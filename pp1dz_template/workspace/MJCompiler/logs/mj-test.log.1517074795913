@@ -1,0 +1,18 @@
+INFO  18:38:52,497 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:38:52,542 - #2 program
+INFO  18:38:52,542 - #43 ImeMogaProgramaa
+INFO  18:38:52,542 - #15 const
+INFO  18:38:52,543 - #43 int
+INFO  18:38:52,543 - #43 sima
+INFO  18:38:52,544 - #29 =
+INFO  18:38:52,544 - #45 "nesto svasta"
+INFO  18:38:52,544 - #32 ;
+INFO  18:38:52,544 - #43 int
+INFO  18:38:52,545 - #43 y
+INFO  18:38:52,545 - #32 ;
+INFO  18:38:52,546 - #43 int
+INFO  18:38:52,548 - #43 k
+INFO  18:38:52,548 - #35 (
+ERROR 18:38:52,548 - 
+Sintaksna greska na liniji 6
+ERROR 18:38:52,548 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

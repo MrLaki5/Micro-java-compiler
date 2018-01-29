@@ -1,0 +1,9 @@
+INFO  18:27:38,381 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:27:38,418 - #2 program
+INFO  18:27:38,419 - #43 ImeMogaProgramaa
+INFO  18:27:38,419 - #43 const
+INFO  18:27:38,419 - #43 int
+INFO  18:27:38,420 - #43 sima
+ERROR 18:27:38,420 - 
+Sintaksna greska na liniji 2
+ERROR 18:27:38,420 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

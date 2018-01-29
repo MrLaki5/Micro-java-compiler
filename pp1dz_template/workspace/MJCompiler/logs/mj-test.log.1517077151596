@@ -1,0 +1,45 @@
+INFO  19:12:31,442 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  19:12:31,490 - #2 program
+INFO  19:12:31,491 - #43 ImeMogaProgramaa
+INFO  19:12:31,491 - #15 const
+INFO  19:12:31,500 - #43 int
+INFO  19:12:31,501 - #43 sima
+INFO  19:12:31,501 - #29 =
+INFO  19:12:31,501 - #44 true
+INFO  19:12:31,502 - #33 ,
+INFO  19:12:31,502 - #43 joka
+INFO  19:12:31,502 - #29 =
+INFO  19:12:31,503 - #45 "string"
+INFO  19:12:31,503 - #33 ,
+INFO  19:12:31,503 - #43 maca
+INFO  19:12:31,503 - #29 =
+INFO  19:12:31,503 - #42 55
+INFO  19:12:31,503 - #32 ;
+INFO  19:12:31,503 - #43 konjina
+INFO  19:12:31,506 - #43 y
+INFO  19:12:31,506 - #37 [
+INFO  19:12:31,507 - #38 ]
+INFO  19:12:31,507 - #33 ,
+INFO  19:12:31,512 - #43 x
+INFO  19:12:31,512 - #37 [
+INFO  19:12:31,512 - #38 ]
+INFO  19:12:31,512 - #32 ;
+INFO  19:12:31,513 - #4 class
+INFO  19:12:31,514 - #43 imeklase
+INFO  19:12:31,515 - #13 extends
+INFO  19:12:31,515 - #43 tipklase
+INFO  19:12:31,515 - #39 {
+INFO  19:12:31,515 - #40 }
+INFO  19:12:31,518 - #4 class
+INFO  19:12:31,519 - #43 imeklase
+INFO  19:12:31,519 - #13 extends
+INFO  19:12:31,520 - #43 tipklase
+INFO  19:12:31,520 - #39 {
+INFO  19:12:31,520 - #43 int
+INFO  19:12:31,520 - #43 nesto
+INFO  19:12:31,520 - #33 ,
+INFO  19:12:31,520 - #43 String
+INFO  19:12:31,520 - #43 proba
+ERROR 19:12:31,521 - 
+Sintaksna greska na liniji 5
+ERROR 19:12:31,522 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

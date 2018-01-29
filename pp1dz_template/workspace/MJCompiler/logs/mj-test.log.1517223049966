@@ -1,0 +1,3207 @@
+INFO  11:49:16,607 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  11:49:16,656 - #2 program
+INFO  11:49:16,656 - #43 ImeMogaProgramaa
+INFO  11:49:16,656 - #15 const
+INFO  11:49:16,657 - #43 int
+INFO  11:49:16,657 - #43 sima
+INFO  11:49:16,658 - #29 =
+INFO  11:49:16,658 - #44 true
+INFO  11:49:16,658 - #33 ,
+INFO  11:49:16,658 - #43 joka
+INFO  11:49:16,658 - #29 =
+INFO  11:49:16,660 - #45 "string"
+INFO  11:49:16,660 - #33 ,
+INFO  11:49:16,660 - #43 maca
+INFO  11:49:16,660 - #29 =
+INFO  11:49:16,660 - #42 55
+INFO  11:49:16,660 - #32 ;
+INFO  11:49:16,660 - #43 int
+INFO  11:49:16,661 - #43 a
+INFO  11:49:16,661 - #32 ;
+INFO  11:49:16,662 - #4 class
+INFO  11:49:16,662 - #43 imeklase
+INFO  11:49:16,664 - #13 extends
+INFO  11:49:16,664 - #43 tipklase
+INFO  11:49:16,664 - #39 {
+INFO  11:49:16,664 - #40 }
+INFO  11:49:16,665 - #4 class
+INFO  11:49:16,668 - #43 imeklase
+INFO  11:49:16,668 - #13 extends
+INFO  11:49:16,668 - #43 tipklase
+INFO  11:49:16,668 - #39 {
+INFO  11:49:16,668 - #43 int
+INFO  11:49:16,668 - #43 nesto
+INFO  11:49:16,668 - #33 ,
+INFO  11:49:16,668 - #43 blah
+INFO  11:49:16,668 - #37 [
+INFO  11:49:16,668 - #38 ]
+INFO  11:49:16,668 - #32 ;
+INFO  11:49:16,669 - #43 int
+INFO  11:49:16,670 - #43 nesto
+INFO  11:49:16,670 - #37 [
+INFO  11:49:16,670 - #38 ]
+INFO  11:49:16,670 - #33 ,
+INFO  11:49:16,670 - #43 josnesto
+INFO  11:49:16,670 - #32 ;
+INFO  11:49:16,670 - #43 String
+INFO  11:49:16,670 - #43 strava
+INFO  11:49:16,670 - #32 ;
+INFO  11:49:16,670 - #40 }
+INFO  11:49:16,670 - #4 class
+INFO  11:49:16,670 - #43 imeklase
+INFO  11:49:16,670 - #13 extends
+INFO  11:49:16,670 - #43 tipklase
+INFO  11:49:16,670 - #39 {
+INFO  11:49:16,670 - #43 int
+INFO  11:49:16,671 - #43 nesto
+INFO  11:49:16,671 - #33 ,
+INFO  11:49:16,671 - #43 blah
+INFO  11:49:16,671 - #37 [
+INFO  11:49:16,671 - #38 ]
+INFO  11:49:16,671 - #32 ;
+INFO  11:49:16,671 - #39 {
+INFO  11:49:16,671 - #40 }
+INFO  11:49:16,671 - #40 }
+INFO  11:49:16,671 - #4 class
+INFO  11:49:16,671 - #43 imeklase
+INFO  11:49:16,671 - #13 extends
+INFO  11:49:16,671 - #43 tipklase
+INFO  11:49:16,671 - #39 {
+INFO  11:49:16,671 - #39 {
+INFO  11:49:16,671 - #40 }
+INFO  11:49:16,671 - #40 }
+INFO  11:49:16,671 - #4 class
+INFO  11:49:16,671 - #43 imeklase
+INFO  11:49:16,671 - #39 {
+INFO  11:49:16,672 - #43 int
+INFO  11:49:16,672 - #43 nesto
+INFO  11:49:16,672 - #33 ,
+INFO  11:49:16,672 - #43 blah
+INFO  11:49:16,672 - #37 [
+INFO  11:49:16,672 - #38 ]
+INFO  11:49:16,672 - #32 ;
+INFO  11:49:16,672 - #39 {
+INFO  11:49:16,672 - #10 void
+INFO  11:49:16,672 - #43 imeMetode
+INFO  11:49:16,672 - #35 (
+INFO  11:49:16,672 - #43 int
+INFO  11:49:16,672 - #43 a
+INFO  11:49:16,672 - #33 ,
+INFO  11:49:16,673 - #43 String
+INFO  11:49:16,673 - #43 b
+INFO  11:49:16,673 - #33 ,
+INFO  11:49:16,673 - #43 Float
+INFO  11:49:16,673 - #43 c
+INFO  11:49:16,673 - #37 [
+INFO  11:49:16,673 - #38 ]
+INFO  11:49:16,673 - #36 )
+INFO  11:49:16,673 - #43 int
+INFO  11:49:16,673 - #43 a
+INFO  11:49:16,673 - #32 ;
+INFO  11:49:16,673 - #39 {
+INFO  11:49:16,673 - #40 }
+INFO  11:49:16,675 - #43 int
+INFO  11:49:16,675 - #43 drugametada
+INFO  11:49:16,675 - #35 (
+INFO  11:49:16,675 - #36 )
+INFO  11:49:16,676 - #43 String
+INFO  11:49:16,676 - #43 a
+INFO  11:49:16,676 - #33 ,
+INFO  11:49:16,676 - #43 b
+INFO  11:49:16,676 - #37 [
+INFO  11:49:16,676 - #38 ]
+INFO  11:49:16,676 - #33 ,
+INFO  11:49:16,676 - #43 c
+INFO  11:49:16,676 - #32 ;
+INFO  11:49:16,677 - #39 {
+INFO  11:49:16,677 - #3 break
+INFO  11:49:16,677 - #32 ;
+INFO  11:49:16,677 - #14 continue
+INFO  11:49:16,677 - #32 ;
+INFO  11:49:16,678 - #40 }
+INFO  11:49:16,678 - #40 }
+INFO  11:49:16,678 - #40 }
+INFO  11:49:16,678 - #39 {
+INFO  11:49:16,678 - #43 int
+INFO  11:49:16,678 - #43 k
+INFO  11:49:16,678 - #35 (
+INFO  11:49:16,678 - #36 )
+INFO  11:49:16,678 - #43 int
+INFO  11:49:16,678 - #43 c
+INFO  11:49:16,680 - #32 ;
+INFO  11:49:16,680 - #39 {
+INFO  11:49:16,680 - #43 c_some123_true
+INFO  11:49:16,680 - #29 =
+INFO  11:49:16,680 - #45 "proba 123"
+INFO  11:49:16,687 - #32 ;
+INFO  11:49:16,688 - #43 c
+INFO  11:49:16,688 - #29 =
+INFO  11:49:16,688 - #44 true
+INFO  11:49:16,688 - #32 ;
+INFO  11:49:16,688 - #9 return
+INFO  11:49:16,688 - #43 c
+INFO  11:49:16,688 - #16 +
+INFO  11:49:16,688 - #42 3
+INFO  11:49:16,689 - #32 ;
+INFO  11:49:16,689 - #43 str
+INFO  11:49:16,689 - #29 =
+INFO  11:49:16,689 - #45 "ako"
+INFO  11:49:16,689 - #16 +
+INFO  11:49:16,689 - #45 "nesto"
+INFO  11:49:16,690 - #32 ;
+INFO  11:49:16,690 - #40 }
+INFO  11:49:16,690 - #43 int
+INFO  11:49:16,690 - #43 main
+INFO  11:49:16,690 - #35 (
+INFO  11:49:16,690 - #36 )
+INFO  11:49:16,690 - #39 {
+INFO  11:49:16,690 - #43 designatorProba
+INFO  11:49:16,690 - #29 =
+INFO  11:49:16,690 - #42 55
+INFO  11:49:16,690 - #16 +
+INFO  11:49:16,690 - #42 33
+INFO  11:49:16,690 - #18 *
+INFO  11:49:16,690 - #42 22
+INFO  11:49:16,691 - #32 ;
+INFO  11:49:16,691 - #43 designatorProba
+INFO  11:49:16,691 - #35 (
+INFO  11:49:16,691 - #45 "baba"
+INFO  11:49:16,691 - #18 *
+INFO  11:49:16,692 - #45 "strina"
+INFO  11:49:16,692 - #33 ,
+INFO  11:49:16,692 - #44 true
+INFO  11:49:16,692 - #36 )
+INFO  11:49:16,692 - #32 ;
+INFO  11:49:16,692 - #43 designatorProba
+INFO  11:49:16,692 - #35 (
+INFO  11:49:16,692 - #36 )
+INFO  11:49:16,693 - #32 ;
+INFO  11:49:16,693 - #43 designatorProba
+INFO  11:49:16,693 - #30 ++
+INFO  11:49:16,693 - #32 ;
+INFO  11:49:16,698 - #43 designatorProba
+INFO  11:49:16,698 - #31 --
+INFO  11:49:16,700 - #32 ;
+INFO  11:49:16,700 - #43 designatorProba
+INFO  11:49:16,700 - #29 =
+INFO  11:49:16,700 - #17 -
+INFO  11:49:16,700 - #42 32
+INFO  11:49:16,700 - #32 ;
+INFO  11:49:16,700 - #5 if
+INFO  11:49:16,700 - #35 (
+INFO  11:49:16,701 - #45 "nesto"
+INFO  11:49:16,701 - #26 <=
+INFO  11:49:16,701 - #42 55
+INFO  11:49:16,702 - #27 &&
+INFO  11:49:16,702 - #44 true
+INFO  11:49:16,702 - #28 ||
+INFO  11:49:16,702 - #45 "proba"
+INFO  11:49:16,702 - #36 )
+INFO  11:49:16,703 - #39 {
+INFO  11:49:16,703 - #43 proba
+INFO  11:49:16,703 - #29 =
+INFO  11:49:16,703 - #42 12
+INFO  11:49:16,703 - #16 +
+INFO  11:49:16,703 - #42 12
+INFO  11:49:16,703 - #16 +
+INFO  11:49:16,703 - #42 12
+INFO  11:49:16,703 - #16 +
+INFO  11:49:16,703 - #42 12
+INFO  11:49:16,703 - #32 ;
+INFO  11:49:16,703 - #40 }
+INFO  11:49:16,703 - #5 if
+INFO  11:49:16,703 - #35 (
+INFO  11:49:16,703 - #45 "nesto"
+INFO  11:49:16,703 - #22 !=
+INFO  11:49:16,703 - #42 55
+INFO  11:49:16,703 - #36 )
+INFO  11:49:16,703 - #39 {
+INFO  11:49:16,703 - #43 proba
+INFO  11:49:16,703 - #29 =
+INFO  11:49:16,703 - #42 12
+INFO  11:49:16,703 - #16 +
+INFO  11:49:16,703 - #42 12
+INFO  11:49:16,705 - #16 +
+INFO  11:49:16,705 - #42 12
+INFO  11:49:16,705 - #16 +
+INFO  11:49:16,705 - #42 12
+INFO  11:49:16,705 - #32 ;
+INFO  11:49:16,705 - #40 }
+INFO  11:49:16,705 - #41 else
+INFO  11:49:16,705 - #39 {
+INFO  11:49:16,705 - #3 break
+INFO  11:49:16,705 - #32 ;
+INFO  11:49:16,705 - #40 }
+INFO  11:49:16,705 - #11 do
+INFO  11:49:16,705 - #39 {
+INFO  11:49:16,705 - #43 proba
+INFO  11:49:16,705 - #34 .
+INFO  11:49:16,705 - #43 jedan
+INFO  11:49:16,705 - #37 [
+INFO  11:49:16,705 - #17 -
+INFO  11:49:16,705 - #45 "pingvin"
+INFO  11:49:16,705 - #18 *
+INFO  11:49:16,705 - #44 true
+INFO  11:49:16,705 - #38 ]
+INFO  11:49:16,705 - #29 =
+INFO  11:49:16,705 - #17 -
+INFO  11:49:16,705 - #42 121
+INFO  11:49:16,705 - #32 ;
+INFO  11:49:16,705 - #9 return
+INFO  11:49:16,707 - #44 true
+INFO  11:49:16,707 - #32 ;
+INFO  11:49:16,707 - #9 return
+INFO  11:49:16,708 - #32 ;
+INFO  11:49:16,708 - #8 read
+INFO  11:49:16,708 - #35 (
+INFO  11:49:16,708 - #43 a
+INFO  11:49:16,708 - #37 [
+INFO  11:49:16,708 - #35 (
+INFO  11:49:16,708 - #43 a
+INFO  11:49:16,708 - #20 %
+INFO  11:49:16,708 - #43 b
+INFO  11:49:16,708 - #36 )
+INFO  11:49:16,708 - #38 ]
+INFO  11:49:16,708 - #36 )
+INFO  11:49:16,708 - #32 ;
+INFO  11:49:16,708 - #7 print
+INFO  11:49:16,709 - #35 (
+INFO  11:49:16,709 - #42 3242
+INFO  11:49:16,709 - #36 )
+INFO  11:49:16,709 - #32 ;
+INFO  11:49:16,709 - #7 print
+INFO  11:49:16,709 - #35 (
+INFO  11:49:16,709 - #43 c
+INFO  11:49:16,709 - #34 .
+INFO  11:49:16,709 - #43 a
+INFO  11:49:16,709 - #33 ,
+INFO  11:49:16,709 - #42 21
+INFO  11:49:16,709 - #36 )
+INFO  11:49:16,709 - #32 ;
+INFO  11:49:16,709 - #40 }
+INFO  11:49:16,710 - #12 while
+INFO  11:49:16,710 - #35 (
+INFO  11:49:16,710 - #43 a
+INFO  11:49:16,710 - #34 .
+INFO  11:49:16,710 - #43 b
+INFO  11:49:16,710 - #34 .
+INFO  11:49:16,710 - #43 c
+INFO  11:49:16,710 - #34 .
+INFO  11:49:16,710 - #43 d
+INFO  11:49:16,740 - #37 [
+INFO  11:49:16,740 - #6 new
+INFO  11:49:16,740 - #43 int
+INFO  11:49:16,740 - #38 ]
+INFO  11:49:16,740 - #36 )
+INFO  11:49:16,740 - #32 ;
+INFO  11:49:16,741 - #7 print
+INFO  11:49:16,741 - #35 (
+INFO  11:49:16,741 - #42 1
+INFO  11:49:16,741 - #36 )
+INFO  11:49:16,741 - #32 ;
+INFO  11:49:16,741 - #43 x
+INFO  11:49:16,741 - #29 =
+INFO  11:49:16,741 - #43 y
+INFO  11:49:16,741 - #16 +
+INFO  11:49:16,741 - #42 3
+INFO  11:49:16,741 - #32 ;
+INFO  11:49:16,741 - #43 k
+INFO  11:49:16,741 - #35 (
+INFO  11:49:16,741 - #36 )
+INFO  11:49:16,741 - #32 ;
+INFO  11:49:16,741 - #7 print
+INFO  11:49:16,742 - #35 (
+INFO  11:49:16,742 - #42 2
+INFO  11:49:16,742 - #36 )
+INFO  11:49:16,742 - #32 ;
+INFO  11:49:16,742 - #43 a
+INFO  11:49:16,742 - #29 =
+INFO  11:49:16,742 - #43 a
+INFO  11:49:16,742 - #34 .
+INFO  11:49:16,742 - #43 b
+INFO  11:49:16,742 - #37 [
+INFO  11:49:16,742 - #42 12
+INFO  11:49:16,742 - #38 ]
+INFO  11:49:16,742 - #32 ;
+INFO  11:49:16,742 - #40 }
+INFO  11:49:16,742 - #40 }
+INFO  11:49:16,751 - ProgName(
+ ImeMogaProgramaa
+) [ProgName]Program(
+  ProgName(
+ ImeMogaProgramaa
+) [ProgName]ProgName(
+   ProgName(
+ ImeMogaProgramaa
+) [ProgName]ImeMogaProgramaa
+  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ProgName]
+  ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDeclarations(
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDeclarations(
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDeclarations(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDeclarations(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDeclarations(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDeclarations(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]ConstDeclarations(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoDecl(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoDecl]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]ConstDecl(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]sima
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]BooleanValue(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]true
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BooleanValue]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherConstDecl(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherConstDecl(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherConstDecl(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherConstDecl]
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]joka
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]StringValue(
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]"string"
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [StringValue]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherConstDecl]
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]maca
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]IntegerValue(
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]55
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IntegerValue]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherConstDecl]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ConstDecl]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ConstDeclarations]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]GlobalVarDeclElem(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]GlobalVarDeclLast(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]GlobalVarTwoNoErr(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [GlobalVarTwoNoErr]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [GlobalVarDeclLast]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [GlobalVarDeclElem]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDeclarations]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDecl(
+             ProgName(
+ ImeMogaProgramaa
+) [ProgName]imeklase
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Extension(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]tipklase
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Extension]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoClassMethods(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoClassMethods]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDecl]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDeclarations]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDecl(
+           ProgName(
+ ImeMogaProgramaa
+) [ProgName]imeklase
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Extension(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]tipklase
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Extension]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]nesto
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherVarDecl(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]blah
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsArray(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsArray]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherVarDecl]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]nesto
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsArray(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsArray]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherVarDecl(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]josnesto
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherVarDecl]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]String
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]strava
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoClassMethods(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoClassMethods]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDecl]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDeclarations]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDecl(
+         ProgName(
+ ImeMogaProgramaa
+) [ProgName]imeklase
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Extension(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+             ProgName(
+ ImeMogaProgramaa
+) [ProgName]tipklase
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Extension]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+             ProgName(
+ ImeMogaProgramaa
+) [ProgName]nesto
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherVarDecl(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]blah
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsArray(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsArray]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherVarDecl]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassMethods(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoMethodDecl(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoMethodDecl]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassMethods]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDecl]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDeclarations]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDecl(
+       ProgName(
+ ImeMogaProgramaa
+) [ProgName]imeklase
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Extension(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+           ProgName(
+ ImeMogaProgramaa
+) [ProgName]tipklase
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Extension]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassMethods(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoMethodDecl(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoMethodDecl]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassMethods]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDecl]
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDeclarations]
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassDecl(
+     ProgName(
+ ImeMogaProgramaa
+) [ProgName]imeklase
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoExtension(
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoExtension]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+           ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+         ProgName(
+ ImeMogaProgramaa
+) [ProgName]nesto
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherVarDecl(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+           ProgName(
+ ImeMogaProgramaa
+) [ProgName]blah
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsArray(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsArray]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherVarDecl]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]ClassMethods(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDeclarations(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDeclarations(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoMethodDecl(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoMethodDecl]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDecl(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodVoidType(
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]imeMetode
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodVoidType]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]FormParams(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]FormalParamDecls(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]FormalParamDecls(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleFormalParamDecl(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]FormalParamDecl(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [FormalParamDecl]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleFormalParamDecl]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]FormalParamDecl(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]String
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]b
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [FormalParamDecl]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [FormalParamDecls]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]FormalParamDecl(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]Float
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]c
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsArray(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsArray]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [FormalParamDecl]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [FormalParamDecls]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [FormParams]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDecl]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDeclarations]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDecl(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodType(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+             ProgName(
+ ImeMogaProgramaa
+) [ProgName]drugametada
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodType]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoFormParam(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoFormParam]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]String
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherVarDecl(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherVarDecl(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]b
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsArray(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsArray]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherVarDecl]
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]c
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherVarDecl]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]BreakStmt(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BreakStmt]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]ContinueStmt(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ContinueStmt]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDecl]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDeclarations]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassMethods]
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDecl]
+  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ClassDeclarations]
+  ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDeclarations(
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDeclarations(
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoMethodDecl(
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoMethodDecl]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDecl(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodType(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+           ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+         ProgName(
+ ImeMogaProgramaa
+) [ProgName]k
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodType]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoFormParam(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoFormParam]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarOnlyDeclarations(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]VarDecl(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+             ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+           ProgName(
+ ImeMogaProgramaa
+) [ProgName]c
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]IsNotArray(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IsNotArray]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoAnotherVarDecl(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoAnotherVarDecl]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarDecl]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [VarOnlyDeclarations]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]c_some123_true
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]"proba 123"
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]c
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]BoolConstFactor(
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]true
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BoolConstFactor]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]ReturnExprStmt(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorNoActFactor(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]c
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorNoActFactor]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]3
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ReturnExprStmt]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+               ProgName(
+ ImeMogaProgramaa
+) [ProgName]str
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]"ako"
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]"nesto"
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDecl]
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDeclarations]
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodDecl(
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]MethodType(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+         ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+       ProgName(
+ ImeMogaProgramaa
+) [ProgName]main
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodType]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoFormParam(
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoFormParam]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoVarOnlyDeclarations(
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoVarOnlyDeclarations]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]designatorProba
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                             ProgName(
+ ImeMogaProgramaa
+) [ProgName]55
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherTerm(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                             ProgName(
+ ImeMogaProgramaa
+) [ProgName]33
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]MulMulop(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MulMulop]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                           ProgName(
+ ImeMogaProgramaa
+) [ProgName]22
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherTerm]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementActP(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]designatorProba
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]ActListPar(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherActPars(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleActPars(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherTerm(
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]"baba"
+                                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]MulMulop(
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MulMulop]
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                                               ProgName(
+ ImeMogaProgramaa
+) [ProgName]"strina"
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherTerm]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleActPars]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]BoolConstFactor(
+                                             ProgName(
+ ImeMogaProgramaa
+) [ProgName]true
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BoolConstFactor]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherActPars]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ActListPar]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementActP]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementActP(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]designatorProba
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoActList(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoActList]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementActP]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementPP(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]designatorProba
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementPP]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementMM(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                               ProgName(
+ ImeMogaProgramaa
+) [ProgName]designatorProba
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementMM]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                             ProgName(
+ ImeMogaProgramaa
+) [ProgName]designatorProba
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleNegExpr(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]32
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleNegExpr]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]IfStmtNoElse(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherCondition(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleCondition(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherCondTerm(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleCondTerm(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]CondFactRelop(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]"nesto"
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]LowerEqualRelop(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [LowerEqualRelop]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]55
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CondFactRelop]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleCondTerm]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]CondFactNoRelop(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]BoolConstFactor(
+                                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]true
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BoolConstFactor]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CondFactNoRelop]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherCondTerm]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleCondition]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleCondTerm(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]CondFactNoRelop(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]"proba"
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CondFactNoRelop]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleCondTerm]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherCondition]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]BraceStmt(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]proba
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                           ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BraceStmt]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IfStmtNoElse]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]IfStmtElse(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleCondition(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleCondTerm(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]CondFactRelop(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]"nesto"
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]NotEqualsRelop(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NotEqualsRelop]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]55
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CondFactRelop]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleCondTerm]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleCondition]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]BraceStmt(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                               ProgName(
+ ImeMogaProgramaa
+) [ProgName]proba
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BraceStmt]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]BraceStmt(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]BreakStmt(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BreakStmt]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BraceStmt]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [IfStmtElse]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]DoWhileStmt(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]BraceStmt(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]Statements(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoStmt(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoStmt]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExprDesignator(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherIdentDesignator(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                           ProgName(
+ ImeMogaProgramaa
+) [ProgName]proba
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]jedan
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherIdentDesignator]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleNegExpr(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherTerm(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]CharConstFactor(
+                                               ProgName(
+ ImeMogaProgramaa
+) [ProgName]"pingvin"
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CharConstFactor]
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]MulMulop(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MulMulop]
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]BoolConstFactor(
+                                             ProgName(
+ ImeMogaProgramaa
+) [ProgName]true
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BoolConstFactor]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherTerm]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleNegExpr]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExprDesignator]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleNegExpr(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                           ProgName(
+ ImeMogaProgramaa
+) [ProgName]121
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleNegExpr]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]ReturnExprStmt(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]BoolConstFactor(
+                                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]true
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BoolConstFactor]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ReturnExprStmt]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]ReturnNoExprStmt(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ReturnNoExprStmt]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]ReadStmt(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExprDesignator(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]ExprFactor(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherTerm(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorNoActFactor(
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                               ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorNoActFactor]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]ModMulop(
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ModMulop]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorNoActFactor(
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                             ProgName(
+ ImeMogaProgramaa
+) [ProgName]b
+                                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorNoActFactor]
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherTerm]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ExprFactor]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExprDesignator]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [ReadStmt]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]PrintNoNumStmt(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]3242
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PrintNoNumStmt]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]PrintNumStmt(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorNoActFactor(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherIdentDesignator(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]c
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherIdentDesignator]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorNoActFactor]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]21
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PrintNumStmt]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [BraceStmt]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleCondition(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleCondTerm(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]CondFactNoRelop(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorNoActFactor(
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExprDesignator(
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherIdentDesignator(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherIdentDesignator(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherIdentDesignator(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]b
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherIdentDesignator]
+                                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]c
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherIdentDesignator]
+                                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]d
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherIdentDesignator]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NewNoExprFactor(
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Type(
+                                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]int
+                                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Type]
+                                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NewNoExprFactor]
+                                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExprDesignator]
+                              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorNoActFactor]
+                            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [CondFactNoRelop]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleCondTerm]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleCondition]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DoWhileStmt]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]PrintNoNumStmt(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]1
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PrintNoNumStmt]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                   ProgName(
+ ImeMogaProgramaa
+) [ProgName]x
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExpr(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorNoActFactor(
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                           ProgName(
+ ImeMogaProgramaa
+) [ProgName]y
+                          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorNoActFactor]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]PlusAddop(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PlusAddop]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]3
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExpr]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementActP(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]k
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NoActList(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NoActList]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementActP]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]PrintNoNumStmt(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                 ProgName(
+ ImeMogaProgramaa
+) [ProgName]2
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [PrintNoNumStmt]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]Assignment(
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorStatementExpr(
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+             ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]DesignatorNoActFactor(
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherExprDesignator(
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]AnotherIdentDesignator(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleDesignator(
+                       ProgName(
+ ImeMogaProgramaa
+) [ProgName]a
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleDesignator]
+                     ProgName(
+ ImeMogaProgramaa
+) [ProgName]b
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherIdentDesignator]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]SinglePosExpr(
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]SingleTerm(
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]NumberConstFactor(
+                         ProgName(
+ ImeMogaProgramaa
+) [ProgName]12
+                        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [NumberConstFactor]
+                      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+                    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+                  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [AnotherExprDesignator]
+                ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorNoActFactor]
+              ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SingleTerm]
+            ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [SinglePosExpr]
+          ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [DesignatorStatementExpr]
+        ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Assignment]
+      ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Statements]
+    ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDecl]
+  ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [MethodDeclarations]
+ProgName(
+ ImeMogaProgramaa
+) [ProgName]) [Program]

@@ -1,0 +1,28 @@
+INFO  18:49:39,097 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:49:39,146 - #2 program
+INFO  18:49:39,146 - #43 ImeMogaProgramaa
+INFO  18:49:39,146 - #15 const
+INFO  18:49:39,148 - #43 int
+INFO  18:49:39,148 - #43 sima
+INFO  18:49:39,148 - #29 =
+INFO  18:49:39,150 - #44 true
+INFO  18:49:39,150 - #33 ,
+INFO  18:49:39,159 - #43 joka
+INFO  18:49:39,160 - #29 =
+INFO  18:49:39,160 - #45 "string"
+INFO  18:49:39,160 - #33 ,
+INFO  18:49:39,161 - #43 maca
+INFO  18:49:39,161 - #29 =
+INFO  18:49:39,161 - #42 55
+INFO  18:49:39,161 - #32 ;
+INFO  18:49:39,161 - #43 konjina
+INFO  18:49:39,162 - #43 y
+INFO  18:49:39,162 - #33 ,
+INFO  18:49:39,165 - #43 x
+INFO  18:49:39,166 - #37 [
+INFO  18:49:39,167 - #38 ]
+INFO  18:49:39,167 - #32 ;
+INFO  18:49:39,168 - #4 class
+ERROR 18:49:39,168 - 
+Sintaksna greska na liniji 4
+ERROR 18:49:39,168 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4

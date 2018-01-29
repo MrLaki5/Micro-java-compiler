@@ -1,0 +1,24 @@
+INFO  14:11:53,414 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  14:11:53,475 - #2 program
+INFO  14:11:53,475 - #43 ImeMogaProgramaa
+INFO  14:11:53,476 - #15 const
+INFO  14:11:53,480 - #43 int
+INFO  14:11:53,480 - #43 sima
+INFO  14:11:53,481 - #29 =
+INFO  14:11:53,481 - #44 true
+INFO  14:11:53,481 - #33 ,
+INFO  14:11:53,484 - #43 joka
+INFO  14:11:53,484 - #29 =
+INFO  14:11:53,484 - #45 "string"
+INFO  14:11:53,485 - #33 ,
+INFO  14:11:53,485 - #43 maca
+INFO  14:11:53,485 - #29 =
+INFO  14:11:53,485 - #42 55
+INFO  14:11:53,485 - #32 ;
+INFO  14:11:53,485 - #43 int
+INFO  14:11:53,486 - #32 ;
+ERROR 14:11:53,486 - 
+Sintaksna greska na liniji 3
+INFO  14:11:53,487 - #4 class
+INFO  14:11:53,488 - #43 imeklase
+INFO  14:11:53,489 - #13 extends

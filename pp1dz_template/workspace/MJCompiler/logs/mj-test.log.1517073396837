@@ -1,0 +1,42 @@
+INFO  18:15:31,730 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:15:31,803 - #2 program
+INFO  18:15:31,803 - #43 MJProgram
+INFO  18:15:31,803 - #43 int
+INFO  18:15:31,803 - #43 x
+INFO  18:15:31,804 - #32 ;
+INFO  18:15:31,805 - #43 int
+INFO  18:15:31,806 - #43 y
+INFO  18:15:31,806 - #32 ;
+INFO  18:15:31,806 - #39 {
+INFO  18:15:31,806 - #43 int
+INFO  18:15:31,806 - #43 k
+INFO  18:15:31,806 - #35 (
+INFO  18:15:31,807 - #36 )
+INFO  18:15:31,807 - #43 int
+INFO  18:15:31,808 - #43 c
+INFO  18:15:31,808 - #32 ;
+INFO  18:15:31,808 - #39 {
+INFO  18:15:31,808 - #43 c_some123_true
+INFO  18:15:31,808 - #29 =
+INFO  18:15:31,809 - #45 "proba 123"
+INFO  18:15:31,809 - #32 ;
+INFO  18:15:31,811 - #43 c
+INFO  18:15:31,811 - #29 =
+INFO  18:15:31,811 - #44 true
+INFO  18:15:31,811 - #32 ;
+INFO  18:15:31,811 - #9 return
+INFO  18:15:31,811 - #43 c
+INFO  18:15:31,811 - #16 +
+INFO  18:15:31,812 - #42 3
+INFO  18:15:31,812 - #32 ;
+INFO  18:15:31,813 - #43 str
+INFO  18:15:31,813 - #29 =
+INFO  18:15:31,813 - #45 "ako"
+INFO  18:15:31,813 - #16 +
+INFO  18:15:31,813 - #45 "nesto"
+INFO  18:15:31,813 - #32 ;
+INFO  18:15:31,813 - #43 a
+INFO  18:15:31,813 - #23 >
+ERROR 18:15:31,813 - 
+Sintaksna greska na liniji 10
+ERROR 18:15:31,813 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

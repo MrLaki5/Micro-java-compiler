@@ -1,0 +1,5 @@
+INFO  18:24:00,744 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:24:00,822 - #43 rogonja
+ERROR 18:24:00,823 - 
+Sintaksna greska na liniji 1
+ERROR 18:24:00,823 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1

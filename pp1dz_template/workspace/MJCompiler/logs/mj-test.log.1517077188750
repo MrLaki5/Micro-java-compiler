@@ -1,0 +1,43 @@
+INFO  19:19:11,602 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  19:19:11,651 - #2 program
+INFO  19:19:11,651 - #43 ImeMogaProgramaa
+INFO  19:19:11,651 - #15 const
+INFO  19:19:11,652 - #43 int
+INFO  19:19:11,652 - #43 sima
+INFO  19:19:11,653 - #29 =
+INFO  19:19:11,653 - #44 true
+INFO  19:19:11,654 - #33 ,
+INFO  19:19:11,661 - #43 joka
+INFO  19:19:11,662 - #29 =
+INFO  19:19:11,662 - #45 "string"
+INFO  19:19:11,662 - #33 ,
+INFO  19:19:11,662 - #43 maca
+INFO  19:19:11,663 - #29 =
+INFO  19:19:11,663 - #42 55
+INFO  19:19:11,663 - #32 ;
+INFO  19:19:11,663 - #43 konjina
+INFO  19:19:11,664 - #43 y
+INFO  19:19:11,664 - #37 [
+INFO  19:19:11,664 - #38 ]
+INFO  19:19:11,664 - #33 ,
+INFO  19:19:11,668 - #43 x
+INFO  19:19:11,668 - #37 [
+INFO  19:19:11,668 - #38 ]
+INFO  19:19:11,668 - #32 ;
+INFO  19:19:11,669 - #4 class
+INFO  19:19:11,669 - #43 imeklase
+INFO  19:19:11,669 - #13 extends
+INFO  19:19:11,669 - #43 tipklase
+INFO  19:19:11,669 - #39 {
+INFO  19:19:11,670 - #40 }
+INFO  19:19:11,671 - #4 class
+INFO  19:19:11,673 - #43 imeklase
+INFO  19:19:11,674 - #13 extends
+INFO  19:19:11,674 - #43 tipklase
+INFO  19:19:11,674 - #39 {
+INFO  19:19:11,674 - #43 int
+INFO  19:19:11,674 - #43 nesto
+INFO  19:19:11,674 - #40 }
+ERROR 19:19:11,674 - 
+Sintaksna greska na liniji 5
+ERROR 19:19:11,674 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

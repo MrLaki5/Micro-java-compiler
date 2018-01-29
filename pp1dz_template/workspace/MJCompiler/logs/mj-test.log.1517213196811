@@ -1,0 +1,48 @@
+INFO  09:06:16,190 - Compiling source file: C:\Users\mimar\Desktop\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  09:06:16,199 - #2 program
+INFO  09:06:16,200 - #43 ImeMogaProgramaa
+INFO  09:06:16,200 - #15 const
+INFO  09:06:16,200 - #43 int
+INFO  09:06:16,200 - #43 sima
+INFO  09:06:16,200 - #29 =
+INFO  09:06:16,200 - #44 true
+INFO  09:06:16,200 - #33 ,
+INFO  09:06:16,200 - #43 joka
+INFO  09:06:16,200 - #29 =
+INFO  09:06:16,201 - #45 "string"
+INFO  09:06:16,201 - #33 ,
+INFO  09:06:16,201 - #43 maca
+INFO  09:06:16,201 - #29 =
+INFO  09:06:16,201 - #42 55
+INFO  09:06:16,201 - #32 ;
+INFO  09:06:16,201 - #43 int
+INFO  09:06:16,201 - #43 a
+INFO  09:06:16,201 - #37 [
+INFO  09:06:16,201 - #38 ]
+INFO  09:06:16,201 - #33 ,
+INFO  09:06:16,203 - #42 678
+ERROR 09:06:16,203 - 
+Sintaksna greska na liniji 3
+INFO  09:06:16,203 - #33 ,
+INFO  09:06:16,203 - #43 b
+INFO  09:06:16,203 - #33 ,
+INFO  09:06:16,203 - #43 c
+INFO  09:06:16,204 - #33 ,
+INFO  09:06:16,204 - #45 "nesto"
+ERROR 09:06:16,204 - 
+Sintaksna greska na liniji 3
+INFO  09:06:16,204 - #33 ,
+INFO  09:06:16,204 - #43 g
+INFO  09:06:16,204 - #33 ,
+INFO  09:06:16,204 - #44 true
+ERROR 09:06:16,204 - 
+Sintaksna greska na liniji 3
+INFO  09:06:16,204 - #32 ;
+INFO  09:06:16,204 - #43 int
+INFO  09:06:16,204 - #43 poy
+INFO  09:06:16,204 - #32 ;
+INFO  09:06:16,204 - #43 int
+INFO  09:06:16,204 - #42 5
+ERROR 09:06:16,204 - 
+Sintaksna greska na liniji 5
+ERROR 09:06:16,204 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5
