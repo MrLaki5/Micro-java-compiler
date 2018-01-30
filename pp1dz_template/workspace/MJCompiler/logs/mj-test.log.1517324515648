@@ -1,0 +1,28 @@
+INFO  15:50:40,526 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  15:50:40,585 - #2 program
+INFO  15:50:40,586 - #43 ImeMogaProgramaa
+INFO  15:50:40,586 - #43 int
+INFO  15:50:40,587 - #43 a
+INFO  15:50:40,588 - #32 ;
+INFO  15:50:40,590 - #43 int
+INFO  15:50:40,590 - #43 b
+INFO  15:50:40,592 - #32 ;
+INFO  15:50:40,593 - #39 {
+INFO  15:50:40,593 - #10 void
+INFO  15:50:40,593 - #43 main
+INFO  15:50:40,594 - #35 (
+INFO  15:50:40,594 - #36 )
+INFO  15:50:40,594 - #43 int
+INFO  15:50:40,595 - #43 a
+INFO  15:50:40,595 - #33 ,
+INFO  15:50:40,596 - #43 b
+INFO  15:50:40,596 - #32 ;
+INFO  15:50:40,596 - #43 int
+INFO  15:50:40,600 - #43 b
+INFO  15:50:40,601 - #32 ;
+INFO  15:50:40,601 - #39 {
+INFO  15:50:40,601 - #40 }
+INFO  15:50:40,602 - #40 }
+INFO  15:50:40,658 - Obradjuje se funkcija main: linija 6
+INFO  15:50:40,658 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 7
+INFO  15:50:40,658 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8

@@ -1,0 +1,19 @@
+INFO  14:51:11,229 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  14:51:11,313 - #2 program
+INFO  14:51:11,314 - #43 ImeMogaProgramaa
+INFO  14:51:11,314 - #43 int
+INFO  14:51:11,315 - #43 a
+INFO  14:51:11,316 - #32 ;
+INFO  14:51:11,318 - #43 int
+INFO  14:51:11,318 - #43 b
+INFO  14:51:11,319 - #32 ;
+INFO  14:51:11,319 - #39 {
+INFO  14:51:11,319 - #43 int
+INFO  14:51:11,320 - #43 main
+INFO  14:51:11,321 - #35 (
+INFO  14:51:11,322 - #36 )
+INFO  14:51:11,323 - #43 int
+INFO  14:51:11,323 - #43 a
+INFO  14:51:11,324 - #39 {
+ERROR 14:51:11,325 - Sintaksna greska na liniji 7
+ERROR 14:51:11,325 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

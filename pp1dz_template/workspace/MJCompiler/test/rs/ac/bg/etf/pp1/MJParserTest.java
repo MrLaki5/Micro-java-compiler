@@ -47,12 +47,14 @@ public class MJParserTest {
 			MJParser p = new MJParser(lexer);
 			
 			Symbol sim=p.parse();
+			Tab.init();
+			SemanticPass semanticCheck=new SemanticPass();
+			SyntaxNode prog = (SyntaxNode)(sim.value);
+			prog.traverseBottomUp(semanticCheck);
 			
-			if(!p.errorDetected){				
-				SyntaxNode prog = (SyntaxNode)(sim.value);
-				PrintPass pPass=new PrintPass();
-				prog.traverseBottomUp(pPass);
-				log.info(pPass.outString());			
+			
+			if(!p.errorDetected && semanticCheck.passed()){				
+				//log.info(((rs.ac.bg.etf.pp1.ast.Program)prog).toString(""));			
 			}
 			
 			/*

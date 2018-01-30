@@ -60,14 +60,17 @@ terminal PP, MM, SEMI, COMMA, DOT, LPAREN, RPAREN, LBBRACE, RBBRACE, LBRACE, RBR
 terminal Integer NUMBER ;
 terminal String IDENT, BOOL, CHAR;
 
-nonterminal Program, ProgName, DeclList, DeclVarOnlyList, ConstDecl, ConstDeclList, ConstValue, VarDecl, VarDeclList;
-nonterminal	ClassDecl, ExtendsPart, ClassMethodDecl, Type, MethodDeclList, MethodDecl, MethodTypeName, FormPars, FormalParamList;
+nonterminal /*Program, ProgName, */DeclList, DeclVarOnlyList, ConstDeclList, VarDecl, VarDeclList;
+nonterminal	ClassDecl, ExtendsPart, ClassMethodDecl, MethodDeclList, FormPars, FormalParamList, GlobalVarType;
 nonterminal FormalParamDecl, StatementList, Statement, DesignatorStatement, ActList, ActPars, Condition, CondTerm, CondFact, Expr;
 nonterminal Term, Factor, Designator, Relop, Addop, Mulop, ArrayPart, GlobalVarDecl, GlobalVarDeclList, GlobalVarOne, GlobalVarTwo;
 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue;
+
 precedence left ELSE;
 
-/*nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
+/*nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator; 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, VarDeclList; */
 
 Program ::= (Program) PROG ProgName:p DeclList LBRACE MethodDeclList RBRACE 
@@ -116,7 +119,10 @@ GlobalVarDeclList ::= (NEmptyGlobalVarDeclList) GlobalVarDeclList COMMA IDENT:Va
 					  (EmptyGlobalVarDeclList)
 					  ;*/
 			   
-GlobalVarDecl ::= (GlobalVarDeclElem) Type GlobalVarDeclList
+GlobalVarDecl ::= (GlobalVarDeclElem) GlobalVarType GlobalVarDeclList
+;
+
+GlobalVarType ::= (GlobalVarType) Type:varType
 ;
 
 GlobalVarDeclList ::= (GlobalVarDeclAnother) GlobalVarOne GlobalVarDeclList
@@ -124,12 +130,12 @@ GlobalVarDeclList ::= (GlobalVarDeclAnother) GlobalVarOne GlobalVarDeclList
 					  (GlobalVarDeclLast) GlobalVarTwo
 					  ;
 
-GlobalVarOne ::= (GlobalVarOneNoErr) IDENT ArrayPart COMMA
+GlobalVarOne ::= (GlobalVarOneNoErr) IDENT:varName ArrayPart COMMA
 			     |
 			     (GlobalVarOneErr) error COMMA
 			     ;
 
-GlobalVarTwo ::= (GlobalVarTwoNoErr) IDENT ArrayPart SEMI
+GlobalVarTwo ::= (GlobalVarTwoNoErr) IDENT:varName ArrayPart SEMI
 				 |
 				 (GlobalVarTwoErr) error SEMI
 				 ;
@@ -168,7 +174,7 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 					(NoMethodDecl)/* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeName LPAREN FormPars RPAREN DeclVarOnlyList LBRACE StatementList RBRACE 
+MethodDecl ::= (MethodDecl) MethodTypeName:methName LPAREN FormPars RPAREN DeclVarOnlyList LBRACE StatementList RBRACE 
 			   ;
 
 MethodTypeName ::= (MethodType) Type:retType IDENT:methName

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Obj"/>
 <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Struct"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VisitorAdaptor"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.Program"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.SyntaxNode"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ProgName"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDecl"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.Type"/>
+<fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Obj"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodDecl"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodTypeName"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodType"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodVoidType"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.GlobalVarDeclElem"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.GlobalVarOneNoErr"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.GlobalVarTwoNoErr"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.GlobalVarType"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ConstDecl"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.BooleanValue"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.StringValue"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IntegerValue"/>
 </qualifiedTypeNameHistroy>

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2018 11:12:57
+// 30/0/2018 17:14:48
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,8 @@ public class ConstDecl implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
     private Type Type;
     private String varName;
     private ConstValue ConstValue;

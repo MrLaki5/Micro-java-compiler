@@ -1,0 +1,48 @@
+INFO  16:39:48,170 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:39:48,262 - #2 program
+INFO  16:39:48,269 - #43 ImeMogaProgramaa
+INFO  16:39:48,269 - #43 int
+INFO  16:39:48,272 - #43 a
+INFO  16:39:48,286 - #33 ,
+INFO  16:39:48,288 - #43 d
+INFO  16:39:48,289 - #32 ;
+INFO  16:39:48,291 - #43 int
+INFO  16:39:48,292 - #43 b
+INFO  16:39:48,295 - #32 ;
+INFO  16:39:48,302 - #43 char
+INFO  16:39:48,302 - #43 c
+INFO  16:39:48,302 - #32 ;
+INFO  16:39:48,302 - #39 {
+INFO  16:39:48,302 - #10 void
+INFO  16:39:48,304 - #43 prog2
+INFO  16:39:48,304 - #35 (
+INFO  16:39:48,304 - #36 )
+INFO  16:39:48,307 - #43 int
+INFO  16:39:48,309 - #43 a
+INFO  16:39:48,310 - #32 ;
+INFO  16:39:48,323 - #39 {
+INFO  16:39:48,354 - #40 }
+INFO  16:39:48,355 - #10 void
+INFO  16:39:48,356 - #43 main
+INFO  16:39:48,356 - #35 (
+INFO  16:39:48,356 - #36 )
+INFO  16:39:48,356 - #43 int
+INFO  16:39:48,357 - #43 a
+INFO  16:39:48,357 - #33 ,
+INFO  16:39:48,357 - #43 b
+INFO  16:39:48,357 - #32 ;
+INFO  16:39:48,357 - #43 int
+INFO  16:39:48,357 - #43 b
+INFO  16:39:48,357 - #32 ;
+INFO  16:39:48,357 - #39 {
+INFO  16:39:48,358 - #40 }
+INFO  16:39:48,358 - #40 }
+INFO  16:39:48,374 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 2
+INFO  16:39:48,375 - Deklarisana promenljiva d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 2
+INFO  16:39:48,380 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 3
+INFO  16:39:48,380 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 4
+INFO  16:39:48,380 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 7
+INFO  16:39:48,380 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 8
+INFO  16:39:48,380 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 12
+INFO  16:39:48,380 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 13
+INFO  16:39:48,380 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 14

@@ -1,0 +1,21 @@
+INFO  14:51:28,462 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  14:51:28,507 - #2 program
+INFO  14:51:28,508 - #43 ImeMogaProgramaa
+INFO  14:51:28,508 - #43 int
+INFO  14:51:28,509 - #43 a
+INFO  14:51:28,510 - #32 ;
+INFO  14:51:28,512 - #43 int
+INFO  14:51:28,512 - #43 b
+INFO  14:51:28,512 - #32 ;
+INFO  14:51:28,513 - #39 {
+INFO  14:51:28,513 - #43 int
+INFO  14:51:28,513 - #43 main
+INFO  14:51:28,513 - #35 (
+INFO  14:51:28,514 - #36 )
+INFO  14:51:28,514 - #43 int
+INFO  14:51:28,527 - #43 a
+INFO  14:51:28,527 - #32 ;
+INFO  14:51:28,527 - #39 {
+INFO  14:51:28,530 - #40 }
+INFO  14:51:28,531 - #40 }
+INFO  14:51:28,542 - Deklarisana promenljiva a na liniji 7

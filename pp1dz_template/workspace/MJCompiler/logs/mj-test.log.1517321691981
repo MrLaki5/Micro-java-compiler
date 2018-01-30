@@ -1,0 +1,38 @@
+INFO  15:14:20,579 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  15:14:20,618 - #2 program
+INFO  15:14:20,618 - #43 ImeMogaProgramaa
+INFO  15:14:20,618 - #43 int
+INFO  15:14:20,619 - #43 a
+INFO  15:14:20,620 - #32 ;
+INFO  15:14:20,621 - #43 int
+INFO  15:14:20,622 - #43 b
+INFO  15:14:20,622 - #32 ;
+INFO  15:14:20,622 - #39 {
+INFO  15:14:20,622 - #43 int
+INFO  15:14:20,622 - #43 drugaFja
+INFO  15:14:20,622 - #35 (
+INFO  15:14:20,623 - #36 )
+INFO  15:14:20,623 - #43 bool
+INFO  15:14:20,624 - #43 a
+INFO  15:14:20,624 - #32 ;
+INFO  15:14:20,624 - #39 {
+INFO  15:14:20,626 - #40 }
+INFO  15:14:20,627 - #43 int
+INFO  15:14:20,628 - #43 main
+INFO  15:14:20,629 - #35 (
+INFO  15:14:20,629 - #36 )
+INFO  15:14:20,629 - #43 int
+INFO  15:14:20,629 - #43 a
+INFO  15:14:20,629 - #33 ,
+INFO  15:14:20,629 - #43 b
+INFO  15:14:20,629 - #32 ;
+INFO  15:14:20,629 - #43 int
+INFO  15:14:20,629 - #43 b
+INFO  15:14:20,629 - #32 ;
+INFO  15:14:20,630 - #39 {
+INFO  15:14:20,630 - #40 }
+INFO  15:14:20,630 - #40 }
+ERROR 15:14:20,637 - Nije pronadjen tip bool u tabeli simbola
+INFO  15:14:20,637 - Deklarisana promenljiva a: linija 6
+ERROR 15:14:20,637 - Promenljiva a vec postoji: linija 11
+INFO  15:14:20,637 - Deklarisana promenljiva b: linija 12

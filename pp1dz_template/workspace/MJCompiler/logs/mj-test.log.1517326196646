@@ -1,0 +1,41 @@
+INFO  16:29:39,912 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:29:39,954 - #2 program
+INFO  16:29:39,954 - #43 ImeMogaProgramaa
+INFO  16:29:39,954 - #43 int
+INFO  16:29:39,955 - #43 a
+INFO  16:29:39,956 - #32 ;
+INFO  16:29:39,958 - #43 int
+INFO  16:29:39,959 - #43 b
+INFO  16:29:39,959 - #32 ;
+INFO  16:29:39,959 - #39 {
+INFO  16:29:39,959 - #10 void
+INFO  16:29:39,960 - #43 prog2
+INFO  16:29:39,960 - #35 (
+INFO  16:29:39,960 - #36 )
+INFO  16:29:39,961 - #43 int
+INFO  16:29:39,961 - #43 a
+INFO  16:29:39,961 - #32 ;
+INFO  16:29:39,962 - #39 {
+INFO  16:29:39,974 - #40 }
+INFO  16:29:39,976 - #10 void
+INFO  16:29:39,976 - #43 main
+INFO  16:29:39,979 - #35 (
+INFO  16:29:39,979 - #36 )
+INFO  16:29:39,979 - #43 int
+INFO  16:29:39,980 - #43 a
+INFO  16:29:39,980 - #33 ,
+INFO  16:29:39,980 - #43 b
+INFO  16:29:39,980 - #32 ;
+INFO  16:29:39,981 - #43 int
+INFO  16:29:39,981 - #43 b
+INFO  16:29:39,981 - #32 ;
+INFO  16:29:39,981 - #39 {
+INFO  16:29:39,981 - #40 }
+INFO  16:29:39,981 - #40 }
+INFO  16:29:39,990 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 2
+INFO  16:29:39,990 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 3
+INFO  16:29:39,990 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 6
+INFO  16:29:39,990 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 7
+INFO  16:29:39,990 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 11
+INFO  16:29:39,990 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 12
+INFO  16:29:39,990 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 13

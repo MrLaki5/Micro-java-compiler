@@ -1,0 +1,31 @@
+INFO  14:55:55,953 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  14:55:56,021 - #2 program
+INFO  14:55:56,021 - #43 ImeMogaProgramaa
+INFO  14:55:56,021 - #43 int
+INFO  14:55:56,023 - #43 a
+INFO  14:55:56,024 - #32 ;
+INFO  14:55:56,025 - #43 int
+INFO  14:55:56,026 - #43 b
+INFO  14:55:56,026 - #32 ;
+INFO  14:55:56,026 - #39 {
+INFO  14:55:56,027 - #43 int
+INFO  14:55:56,027 - #43 main
+INFO  14:55:56,027 - #35 (
+INFO  14:55:56,027 - #36 )
+INFO  14:55:56,029 - #43 int
+INFO  14:55:56,030 - #43 a
+INFO  14:55:56,030 - #33 ,
+INFO  14:55:56,030 - #43 a
+INFO  14:55:56,031 - #32 ;
+INFO  14:55:56,031 - #43 int
+INFO  14:55:56,035 - #43 b
+INFO  14:55:56,037 - #32 ;
+INFO  14:55:56,037 - #43 int
+INFO  14:55:56,037 - #43 a
+INFO  14:55:56,037 - #32 ;
+INFO  14:55:56,037 - #39 {
+INFO  14:55:56,037 - #40 }
+INFO  14:55:56,038 - #40 }
+INFO  14:55:56,088 - Deklarisana promenljiva a: linija 7
+INFO  14:55:56,088 - Deklarisana promenljiva b: linija 8
+ERROR 14:55:56,088 - Promenljiva a vec postoji: linija 9

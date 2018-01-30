@@ -1,0 +1,37 @@
+INFO  15:13:25,382 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  15:13:25,424 - #2 program
+INFO  15:13:25,424 - #43 ImeMogaProgramaa
+INFO  15:13:25,424 - #43 int
+INFO  15:13:25,425 - #43 a
+INFO  15:13:25,426 - #32 ;
+INFO  15:13:25,428 - #43 int
+INFO  15:13:25,429 - #43 b
+INFO  15:13:25,429 - #32 ;
+INFO  15:13:25,429 - #39 {
+INFO  15:13:25,429 - #43 int
+INFO  15:13:25,430 - #43 drugaFja
+INFO  15:13:25,430 - #35 (
+INFO  15:13:25,430 - #36 )
+INFO  15:13:25,430 - #43 int
+INFO  15:13:25,431 - #43 char
+INFO  15:13:25,431 - #32 ;
+INFO  15:13:25,431 - #39 {
+INFO  15:13:25,446 - #40 }
+INFO  15:13:25,447 - #43 int
+INFO  15:13:25,449 - #43 main
+INFO  15:13:25,449 - #35 (
+INFO  15:13:25,450 - #36 )
+INFO  15:13:25,450 - #43 int
+INFO  15:13:25,450 - #43 a
+INFO  15:13:25,450 - #33 ,
+INFO  15:13:25,450 - #43 b
+INFO  15:13:25,450 - #32 ;
+INFO  15:13:25,450 - #43 int
+INFO  15:13:25,450 - #43 b
+INFO  15:13:25,451 - #32 ;
+INFO  15:13:25,451 - #39 {
+INFO  15:13:25,451 - #40 }
+INFO  15:13:25,451 - #40 }
+ERROR 15:13:25,463 - Promenljiva char ne moze imati naziv tipa: linija 6
+INFO  15:13:25,464 - Deklarisana promenljiva a: linija 11
+INFO  15:13:25,464 - Deklarisana promenljiva b: linija 12

@@ -1,0 +1,40 @@
+INFO  15:08:22,966 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  15:08:23,056 - #2 program
+INFO  15:08:23,056 - #43 ImeMogaProgramaa
+INFO  15:08:23,056 - #43 int
+INFO  15:08:23,060 - #43 a
+INFO  15:08:23,061 - #32 ;
+INFO  15:08:23,064 - #43 int
+INFO  15:08:23,065 - #43 b
+INFO  15:08:23,065 - #32 ;
+INFO  15:08:23,065 - #39 {
+INFO  15:08:23,065 - #43 int
+INFO  15:08:23,066 - #43 drugaFja
+INFO  15:08:23,066 - #35 (
+INFO  15:08:23,066 - #36 )
+INFO  15:08:23,067 - #43 int
+INFO  15:08:23,068 - #43 int
+INFO  15:08:23,068 - #32 ;
+INFO  15:08:23,069 - #39 {
+INFO  15:08:23,079 - #40 }
+INFO  15:08:23,081 - #43 int
+INFO  15:08:23,083 - #43 main
+INFO  15:08:23,087 - #35 (
+INFO  15:08:23,087 - #36 )
+INFO  15:08:23,087 - #43 int
+INFO  15:08:23,087 - #43 a
+INFO  15:08:23,087 - #33 ,
+INFO  15:08:23,087 - #43 b
+INFO  15:08:23,087 - #32 ;
+INFO  15:08:23,087 - #43 int
+INFO  15:08:23,088 - #43 b
+INFO  15:08:23,088 - #32 ;
+INFO  15:08:23,088 - #39 {
+INFO  15:08:23,088 - #40 }
+INFO  15:08:23,088 - #40 }
+INFO  15:08:23,102 - Deklarisana promenljiva int: linija 6
+ERROR 15:08:23,108 - Greska: Ime int ne predstavlja tip : linija 10
+ERROR 15:08:23,123 - Greska: Ime int ne predstavlja tip : linija 11
+INFO  15:08:23,124 - Deklarisana promenljiva a: linija 11
+ERROR 15:08:23,124 - Greska: Ime int ne predstavlja tip : linija 12
+INFO  15:08:23,124 - Deklarisana promenljiva b: linija 12

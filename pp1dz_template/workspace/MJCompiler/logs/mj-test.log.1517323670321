@@ -1,0 +1,29 @@
+INFO  15:47:33,446 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  15:47:33,493 - #2 program
+INFO  15:47:33,493 - #43 ImeMogaProgramaa
+INFO  15:47:33,494 - #43 int
+INFO  15:47:33,495 - #43 a
+INFO  15:47:33,495 - #32 ;
+INFO  15:47:33,498 - #43 int
+INFO  15:47:33,498 - #43 b
+INFO  15:47:33,500 - #32 ;
+INFO  15:47:33,500 - #39 {
+INFO  15:47:33,501 - #43 int
+INFO  15:47:33,501 - #43 main
+INFO  15:47:33,501 - #35 (
+INFO  15:47:33,502 - #36 )
+INFO  15:47:33,502 - #43 int
+INFO  15:47:33,503 - #43 a
+INFO  15:47:33,503 - #33 ,
+INFO  15:47:33,504 - #43 b
+INFO  15:47:33,504 - #32 ;
+INFO  15:47:33,504 - #43 int
+INFO  15:47:33,507 - #43 b
+INFO  15:47:33,509 - #32 ;
+INFO  15:47:33,510 - #39 {
+INFO  15:47:33,510 - #40 }
+INFO  15:47:33,510 - #40 }
+INFO  15:47:33,520 - Obradjuje se funkcija main: linija 6
+INFO  15:47:33,521 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 7
+INFO  15:47:33,521 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+ERROR 15:47:33,522 - Semanticka greska na liniji 6: funcija main nema return iskaz!

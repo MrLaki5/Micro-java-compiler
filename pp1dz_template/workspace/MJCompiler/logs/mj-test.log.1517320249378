@@ -1,0 +1,70 @@
+INFO  14:50:14,658 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  14:50:14,712 - #2 program
+INFO  14:50:14,713 - #43 ImeMogaProgramaa
+INFO  14:50:14,713 - #43 int
+INFO  14:50:14,714 - #43 a
+INFO  14:50:14,714 - #32 ;
+INFO  14:50:14,716 - #43 int
+INFO  14:50:14,717 - #43 b
+INFO  14:50:14,717 - #32 ;
+INFO  14:50:14,717 - #39 {
+INFO  14:50:14,717 - #43 int
+INFO  14:50:14,717 - #43 main
+INFO  14:50:14,717 - #35 (
+INFO  14:50:14,718 - #36 )
+INFO  14:50:14,718 - #39 {
+INFO  14:50:14,719 - #40 }
+INFO  14:50:14,719 - #40 }
+INFO  14:50:14,734 - Program(
+  ProgName(
+   ImeMogaProgramaa
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoDecl(
+      ) [NoDecl]
+      GlobalVarDeclElem(
+        Type(
+         int
+        ) [Type]
+        GlobalVarDeclLast(
+          GlobalVarTwoNoErr(
+           a
+            IsNotArray(
+            ) [IsNotArray]
+          ) [GlobalVarTwoNoErr]
+        ) [GlobalVarDeclLast]
+      ) [GlobalVarDeclElem]
+    ) [VarDeclarations]
+    GlobalVarDeclElem(
+      Type(
+       int
+      ) [Type]
+      GlobalVarDeclLast(
+        GlobalVarTwoNoErr(
+         b
+          IsNotArray(
+          ) [IsNotArray]
+        ) [GlobalVarTwoNoErr]
+      ) [GlobalVarDeclLast]
+    ) [GlobalVarDeclElem]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodType(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethodType]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarOnlyDeclarations(
+      ) [NoVarOnlyDeclarations]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]

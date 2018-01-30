@@ -1,0 +1,44 @@
+INFO  16:29:56,652 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:29:56,699 - #2 program
+INFO  16:29:56,699 - #43 ImeMogaProgramaa
+INFO  16:29:56,699 - #43 int
+INFO  16:29:56,700 - #43 a
+INFO  16:29:56,700 - #33 ,
+INFO  16:29:56,702 - #43 a
+INFO  16:29:56,702 - #32 ;
+INFO  16:29:56,703 - #43 int
+INFO  16:29:56,703 - #43 b
+INFO  16:29:56,703 - #32 ;
+INFO  16:29:56,703 - #39 {
+INFO  16:29:56,703 - #10 void
+INFO  16:29:56,704 - #43 prog2
+INFO  16:29:56,704 - #35 (
+INFO  16:29:56,704 - #36 )
+INFO  16:29:56,705 - #43 int
+INFO  16:29:56,706 - #43 a
+INFO  16:29:56,706 - #32 ;
+INFO  16:29:56,706 - #39 {
+INFO  16:29:56,709 - #40 }
+INFO  16:29:56,712 - #10 void
+INFO  16:29:56,713 - #43 main
+INFO  16:29:56,713 - #35 (
+INFO  16:29:56,714 - #36 )
+INFO  16:29:56,714 - #43 int
+INFO  16:29:56,714 - #43 a
+INFO  16:29:56,714 - #33 ,
+INFO  16:29:56,714 - #43 b
+INFO  16:29:56,714 - #32 ;
+INFO  16:29:56,714 - #43 int
+INFO  16:29:56,714 - #43 b
+INFO  16:29:56,715 - #32 ;
+INFO  16:29:56,715 - #39 {
+INFO  16:29:56,715 - #40 }
+INFO  16:29:56,715 - #40 }
+INFO  16:29:56,722 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 2
+ERROR 16:29:56,722 - Promenljiva a vec postoji: linija 2
+INFO  16:29:56,722 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 3
+INFO  16:29:56,722 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 6
+INFO  16:29:56,722 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 7
+INFO  16:29:56,722 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 11
+INFO  16:29:56,723 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 12
+INFO  16:29:56,723 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 13

@@ -1,0 +1,38 @@
+INFO  15:13:56,089 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  15:13:56,140 - #2 program
+INFO  15:13:56,140 - #43 ImeMogaProgramaa
+INFO  15:13:56,140 - #43 int
+INFO  15:13:56,140 - #43 a
+INFO  15:13:56,141 - #32 ;
+INFO  15:13:56,145 - #43 int
+INFO  15:13:56,145 - #43 b
+INFO  15:13:56,146 - #32 ;
+INFO  15:13:56,146 - #39 {
+INFO  15:13:56,146 - #43 int
+INFO  15:13:56,146 - #43 drugaFja
+INFO  15:13:56,147 - #35 (
+INFO  15:13:56,147 - #36 )
+INFO  15:13:56,147 - #43 kurac
+INFO  15:13:56,148 - #43 a
+INFO  15:13:56,148 - #32 ;
+INFO  15:13:56,149 - #39 {
+INFO  15:13:56,151 - #40 }
+INFO  15:13:56,152 - #43 int
+INFO  15:13:56,153 - #43 main
+INFO  15:13:56,154 - #35 (
+INFO  15:13:56,154 - #36 )
+INFO  15:13:56,154 - #43 int
+INFO  15:13:56,154 - #43 a
+INFO  15:13:56,155 - #33 ,
+INFO  15:13:56,155 - #43 b
+INFO  15:13:56,155 - #32 ;
+INFO  15:13:56,155 - #43 int
+INFO  15:13:56,155 - #43 b
+INFO  15:13:56,155 - #32 ;
+INFO  15:13:56,155 - #39 {
+INFO  15:13:56,155 - #40 }
+INFO  15:13:56,155 - #40 }
+ERROR 15:13:56,164 - Nije pronadjen tip kurac u tabeli simbola
+INFO  15:13:56,165 - Deklarisana promenljiva a: linija 6
+ERROR 15:13:56,165 - Promenljiva a vec postoji: linija 11
+INFO  15:13:56,165 - Deklarisana promenljiva b: linija 12

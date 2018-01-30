@@ -60,24 +60,18 @@ terminal PP, MM, SEMI, COMMA, DOT, LPAREN, RPAREN, LBBRACE, RBBRACE, LBRACE, RBR
 terminal Integer NUMBER ;
 terminal String IDENT, BOOL, CHAR;
 
-nonterminal Program Program;
-nonterminal ProgName ProgName;
-nonterminal DeclList DeclList;
+nonterminal /*Program, ProgName, */DeclList DeclList;
 nonterminal DeclVarOnlyList DeclVarOnlyList;
-nonterminal ConstDecl ConstDecl;
 nonterminal ConstDeclList ConstDeclList;
-nonterminal ConstValue ConstValue;
 nonterminal VarDecl VarDecl;
 nonterminal VarDeclList VarDeclList;
 nonterminal	ClassDecl ClassDecl;
 nonterminal ExtendsPart ExtendsPart;
 nonterminal ClassMethodDecl ClassMethodDecl;
-nonterminal Type Type;
 nonterminal MethodDeclList MethodDeclList;
-nonterminal MethodDecl MethodDecl;
-nonterminal MethodTypeName MethodTypeName;
 nonterminal FormPars FormPars;
 nonterminal FormalParamList FormalParamList;
+nonterminal GlobalVarType GlobalVarType;
 nonterminal FormalParamDecl FormalParamDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
@@ -100,9 +94,12 @@ nonterminal GlobalVarDeclList GlobalVarDeclList;
 nonterminal GlobalVarOne GlobalVarOne;
 nonterminal GlobalVarTwo GlobalVarTwo;
 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue;
+
 precedence left ELSE;
 
-/*nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
+/*nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator; 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, VarDeclList; */
 
 Program ::= (Program) PROG ProgName:p DeclList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :} 
@@ -151,7 +148,10 @@ GlobalVarDeclList ::= (NEmptyGlobalVarDeclList) GlobalVarDeclList COMMA IDENT:Va
 					  (EmptyGlobalVarDeclList)
 					  ;*/
 			   
-GlobalVarDecl ::= (GlobalVarDeclElem) Type:T1 GlobalVarDeclList:G2 {: RESULT=new GlobalVarDeclElem(T1, G2); RESULT.setLine(T1left); :}
+GlobalVarDecl ::= (GlobalVarDeclElem) GlobalVarType:G1 GlobalVarDeclList:G2 {: RESULT=new GlobalVarDeclElem(G1, G2); RESULT.setLine(G1left); :}
+;
+
+GlobalVarType ::= (GlobalVarType) Type:varType {: RESULT=new GlobalVarType(varType); RESULT.setLine(varTypeleft); :}
 ;
 
 GlobalVarDeclList ::= (GlobalVarDeclAnother) GlobalVarOne:G1 GlobalVarDeclList:G2 {: RESULT=new GlobalVarDeclAnother(G1, G2); RESULT.setLine(G1left); :}
@@ -159,12 +159,12 @@ GlobalVarDeclList ::= (GlobalVarDeclAnother) GlobalVarOne:G1 GlobalVarDeclList:G
 					  (GlobalVarDeclLast) GlobalVarTwo:G1 {: RESULT=new GlobalVarDeclLast(G1); RESULT.setLine(G1left); :}
 					  ;
 
-GlobalVarOne ::= (GlobalVarOneNoErr) IDENT:I1 ArrayPart:A2 COMMA {: RESULT=new GlobalVarOneNoErr(I1, A2); RESULT.setLine(I1left); :}
+GlobalVarOne ::= (GlobalVarOneNoErr) IDENT:varName ArrayPart:A1 COMMA {: RESULT=new GlobalVarOneNoErr(varName, A1); RESULT.setLine(varNameleft); :}
 			     |
 			     (GlobalVarOneErr) error COMMA {: RESULT=new GlobalVarOneErr(); :}
 			     ;
 
-GlobalVarTwo ::= (GlobalVarTwoNoErr) IDENT:I1 ArrayPart:A2 SEMI {: RESULT=new GlobalVarTwoNoErr(I1, A2); RESULT.setLine(I1left); :}
+GlobalVarTwo ::= (GlobalVarTwoNoErr) IDENT:varName ArrayPart:A1 SEMI {: RESULT=new GlobalVarTwoNoErr(varName, A1); RESULT.setLine(varNameleft); :}
 				 |
 				 (GlobalVarTwoErr) error SEMI {: RESULT=new GlobalVarTwoErr(); :}
 				 ;
@@ -203,7 +203,7 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESUL
 					(NoMethodDecl) {: RESULT=new NoMethodDecl(); :}/* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeName:M1 LPAREN FormPars:F2 RPAREN DeclVarOnlyList:D3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodDecl(M1, F2, D3, S4); RESULT.setLine(M1left); :} 
+MethodDecl ::= (MethodDecl) MethodTypeName:methName LPAREN FormPars:F1 RPAREN DeclVarOnlyList:D2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(methName, F1, D2, S3); RESULT.setLine(methNameleft); :} 
 			   ;
 
 MethodTypeName ::= (MethodType) Type:retType IDENT:methName {: RESULT=new MethodType(retType, methName); RESULT.setLine(retTypeleft); :}

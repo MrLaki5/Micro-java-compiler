@@ -1,27 +1,27 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2018 11:12:57
+// 30/0/2018 17:14:48
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class GlobalVarOneNoErr extends GlobalVarOne {
 
-    private String I1;
+    private String varName;
     private ArrayPart ArrayPart;
 
-    public GlobalVarOneNoErr (String I1, ArrayPart ArrayPart) {
-        this.I1=I1;
+    public GlobalVarOneNoErr (String varName, ArrayPart ArrayPart) {
+        this.varName=varName;
         this.ArrayPart=ArrayPart;
         if(ArrayPart!=null) ArrayPart.setParent(this);
     }
 
-    public String getI1() {
-        return I1;
+    public String getVarName() {
+        return varName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setVarName(String varName) {
+        this.varName=varName;
     }
 
     public ArrayPart getArrayPart() {
@@ -55,7 +55,7 @@ public class GlobalVarOneNoErr extends GlobalVarOne {
         buffer.append(tab);
         buffer.append("GlobalVarOneNoErr(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+varName);
         buffer.append("\n");
 
         if(ArrayPart!=null)
