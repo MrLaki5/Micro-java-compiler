@@ -20,4 +20,10 @@
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.BooleanValue"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.StringValue"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IntegerValue"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ConstDeclType"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherConstDecl"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherVarDecl"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclType"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclPTwo"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclAfterComma"/>
 </qualifiedTypeNameHistroy>

@@ -60,8 +60,8 @@ terminal PP, MM, SEMI, COMMA, DOT, LPAREN, RPAREN, LBBRACE, RBBRACE, LBRACE, RBR
 terminal Integer NUMBER ;
 terminal String IDENT, BOOL, CHAR;
 
-nonterminal /*Program, ProgName, */DeclList, DeclVarOnlyList, ConstDeclList, VarDecl, VarDeclList;
-nonterminal	ClassDecl, ExtendsPart, ClassMethodDecl, MethodDeclList, FormPars, FormalParamList, GlobalVarType;
+nonterminal /*Program, ProgName, */DeclList, DeclVarOnlyList, ConstDeclList, VarDecl, VarDeclList, VarDeclType, VarDeclPTwo;
+nonterminal	ClassDecl, ExtendsPart, ClassMethodDecl, MethodDeclList, FormPars, FormalParamList, GlobalVarType, ConstDeclType;
 nonterminal FormalParamDecl, StatementList, Statement, DesignatorStatement, ActList, ActPars, Condition, CondTerm, CondFact, Expr;
 nonterminal Term, Factor, Designator, Relop, Addop, Mulop, ArrayPart, GlobalVarDecl, GlobalVarDeclList, GlobalVarOne, GlobalVarTwo;
 
@@ -93,7 +93,10 @@ DeclVarOnlyList ::= (VarOnlyDeclarations) DeclVarOnlyList VarDecl
 					(NoVarOnlyDeclarations)/* epsilon */
 					;
 
-ConstDecl ::= (ConstDecl) CONST Type:varType IDENT:varName EQUAL ConstValue:valueType ConstDeclList SEMI
+ConstDecl ::= (ConstDecl) CONST ConstDeclType IDENT:varName EQUAL ConstValue:valueType ConstDeclList SEMI
+;
+
+ConstDeclType ::= (ConstDeclType) Type:varType
 ;
 
 ConstDeclList ::= (AnotherConstDecl) ConstDeclList COMMA IDENT:varName EQUAL ConstValue:valueType
@@ -140,7 +143,10 @@ GlobalVarTwo ::= (GlobalVarTwoNoErr) IDENT:varName ArrayPart SEMI
 				 (GlobalVarTwoErr) error SEMI
 				 ;
 				  
-VarDecl ::= (VarDecl) Type:varType IDENT:varName ArrayPart VarDeclList SEMI
+VarDecl ::= (VarDecl) VarDeclType IDENT:varName ArrayPart VarDeclList SEMI
+;
+
+VarDeclType ::= (VarDeclType) Type:varType
 ;
 
 ArrayPart ::= (IsArray) LBBRACE RBBRACE
@@ -148,10 +154,13 @@ ArrayPart ::= (IsArray) LBBRACE RBBRACE
 			  (IsNotArray)/* epsilon */
 			  ;
 
-VarDeclList ::= (AnotherVarDecl) VarDeclList COMMA IDENT:varName ArrayPart
+VarDeclList ::= (AnotherVarDecl) VarDeclList VarDeclPTwo
 				|
 				(NoAnotherVarDecl)/* epsilon */
 				;
+
+VarDeclPTwo ::= (VarDeclAfterComma) COMMA IDENT:varName ArrayPart
+;
 
 ClassDecl ::= (ClassDecl) CLASS IDENT:className ExtendsPart LBRACE DeclVarOnlyList ClassMethodDecl RBRACE
 ;

@@ -1,0 +1,73 @@
+INFO  19:34:18,900 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  19:34:18,949 - #2 program
+INFO  19:34:18,951 - #43 ImeMogaProgramaa
+INFO  19:34:18,958 - #15 const
+INFO  19:34:18,961 - #43 int
+INFO  19:34:18,961 - #43 grr
+INFO  19:34:18,962 - #29 =
+INFO  19:34:18,964 - #44 true
+INFO  19:34:18,964 - #33 ,
+INFO  19:34:18,965 - #43 mjoc
+INFO  19:34:18,965 - #29 =
+INFO  19:34:18,966 - #42 123
+INFO  19:34:18,966 - #33 ,
+INFO  19:34:18,967 - #43 puf
+INFO  19:34:18,967 - #29 =
+INFO  19:34:18,967 - #45 "haha"
+INFO  19:34:18,967 - #32 ;
+INFO  19:34:18,967 - #43 int
+INFO  19:34:18,968 - #43 a
+INFO  19:34:18,969 - #33 ,
+INFO  19:34:18,974 - #43 d
+INFO  19:34:18,975 - #32 ;
+INFO  19:34:18,975 - #43 int
+INFO  19:34:18,979 - #43 b
+INFO  19:34:18,979 - #32 ;
+INFO  19:34:18,979 - #43 char
+INFO  19:34:18,980 - #43 c
+INFO  19:34:18,980 - #32 ;
+INFO  19:34:18,980 - #15 const
+INFO  19:34:18,980 - #43 char
+INFO  19:34:18,980 - #43 grr
+INFO  19:34:18,980 - #29 =
+INFO  19:34:18,980 - #42 123
+INFO  19:34:18,980 - #32 ;
+INFO  19:34:18,980 - #39 {
+INFO  19:34:18,981 - #10 void
+INFO  19:34:18,981 - #43 prog2
+INFO  19:34:18,981 - #35 (
+INFO  19:34:18,982 - #36 )
+INFO  19:34:18,982 - #43 int
+INFO  19:34:18,982 - #43 a
+INFO  19:34:18,983 - #32 ;
+INFO  19:34:18,983 - #39 {
+INFO  19:34:18,984 - #40 }
+INFO  19:34:18,985 - #10 void
+INFO  19:34:18,986 - #43 main
+INFO  19:34:18,986 - #35 (
+INFO  19:34:18,986 - #36 )
+INFO  19:34:18,986 - #43 int
+INFO  19:34:18,986 - #43 a
+INFO  19:34:18,986 - #33 ,
+INFO  19:34:18,986 - #43 b
+INFO  19:34:18,986 - #32 ;
+INFO  19:34:18,987 - #43 int
+INFO  19:34:18,988 - #43 b
+INFO  19:34:18,988 - #32 ;
+INFO  19:34:18,988 - #39 {
+INFO  19:34:18,988 - #40 }
+INFO  19:34:18,988 - #40 }
+INFO  19:34:18,998 - Deklarisana konstanta mjoc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 2
+ERROR 19:34:18,998 - Konstanti puf nije dodeljen ispravan tip: linija 2
+INFO  19:34:18,998 - Deklarisana konstanta grr, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 2
+INFO  19:34:18,999 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 3
+INFO  19:34:18,999 - Deklarisana promenljiva d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 3
+INFO  19:34:18,999 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 4
+INFO  19:34:18,999 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 5
+ERROR 19:34:18,999 - Konstanta grr vec postoji: linija 6
+INFO  19:34:18,999 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 9
+INFO  19:34:19,000 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 10
+INFO  19:34:19,000 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 14
+INFO  19:34:19,000 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@6c5a9e: linija 15
+INFO  19:34:19,000 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1bba400: linija 15
+ERROR 19:34:19,000 - Promenljiva b vec postoji: linija 16

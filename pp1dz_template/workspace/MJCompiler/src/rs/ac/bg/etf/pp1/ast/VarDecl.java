@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2018 17:14:48
+// 30/0/2018 18:59:17
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,14 +9,14 @@ public class VarDecl implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private Type Type;
+    private VarDeclType VarDeclType;
     private String varName;
     private ArrayPart ArrayPart;
     private VarDeclList VarDeclList;
 
-    public VarDecl (Type Type, String varName, ArrayPart ArrayPart, VarDeclList VarDeclList) {
-        this.Type=Type;
-        if(Type!=null) Type.setParent(this);
+    public VarDecl (VarDeclType VarDeclType, String varName, ArrayPart ArrayPart, VarDeclList VarDeclList) {
+        this.VarDeclType=VarDeclType;
+        if(VarDeclType!=null) VarDeclType.setParent(this);
         this.varName=varName;
         this.ArrayPart=ArrayPart;
         if(ArrayPart!=null) ArrayPart.setParent(this);
@@ -24,12 +24,12 @@ public class VarDecl implements SyntaxNode {
         if(VarDeclList!=null) VarDeclList.setParent(this);
     }
 
-    public Type getType() {
-        return Type;
+    public VarDeclType getVarDeclType() {
+        return VarDeclType;
     }
 
-    public void setType(Type Type) {
-        this.Type=Type;
+    public void setVarDeclType(VarDeclType VarDeclType) {
+        this.VarDeclType=VarDeclType;
     }
 
     public String getVarName() {
@@ -77,20 +77,20 @@ public class VarDecl implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Type!=null) Type.accept(visitor);
+        if(VarDeclType!=null) VarDeclType.accept(visitor);
         if(ArrayPart!=null) ArrayPart.accept(visitor);
         if(VarDeclList!=null) VarDeclList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Type!=null) Type.traverseTopDown(visitor);
+        if(VarDeclType!=null) VarDeclType.traverseTopDown(visitor);
         if(ArrayPart!=null) ArrayPart.traverseTopDown(visitor);
         if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Type!=null) Type.traverseBottomUp(visitor);
+        if(VarDeclType!=null) VarDeclType.traverseBottomUp(visitor);
         if(ArrayPart!=null) ArrayPart.traverseBottomUp(visitor);
         if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
         accept(visitor);
@@ -101,8 +101,8 @@ public class VarDecl implements SyntaxNode {
         buffer.append(tab);
         buffer.append("VarDecl(\n");
 
-        if(Type!=null)
-            buffer.append(Type.toString("  "+tab));
+        if(VarDeclType!=null)
+            buffer.append(VarDeclType.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

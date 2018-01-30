@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2018 17:14:48
+// 30/0/2018 18:59:17
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,15 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class AnotherVarDecl extends VarDeclList {
 
     private VarDeclList VarDeclList;
-    private String varName;
-    private ArrayPart ArrayPart;
+    private VarDeclPTwo VarDeclPTwo;
 
-    public AnotherVarDecl (VarDeclList VarDeclList, String varName, ArrayPart ArrayPart) {
+    public AnotherVarDecl (VarDeclList VarDeclList, VarDeclPTwo VarDeclPTwo) {
         this.VarDeclList=VarDeclList;
         if(VarDeclList!=null) VarDeclList.setParent(this);
-        this.varName=varName;
-        this.ArrayPart=ArrayPart;
-        if(ArrayPart!=null) ArrayPart.setParent(this);
+        this.VarDeclPTwo=VarDeclPTwo;
+        if(VarDeclPTwo!=null) VarDeclPTwo.setParent(this);
     }
 
     public VarDeclList getVarDeclList() {
@@ -27,20 +25,12 @@ public class AnotherVarDecl extends VarDeclList {
         this.VarDeclList=VarDeclList;
     }
 
-    public String getVarName() {
-        return varName;
+    public VarDeclPTwo getVarDeclPTwo() {
+        return VarDeclPTwo;
     }
 
-    public void setVarName(String varName) {
-        this.varName=varName;
-    }
-
-    public ArrayPart getArrayPart() {
-        return ArrayPart;
-    }
-
-    public void setArrayPart(ArrayPart ArrayPart) {
-        this.ArrayPart=ArrayPart;
+    public void setVarDeclPTwo(VarDeclPTwo VarDeclPTwo) {
+        this.VarDeclPTwo=VarDeclPTwo;
     }
 
     public void accept(Visitor visitor) {
@@ -49,18 +39,18 @@ public class AnotherVarDecl extends VarDeclList {
 
     public void childrenAccept(Visitor visitor) {
         if(VarDeclList!=null) VarDeclList.accept(visitor);
-        if(ArrayPart!=null) ArrayPart.accept(visitor);
+        if(VarDeclPTwo!=null) VarDeclPTwo.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
-        if(ArrayPart!=null) ArrayPart.traverseTopDown(visitor);
+        if(VarDeclPTwo!=null) VarDeclPTwo.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
-        if(ArrayPart!=null) ArrayPart.traverseBottomUp(visitor);
+        if(VarDeclPTwo!=null) VarDeclPTwo.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -75,11 +65,8 @@ public class AnotherVarDecl extends VarDeclList {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+varName);
-        buffer.append("\n");
-
-        if(ArrayPart!=null)
-            buffer.append(ArrayPart.toString("  "+tab));
+        if(VarDeclPTwo!=null)
+            buffer.append(VarDeclPTwo.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

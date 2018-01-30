@@ -1,7 +1,7 @@
 program ImeMogaProgramaa
-	const int grr=true;
-	int a, d;
-	int b;
+	const int len="dsa",mjoc=123, puf="haha";
+	int char, d;
+	int chr;
 	char c;
 	const char grr=123;
 {	
@@ -12,8 +12,8 @@ program ImeMogaProgramaa
 	}
 
 	void main() 
-	int a,b;
-	int b;
+	int a,eol;
+	int eol;
 	{
 	}
 }

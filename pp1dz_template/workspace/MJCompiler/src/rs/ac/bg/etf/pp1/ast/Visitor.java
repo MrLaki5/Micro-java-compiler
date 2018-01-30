@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2018 17:14:49
+// 30/0/2018 18:59:18
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -20,6 +20,7 @@ public interface Visitor {
     public void visit(Term Term);
     public void visit(Condition Condition);
     public void visit(ConstValue ConstValue);
+    public void visit(VarDeclPTwo VarDeclPTwo);
     public void visit(DeclVarOnlyList DeclVarOnlyList);
     public void visit(ConstDeclList ConstDeclList);
     public void visit(GlobalVarOne GlobalVarOne);
@@ -35,9 +36,9 @@ public interface Visitor {
     public void visit(MethodDeclList MethodDeclList);
     public void visit(FormPars FormPars);
     public void visit(GlobalVarDeclList GlobalVarDeclList);
+    public void visit(GlobalVarTwo GlobalVarTwo);
     public void visit(ExtendsPart ExtendsPart);
     public void visit(ClassMethodDecl ClassMethodDecl);
-    public void visit(GlobalVarTwo GlobalVarTwo);
     public void visit(ModMulop ModMulop);
     public void visit(DivMulop DivMulop);
     public void visit(MulMulop MulMulop);
@@ -110,10 +111,12 @@ public interface Visitor {
     public void visit(NoExtension NoExtension);
     public void visit(Extension Extension);
     public void visit(ClassDecl ClassDecl);
+    public void visit(VarDeclAfterComma VarDeclAfterComma);
     public void visit(NoAnotherVarDecl NoAnotherVarDecl);
     public void visit(AnotherVarDecl AnotherVarDecl);
     public void visit(IsNotArray IsNotArray);
     public void visit(IsArray IsArray);
+    public void visit(VarDeclType VarDeclType);
     public void visit(VarDecl VarDecl);
     public void visit(GlobalVarTwoErr GlobalVarTwoErr);
     public void visit(GlobalVarTwoNoErr GlobalVarTwoNoErr);
@@ -128,6 +131,7 @@ public interface Visitor {
     public void visit(BooleanValue BooleanValue);
     public void visit(NoAnotherConstDecl NoAnotherConstDecl);
     public void visit(AnotherConstDecl AnotherConstDecl);
+    public void visit(ConstDeclType ConstDeclType);
     public void visit(ConstDecl ConstDecl);
     public void visit(NoVarOnlyDeclarations NoVarOnlyDeclarations);
     public void visit(VarOnlyDeclarations VarOnlyDeclarations);

@@ -1,8 +1,11 @@
 package rs.ac.bg.etf.pp1;
 import org.apache.log4j.Logger;
 
+import rs.ac.bg.etf.pp1.ast.AnotherConstDecl;
+import rs.ac.bg.etf.pp1.ast.AnotherVarDecl;
 import rs.ac.bg.etf.pp1.ast.BooleanValue;
 import rs.ac.bg.etf.pp1.ast.ConstDecl;
+import rs.ac.bg.etf.pp1.ast.ConstDeclType;
 import rs.ac.bg.etf.pp1.ast.GlobalVarDeclElem;
 import rs.ac.bg.etf.pp1.ast.GlobalVarOneNoErr;
 import rs.ac.bg.etf.pp1.ast.GlobalVarTwoNoErr;
@@ -18,6 +21,9 @@ import rs.ac.bg.etf.pp1.ast.StringValue;
 import rs.ac.bg.etf.pp1.ast.SyntaxNode;
 import rs.ac.bg.etf.pp1.ast.Type;
 import rs.ac.bg.etf.pp1.ast.VarDecl;
+import rs.ac.bg.etf.pp1.ast.VarDeclAfterComma;
+import rs.ac.bg.etf.pp1.ast.VarDeclPTwo;
+import rs.ac.bg.etf.pp1.ast.VarDeclType;
 import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
@@ -28,9 +34,13 @@ public class SemanticPass extends VisitorAdaptor {
 	boolean errorDetected = false;
 	int printCallCount = 0;
 	Obj currentMethod = null;
+	String currentMethodName="";
+	boolean mainFound=false;
 	Struct tempGlobVarType=null;
+	Struct tempConstType=null;
 	boolean returnFound = false;
 	int nVars;
+	String reservedWords[]={"eol", "chr", "ord", "len"};
 
 	Logger log = Logger.getLogger(getClass());
 
@@ -51,15 +61,31 @@ public class SemanticPass extends VisitorAdaptor {
 		log.info(msg.toString());
 	}
 	
+	public boolean isReserved(String name){
+		for(int i=0; i<reservedWords.length;i++){
+			if(reservedWords[i].equals(name)){
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public void visit(Program program) {		
 		nVars = Tab.currentScope.getnVars();
 		Tab.chainLocalSymbols(program.getProgName().obj);
 		Tab.closeScope();
+		if(!mainFound){
+			report_error("Main nije pronadjen u programu", null);
+		}
 	}
 
 	public void visit(ProgName progName) {
 		progName.obj = Tab.insert(Obj.Prog, progName.getPName(), Tab.noType);
 		Tab.openScope();     	
+	}
+	
+	public void visit(VarDeclType varDeclType){
+		tempGlobVarType=varDeclType.getType().struct;
 	}
 
 	public void visit(VarDecl varDecl) {
@@ -68,7 +94,11 @@ public class SemanticPass extends VisitorAdaptor {
 		if(temp!=Tab.noObj){
 			//provera da li je nadjeni node iz tabele sa istim imenom tipa Type
 			if (temp.getKind()==Obj.Type){
-				report_error("Promenljiva "+ varDecl.getVarName() +" ne moze imati naziv tipa", varDecl);
+				report_error("Promenljiva "+ varDecl.getVarName() +" ne moze imati predeklarisani naziv", varDecl);
+				return;
+			}
+			if(isReserved(varDecl.getVarName())){
+				report_error("Promenljiva "+ varDecl.getVarName() +" ne moze imati predeklarisani naziv", varDecl);
 				return;
 			}
 			//provera da li je nadjeni node iz tabele simbola istog scopa kao nova promenljiva
@@ -77,8 +107,31 @@ public class SemanticPass extends VisitorAdaptor {
 				return;
 			}
 		}
-		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), varDecl.getType().struct);
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), varDecl.getVarDeclType().getType().struct);
 		report_info("Deklarisana promenljiva "+ varDecl.getVarName()+", objekat u tabeli simbola "+varNode.toString(), varDecl);
+	}
+	
+	public void visit(VarDeclAfterComma anotherVarDecl){
+		Obj temp=Tab.find(anotherVarDecl.getVarName());
+		//provera da li postoji ime prom u tabeli simbola
+		if(temp!=Tab.noObj){
+			//provera da li je nadjeni node iz tabele sa istim imenom tipa Type
+			if (temp.getKind()==Obj.Type){
+				report_error("Promenljiva "+ anotherVarDecl.getVarName() +" ne moze imati naziv tipa", anotherVarDecl);
+				return;
+			}
+			if(isReserved(anotherVarDecl.getVarName())){
+				report_error("Promenljiva "+ anotherVarDecl.getVarName() +" ne moze imati predeklarisani naziv", anotherVarDecl);
+				return;
+			}
+			//provera da li je nadjeni node iz tabele simbola istog scopa kao nova promenljiva
+			if (Tab.currentScope.findSymbol(anotherVarDecl.getVarName())!=null){
+				report_error("Promenljiva "+ anotherVarDecl.getVarName() +" vec postoji", anotherVarDecl);
+				return;
+			}
+		}
+		Obj varNode = Tab.insert(Obj.Var, anotherVarDecl.getVarName(), tempGlobVarType);
+		report_info("Deklarisana promenljiva "+ anotherVarDecl.getVarName()+", objekat u tabeli simbola "+varNode.toString(), anotherVarDecl);
 	}
 	
 	public void visit(GlobalVarType globalVarType){
@@ -92,6 +145,10 @@ public class SemanticPass extends VisitorAdaptor {
 			//provera da li je nadjeni node iz tabele sa istim imenom tipa Type
 			if (temp.getKind()==Obj.Type){
 				report_error("Promenljiva "+ globalVarNoErr.getVarName() +" ne moze imati naziv tipa", globalVarNoErr);
+				return;
+			}
+			if(isReserved(globalVarNoErr.getVarName())){
+				report_error("Promenljiva "+ globalVarNoErr.getVarName() +" ne moze imati predeklarisani naziv", globalVarNoErr);
 				return;
 			}
 			//provera da li je nadjeni node iz tabele simbola istog scopa kao nova promenljiva
@@ -111,6 +168,10 @@ public class SemanticPass extends VisitorAdaptor {
 			//provera da li je nadjeni node iz tabele sa istim imenom tipa Type
 			if (temp.getKind()==Obj.Type){
 				report_error("Promenljiva "+ globalVarNoErr.getVarName() +" ne moze imati naziv tipa", globalVarNoErr);
+				return;
+			}
+			if(isReserved(globalVarNoErr.getVarName())){
+				report_error("Promenljiva "+ globalVarNoErr.getVarName() +" ne moze imati predeklarisani naziv", globalVarNoErr);
 				return;
 			}
 			//provera da li je nadjeni node iz tabele simbola istog scopa kao nova promenljiva
@@ -133,13 +194,17 @@ public class SemanticPass extends VisitorAdaptor {
 				report_error("Konstanta "+ constDecl.getVarName() +" ne moze imati naziv tipa", constDecl);
 				return;
 			}
+			if(isReserved(constDecl.getVarName())){
+				report_error("Promenljiva "+ constDecl.getVarName() +" ne moze imati predeklarisani naziv", constDecl);
+				return;
+			}
 			//provera da li je nadjeni node iz tabele simbola istog scopa kao nova promenljiva
 			if (Tab.currentScope.findSymbol(constDecl.getVarName())!=null){
 				report_error("Konstanta "+ constDecl.getVarName() +" vec postoji", constDecl);
 				return;
 			}
 		}
-		if(constDecl.getConstValue().struct.assignableTo(constDecl.getType().struct)){
+		if(constDecl.getConstValue().struct.equals(tempConstType)){
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getVarName(), tempGlobVarType);
 			report_info("Deklarisana konstanta "+ constDecl.getVarName()+", objekat u tabeli simbola "+varNode.toString(), constDecl);
 		}
@@ -147,7 +212,39 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error("Konstanti "+constDecl.getVarName()+" nije dodeljen ispravan tip", constDecl);
 		}
 	}
+	
+	public void visit(AnotherConstDecl constDecl){
+		Obj temp=Tab.find(constDecl.getVarName());
+		//provera da li postoji ime prom u tabeli simbola
+		if(temp!=Tab.noObj){
+			//provera da li je nadjeni node iz tabele sa istim imenom tipa Type
+			if (temp.getKind()==Obj.Type){
+				report_error("Konstanta "+ constDecl.getVarName() +" ne moze imati naziv tipa", constDecl.getConstValue());
+				return;
+			}
+			if(isReserved(constDecl.getVarName())){
+				report_error("Promenljiva "+ constDecl.getVarName() +" ne moze imati predeklarisani naziv", constDecl);
+				return;
+			}
+			//provera da li je nadjeni node iz tabele simbola istog scopa kao nova promenljiva
+			if (Tab.currentScope.findSymbol(constDecl.getVarName())!=null){
+				report_error("Konstanta "+ constDecl.getVarName() +" vec postoji", constDecl.getConstValue());
+				return;
+			}
+		}
+		if(constDecl.getConstValue().struct.equals(tempConstType)){
+			Obj varNode = Tab.insert(Obj.Con, constDecl.getVarName(), tempGlobVarType);
+			report_info("Deklarisana konstanta "+ constDecl.getVarName()+", objekat u tabeli simbola "+varNode.toString(), constDecl.getConstValue());
+		}
+		else{
+			report_error("Konstanti "+constDecl.getVarName()+" nije dodeljen ispravan tip", constDecl.getConstValue());
+		}
+	}
 
+	public void visit(ConstDeclType constType){
+		tempConstType=constType.getType().struct;
+	}
+	
 	public void visit(BooleanValue boolVal){
 		boolVal.struct=Tab.intType;
 	}
@@ -182,11 +279,16 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funcija " + currentMethod.getName() + " nema return iskaz!", null);
 		}
 		
+		if(currentMethodName.equals("main")){	//TODO: dodaj da se proverava da main nema parametre
+			mainFound=true;
+		}
+		
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
 		
 		returnFound = false;
 		currentMethod = null;
+		currentMethodName="";
 	}
 
 	public void visit(MethodType methodType) {
@@ -199,6 +301,7 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(MethodVoidType methodVoidType){
 		currentMethod = Tab.insert(Obj.Meth, methodVoidType.getMethName(), Tab.noType);
 		methodVoidType.obj = currentMethod;
+		currentMethodName=methodVoidType.getMethName();
 		Tab.openScope();
 		report_info("Obrada funkcije " + methodVoidType.getMethName()+", objekat u tabeli simbola "+currentMethod.toString(), methodVoidType);
 	}

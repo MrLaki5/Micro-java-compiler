@@ -1,0 +1,73 @@
+INFO  20:00:50,788 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  20:00:50,867 - #2 program
+INFO  20:00:50,867 - #43 ImeMogaProgramaa
+INFO  20:00:50,867 - #15 const
+INFO  20:00:50,871 - #43 int
+INFO  20:00:50,872 - #43 grr
+INFO  20:00:50,873 - #29 =
+INFO  20:00:50,873 - #45 "dsa"
+INFO  20:00:50,873 - #33 ,
+INFO  20:00:50,874 - #43 mjoc
+INFO  20:00:50,874 - #29 =
+INFO  20:00:50,874 - #42 123
+INFO  20:00:50,874 - #33 ,
+INFO  20:00:50,874 - #43 puf
+INFO  20:00:50,874 - #29 =
+INFO  20:00:50,874 - #45 "haha"
+INFO  20:00:50,874 - #32 ;
+INFO  20:00:50,875 - #43 int
+INFO  20:00:50,875 - #43 char
+INFO  20:00:50,876 - #33 ,
+INFO  20:00:50,888 - #43 d
+INFO  20:00:50,889 - #32 ;
+INFO  20:00:50,889 - #43 int
+INFO  20:00:50,889 - #43 b
+INFO  20:00:50,889 - #32 ;
+INFO  20:00:50,889 - #43 char
+INFO  20:00:50,890 - #43 c
+INFO  20:00:50,890 - #32 ;
+INFO  20:00:50,890 - #15 const
+INFO  20:00:50,890 - #43 char
+INFO  20:00:50,890 - #43 grr
+INFO  20:00:50,890 - #29 =
+INFO  20:00:50,890 - #42 123
+INFO  20:00:50,890 - #32 ;
+INFO  20:00:50,890 - #39 {
+INFO  20:00:50,890 - #10 void
+INFO  20:00:50,891 - #43 prog2
+INFO  20:00:50,891 - #35 (
+INFO  20:00:50,891 - #36 )
+INFO  20:00:50,896 - #43 int
+INFO  20:00:50,897 - #43 a
+INFO  20:00:50,898 - #32 ;
+INFO  20:00:50,899 - #39 {
+INFO  20:00:50,901 - #40 }
+INFO  20:00:50,902 - #10 void
+INFO  20:00:50,904 - #43 main
+INFO  20:00:50,904 - #35 (
+INFO  20:00:50,904 - #36 )
+INFO  20:00:50,905 - #43 int
+INFO  20:00:50,905 - #43 a
+INFO  20:00:50,905 - #33 ,
+INFO  20:00:50,905 - #43 b
+INFO  20:00:50,905 - #32 ;
+INFO  20:00:50,905 - #43 int
+INFO  20:00:50,905 - #43 chr
+INFO  20:00:50,906 - #32 ;
+INFO  20:00:50,906 - #39 {
+INFO  20:00:50,906 - #40 }
+INFO  20:00:50,906 - #40 }
+INFO  20:00:50,918 - Deklarisana konstanta mjoc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 2
+ERROR 20:00:50,918 - Konstanti puf nije dodeljen ispravan tip: linija 2
+ERROR 20:00:50,919 - Konstanti grr nije dodeljen ispravan tip: linija 2
+ERROR 20:00:50,919 - Promenljiva char ne moze imati naziv tipa: linija 3
+INFO  20:00:50,919 - Deklarisana promenljiva d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 3
+INFO  20:00:50,920 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 4
+INFO  20:00:50,920 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 5
+ERROR 20:00:50,920 - Konstanti grr nije dodeljen ispravan tip: linija 6
+INFO  20:00:50,921 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 9
+INFO  20:00:50,921 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 10
+INFO  20:00:50,921 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 14
+INFO  20:00:50,921 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 15
+INFO  20:00:50,921 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 15
+ERROR 20:00:50,921 - Promenljiva chr ne moze imati predeklarisani naziv: linija 16

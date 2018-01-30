@@ -1,0 +1,73 @@
+INFO  20:29:55,403 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  20:29:55,452 - #2 program
+INFO  20:29:55,452 - #43 ImeMogaProgramaa
+INFO  20:29:55,452 - #15 const
+INFO  20:29:55,454 - #43 int
+INFO  20:29:55,455 - #43 len
+INFO  20:29:55,456 - #29 =
+INFO  20:29:55,456 - #45 "dsa"
+INFO  20:29:55,456 - #33 ,
+INFO  20:29:55,457 - #43 mjoc
+INFO  20:29:55,457 - #29 =
+INFO  20:29:55,457 - #42 123
+INFO  20:29:55,457 - #33 ,
+INFO  20:29:55,458 - #43 puf
+INFO  20:29:55,458 - #29 =
+INFO  20:29:55,458 - #45 "haha"
+INFO  20:29:55,458 - #32 ;
+INFO  20:29:55,458 - #43 int
+INFO  20:29:55,459 - #43 char
+INFO  20:29:55,460 - #33 ,
+INFO  20:29:55,463 - #43 d
+INFO  20:29:55,464 - #32 ;
+INFO  20:29:55,464 - #43 int
+INFO  20:29:55,464 - #43 chr
+INFO  20:29:55,465 - #32 ;
+INFO  20:29:55,465 - #43 char
+INFO  20:29:55,465 - #43 c
+INFO  20:29:55,465 - #32 ;
+INFO  20:29:55,465 - #15 const
+INFO  20:29:55,465 - #43 char
+INFO  20:29:55,465 - #43 grr
+INFO  20:29:55,465 - #29 =
+INFO  20:29:55,465 - #42 123
+INFO  20:29:55,465 - #32 ;
+INFO  20:29:55,465 - #39 {
+INFO  20:29:55,466 - #10 void
+INFO  20:29:55,466 - #43 prog2
+INFO  20:29:55,466 - #35 (
+INFO  20:29:55,466 - #36 )
+INFO  20:29:55,466 - #43 int
+INFO  20:29:55,468 - #43 a
+INFO  20:29:55,468 - #32 ;
+INFO  20:29:55,469 - #39 {
+INFO  20:29:55,470 - #40 }
+INFO  20:29:55,470 - #10 void
+INFO  20:29:55,471 - #43 main
+INFO  20:29:55,471 - #35 (
+INFO  20:29:55,471 - #36 )
+INFO  20:29:55,471 - #43 int
+INFO  20:29:55,471 - #43 a
+INFO  20:29:55,471 - #33 ,
+INFO  20:29:55,471 - #43 eol
+INFO  20:29:55,471 - #32 ;
+INFO  20:29:55,473 - #43 int
+INFO  20:29:55,473 - #43 eol
+INFO  20:29:55,473 - #32 ;
+INFO  20:29:55,473 - #39 {
+INFO  20:29:55,473 - #40 }
+INFO  20:29:55,473 - #40 }
+INFO  20:29:55,479 - Deklarisana konstanta mjoc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 2
+ERROR 20:29:55,483 - Konstanti puf nije dodeljen ispravan tip: linija 2
+ERROR 20:29:55,483 - Promenljiva len ne moze imati predeklarisani naziv: linija 2
+ERROR 20:29:55,483 - Promenljiva char ne moze imati naziv tipa: linija 3
+INFO  20:29:55,483 - Deklarisana promenljiva d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 3
+ERROR 20:29:55,483 - Promenljiva chr ne moze imati predeklarisani naziv: linija 4
+INFO  20:29:55,483 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 5
+ERROR 20:29:55,483 - Konstanti grr nije dodeljen ispravan tip: linija 6
+INFO  20:29:55,483 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 9
+INFO  20:29:55,484 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 10
+INFO  20:29:55,484 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 14
+ERROR 20:29:55,484 - Promenljiva eol ne moze imati predeklarisani naziv: linija 15
+INFO  20:29:55,484 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 15
+ERROR 20:29:55,484 - Promenljiva eol ne moze imati predeklarisani naziv: linija 16

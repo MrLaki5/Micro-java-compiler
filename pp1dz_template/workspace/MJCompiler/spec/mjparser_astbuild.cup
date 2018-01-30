@@ -65,6 +65,8 @@ nonterminal DeclVarOnlyList DeclVarOnlyList;
 nonterminal ConstDeclList ConstDeclList;
 nonterminal VarDecl VarDecl;
 nonterminal VarDeclList VarDeclList;
+nonterminal VarDeclType VarDeclType;
+nonterminal VarDeclPTwo VarDeclPTwo;
 nonterminal	ClassDecl ClassDecl;
 nonterminal ExtendsPart ExtendsPart;
 nonterminal ClassMethodDecl ClassMethodDecl;
@@ -72,6 +74,7 @@ nonterminal MethodDeclList MethodDeclList;
 nonterminal FormPars FormPars;
 nonterminal FormalParamList FormalParamList;
 nonterminal GlobalVarType GlobalVarType;
+nonterminal ConstDeclType ConstDeclType;
 nonterminal FormalParamDecl FormalParamDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
@@ -122,7 +125,10 @@ DeclVarOnlyList ::= (VarOnlyDeclarations) DeclVarOnlyList:D1 VarDecl:V2 {: RESUL
 					(NoVarOnlyDeclarations) {: RESULT=new NoVarOnlyDeclarations(); :}/* epsilon */
 					;
 
-ConstDecl ::= (ConstDecl) CONST Type:varType IDENT:varName EQUAL ConstValue:valueType ConstDeclList:C1 SEMI {: RESULT=new ConstDecl(varType, varName, valueType, C1); RESULT.setLine(varTypeleft); :}
+ConstDecl ::= (ConstDecl) CONST ConstDeclType:C1 IDENT:varName EQUAL ConstValue:valueType ConstDeclList:C2 SEMI {: RESULT=new ConstDecl(C1, varName, valueType, C2); RESULT.setLine(C1left); :}
+;
+
+ConstDeclType ::= (ConstDeclType) Type:varType {: RESULT=new ConstDeclType(varType); RESULT.setLine(varTypeleft); :}
 ;
 
 ConstDeclList ::= (AnotherConstDecl) ConstDeclList:C1 COMMA IDENT:varName EQUAL ConstValue:valueType {: RESULT=new AnotherConstDecl(C1, varName, valueType); RESULT.setLine(C1left); :}
@@ -169,7 +175,10 @@ GlobalVarTwo ::= (GlobalVarTwoNoErr) IDENT:varName ArrayPart:A1 SEMI {: RESULT=n
 				 (GlobalVarTwoErr) error SEMI {: RESULT=new GlobalVarTwoErr(); :}
 				 ;
 				  
-VarDecl ::= (VarDecl) Type:varType IDENT:varName ArrayPart:A1 VarDeclList:V2 SEMI {: RESULT=new VarDecl(varType, varName, A1, V2); RESULT.setLine(varTypeleft); :}
+VarDecl ::= (VarDecl) VarDeclType:V1 IDENT:varName ArrayPart:A2 VarDeclList:V3 SEMI {: RESULT=new VarDecl(V1, varName, A2, V3); RESULT.setLine(V1left); :}
+;
+
+VarDeclType ::= (VarDeclType) Type:varType {: RESULT=new VarDeclType(varType); RESULT.setLine(varTypeleft); :}
 ;
 
 ArrayPart ::= (IsArray) LBBRACE RBBRACE {: RESULT=new IsArray(); :}
@@ -177,10 +186,13 @@ ArrayPart ::= (IsArray) LBBRACE RBBRACE {: RESULT=new IsArray(); :}
 			  (IsNotArray) {: RESULT=new IsNotArray(); :}/* epsilon */
 			  ;
 
-VarDeclList ::= (AnotherVarDecl) VarDeclList:V1 COMMA IDENT:varName ArrayPart:A2 {: RESULT=new AnotherVarDecl(V1, varName, A2); RESULT.setLine(V1left); :}
+VarDeclList ::= (AnotherVarDecl) VarDeclList:V1 VarDeclPTwo:V2 {: RESULT=new AnotherVarDecl(V1, V2); RESULT.setLine(V1left); :}
 				|
 				(NoAnotherVarDecl) {: RESULT=new NoAnotherVarDecl(); :}/* epsilon */
 				;
+
+VarDeclPTwo ::= (VarDeclAfterComma) COMMA IDENT:varName ArrayPart:A1 {: RESULT=new VarDeclAfterComma(varName, A1); RESULT.setLine(varNameleft); :}
+;
 
 ClassDecl ::= (ClassDecl) CLASS IDENT:className ExtendsPart:E1 LBRACE DeclVarOnlyList:D2 ClassMethodDecl:C3 RBRACE {: RESULT=new ClassDecl(className, E1, D2, C3); RESULT.setLine(classNameleft); :}
 ;
