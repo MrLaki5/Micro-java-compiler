@@ -14,6 +14,8 @@ import rs.ac.bg.etf.pp1.ast.SyntaxNode;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class MJParserTest {
 
@@ -48,7 +50,9 @@ public class MJParserTest {
 			
 			Symbol sim=p.parse();
 			Tab.init();
-			SemanticPass semanticCheck=new SemanticPass();
+			Struct booleanStr=new Struct(Struct.Int);
+			Tab.insert(Obj.Type, "bool", booleanStr);
+			SemanticPass semanticCheck=new SemanticPass(booleanStr);
 			SyntaxNode prog = (SyntaxNode)(sim.value);
 			prog.traverseBottomUp(semanticCheck);
 			

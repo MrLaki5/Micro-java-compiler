@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Struct"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VisitorAdaptor"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.Program"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.SyntaxNode"/>
@@ -26,4 +25,7 @@
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclType"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclPTwo"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclAfterComma"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ArrayPart"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IsArray"/>
+<fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Struct"/>
 </qualifiedTypeNameHistroy>
