@@ -62,11 +62,11 @@ terminal String IDENT, BOOL, CHAR;
 
 nonterminal /*Program, ProgName, */DeclList, DeclVarOnlyList, ConstDeclList, VarDecl, VarDeclList, VarDeclType, VarDeclPTwo;
 nonterminal	ClassDecl, ExtendsPart, ClassMethodDecl, MethodDeclList, FormPars, FormalParamList, GlobalVarType, ConstDeclType;
-nonterminal FormalParamDecl, StatementList, Statement, DesignatorStatement, ActList, ActPars, Condition, CondTerm, CondFact, Expr;
-nonterminal Term, Factor, Designator, Relop, Addop, Mulop, ArrayPart, GlobalVarDecl, GlobalVarDeclList, GlobalVarOne, GlobalVarTwo;
+nonterminal FormalParamDecl, StatementList, Statement, DesignatorStatement, ActList, ActPars, Condition, CondTerm, CondFact;
+nonterminal Relop, Addop, Mulop, ArrayPart, GlobalVarDecl, GlobalVarDeclList, GlobalVarOne, GlobalVarTwo;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue, Expr, Term, Factor;
 
 precedence left ELSE;
 

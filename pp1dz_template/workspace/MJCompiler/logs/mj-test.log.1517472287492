@@ -1,0 +1,105 @@
+INFO  09:04:09,054 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  09:04:09,125 - #2 program
+INFO  09:04:09,125 - #43 ImeMogaProgramaa
+INFO  09:04:09,125 - #15 const
+INFO  09:04:09,148 - #43 bool
+INFO  09:04:09,148 - #43 len
+INFO  09:04:09,148 - #29 =
+INFO  09:04:09,148 - #45 "dsa"
+INFO  09:04:09,148 - #33 ,
+INFO  09:04:09,148 - #43 mjoc
+INFO  09:04:09,148 - #29 =
+INFO  09:04:09,148 - #42 123
+INFO  09:04:09,148 - #33 ,
+INFO  09:04:09,148 - #43 puf
+INFO  09:04:09,148 - #29 =
+INFO  09:04:09,148 - #44 true
+INFO  09:04:09,148 - #32 ;
+INFO  09:04:09,148 - #43 int
+INFO  09:04:09,148 - #43 prom
+INFO  09:04:09,148 - #37 [
+INFO  09:04:09,148 - #38 ]
+INFO  09:04:09,148 - #33 ,
+INFO  09:04:09,171 - #43 d
+INFO  09:04:09,171 - #37 [
+INFO  09:04:09,171 - #38 ]
+INFO  09:04:09,171 - #33 ,
+INFO  09:04:09,171 - #43 c
+INFO  09:04:09,171 - #33 ,
+INFO  09:04:09,171 - #43 kul
+INFO  09:04:09,171 - #37 [
+INFO  09:04:09,171 - #38 ]
+INFO  09:04:09,171 - #32 ;
+INFO  09:04:09,171 - #43 int
+INFO  09:04:09,171 - #43 kk
+INFO  09:04:09,171 - #32 ;
+INFO  09:04:09,171 - #43 char
+INFO  09:04:09,171 - #43 bool
+INFO  09:04:09,171 - #32 ;
+INFO  09:04:09,171 - #15 const
+INFO  09:04:09,171 - #43 char
+INFO  09:04:09,171 - #43 grr
+INFO  09:04:09,171 - #29 =
+INFO  09:04:09,171 - #42 123
+INFO  09:04:09,171 - #32 ;
+INFO  09:04:09,171 - #39 {
+INFO  09:04:09,171 - #10 void
+INFO  09:04:09,171 - #43 prog2
+INFO  09:04:09,171 - #35 (
+INFO  09:04:09,171 - #36 )
+INFO  09:04:09,171 - #43 bool
+INFO  09:04:09,171 - #43 a
+INFO  09:04:09,171 - #37 [
+INFO  09:04:09,171 - #38 ]
+INFO  09:04:09,171 - #33 ,
+INFO  09:04:09,171 - #43 b
+INFO  09:04:09,171 - #37 [
+INFO  09:04:09,171 - #38 ]
+INFO  09:04:09,171 - #33 ,
+INFO  09:04:09,171 - #43 c
+INFO  09:04:09,171 - #32 ;
+INFO  09:04:09,171 - #43 int
+INFO  09:04:09,171 - #43 d
+INFO  09:04:09,171 - #32 ;
+INFO  09:04:09,171 - #39 {
+INFO  09:04:09,171 - #40 }
+INFO  09:04:09,171 - #10 void
+INFO  09:04:09,194 - #43 main
+INFO  09:04:09,194 - #35 (
+INFO  09:04:09,194 - #36 )
+INFO  09:04:09,194 - #43 int
+INFO  09:04:09,194 - #43 a
+INFO  09:04:09,194 - #33 ,
+INFO  09:04:09,194 - #43 eol
+INFO  09:04:09,194 - #32 ;
+INFO  09:04:09,194 - #43 int
+INFO  09:04:09,194 - #43 eol
+INFO  09:04:09,194 - #32 ;
+INFO  09:04:09,194 - #39 {
+INFO  09:04:09,194 - #43 a
+INFO  09:04:09,194 - #29 =
+INFO  09:04:09,194 - #42 5
+INFO  09:04:09,194 - #16 +
+INFO  09:04:09,194 - #42 4
+INFO  09:04:09,194 - #32 ;
+INFO  09:04:09,194 - #40 }
+INFO  09:04:09,194 - #40 }
+ERROR 09:04:09,288 - Konstanti mjoc nije dodeljen ispravan tip: linija 16
+INFO  09:04:09,288 - Deklarisana konstanta puf, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 16
+ERROR 09:04:09,288 - Konstanta len ne moze imati predeklarisani naziv: linija 2
+INFO  09:04:09,288 - Deklarisan niz prom, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 3
+INFO  09:04:09,288 - Deklarisan niz d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 3
+INFO  09:04:09,288 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 3
+INFO  09:04:09,288 - Deklarisan niz kul, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 3
+INFO  09:04:09,288 - Deklarisana promenljiva kk, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 4
+ERROR 09:04:09,288 - Promenljiva bool ne moze imati predeklarisani naziv: linija 5
+ERROR 09:04:09,288 - Konstanti grr nije dodeljen ispravan tip: linija 6
+INFO  09:04:09,288 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 9
+INFO  09:04:09,288 - Deklarisan niz b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 10
+INFO  09:04:09,288 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 10
+INFO  09:04:09,288 - Deklarisan niz a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@6c5a9e: linija 10
+INFO  09:04:09,288 - Deklarisana promenljiva d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1bba400: linija 11
+INFO  09:04:09,288 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@19d3b25: linija 15
+ERROR 09:04:09,288 - Promenljiva eol ne moze imati predeklarisani naziv: linija 16
+INFO  09:04:09,288 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@14989ff: linija 16
+ERROR 09:04:09,288 - Promenljiva eol ne moze imati predeklarisani naziv: linija 17

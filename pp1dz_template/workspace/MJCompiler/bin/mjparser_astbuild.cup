@@ -84,10 +84,6 @@ nonterminal ActPars ActPars;
 nonterminal Condition Condition;
 nonterminal CondTerm CondTerm;
 nonterminal CondFact CondFact;
-nonterminal Expr Expr;
-nonterminal Term Term;
-nonterminal Factor Factor;
-nonterminal Designator Designator;
 nonterminal Relop Relop;
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
@@ -97,8 +93,8 @@ nonterminal GlobalVarDeclList GlobalVarDeclList;
 nonterminal GlobalVarOne GlobalVarOne;
 nonterminal GlobalVarTwo GlobalVarTwo;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue, Expr, Term, Factor;
 
 precedence left ELSE;
 

@@ -27,5 +27,17 @@
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclAfterComma"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ArrayPart"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IsArray"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorNoActFactor"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorActFactor"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherExprDesignator"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorStatementPP"/>
 <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Struct"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorStatementMM"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PrintNoNumStmt"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PrintNumStmt"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ReadStmt"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorStatementActP"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.NewExprFactor"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ExprFactor"/>
 </qualifiedTypeNameHistroy>

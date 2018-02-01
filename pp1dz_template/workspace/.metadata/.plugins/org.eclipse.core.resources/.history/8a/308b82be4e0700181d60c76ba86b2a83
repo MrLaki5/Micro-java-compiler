@@ -1,0 +1,22 @@
+program ImeMogaProgramaa
+	const bool mjoc=false, puf=true;
+	int prom[], d[], c, kul[];
+	int kk;
+	char bool;
+	const char grr=123;
+{	
+
+	char prog2()
+	bool a[], b[], c;
+	int d;
+	{
+		return true;
+	}
+
+	void main() 
+	int a[],d;
+	int c;
+	{
+		a[12]=1*5+4+2+3+a[2];
+	}
+}

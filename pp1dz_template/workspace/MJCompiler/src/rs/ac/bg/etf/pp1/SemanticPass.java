@@ -2,11 +2,24 @@ package rs.ac.bg.etf.pp1;
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.AnotherConstDecl;
+import rs.ac.bg.etf.pp1.ast.AnotherExpr;
+import rs.ac.bg.etf.pp1.ast.AnotherExprDesignator;
+import rs.ac.bg.etf.pp1.ast.AnotherTerm;
 import rs.ac.bg.etf.pp1.ast.AnotherVarDecl;
 import rs.ac.bg.etf.pp1.ast.ArrayPart;
+import rs.ac.bg.etf.pp1.ast.BoolConstFactor;
 import rs.ac.bg.etf.pp1.ast.BooleanValue;
+import rs.ac.bg.etf.pp1.ast.CharConstFactor;
 import rs.ac.bg.etf.pp1.ast.ConstDecl;
 import rs.ac.bg.etf.pp1.ast.ConstDeclType;
+import rs.ac.bg.etf.pp1.ast.Designator;
+import rs.ac.bg.etf.pp1.ast.DesignatorActFactor;
+import rs.ac.bg.etf.pp1.ast.DesignatorNoActFactor;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementActP;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementMM;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementPP;
+import rs.ac.bg.etf.pp1.ast.ExprFactor;
 import rs.ac.bg.etf.pp1.ast.GlobalVarDeclElem;
 import rs.ac.bg.etf.pp1.ast.GlobalVarOneNoErr;
 import rs.ac.bg.etf.pp1.ast.GlobalVarTwoNoErr;
@@ -17,8 +30,18 @@ import rs.ac.bg.etf.pp1.ast.MethodDecl;
 import rs.ac.bg.etf.pp1.ast.MethodType;
 import rs.ac.bg.etf.pp1.ast.MethodTypeName;
 import rs.ac.bg.etf.pp1.ast.MethodVoidType;
+import rs.ac.bg.etf.pp1.ast.NewExprFactor;
+import rs.ac.bg.etf.pp1.ast.NumberConstFactor;
+import rs.ac.bg.etf.pp1.ast.PrintNoNumStmt;
+import rs.ac.bg.etf.pp1.ast.PrintNumStmt;
 import rs.ac.bg.etf.pp1.ast.ProgName;
 import rs.ac.bg.etf.pp1.ast.Program;
+import rs.ac.bg.etf.pp1.ast.ReadStmt;
+import rs.ac.bg.etf.pp1.ast.ReturnExprStmt;
+import rs.ac.bg.etf.pp1.ast.SingleDesignator;
+import rs.ac.bg.etf.pp1.ast.SingleNegExpr;
+import rs.ac.bg.etf.pp1.ast.SinglePosExpr;
+import rs.ac.bg.etf.pp1.ast.SingleTerm;
 import rs.ac.bg.etf.pp1.ast.StringValue;
 import rs.ac.bg.etf.pp1.ast.SyntaxNode;
 import rs.ac.bg.etf.pp1.ast.Type;
@@ -77,6 +100,8 @@ public class SemanticPass extends VisitorAdaptor {
 		return false;
 	}
 	
+	//PROGRAM VISITORS============================================
+	
 	public void visit(Program program) {		
 		nVars = Tab.currentScope.getnVars();
 		Tab.chainLocalSymbols(program.getProgName().obj);
@@ -90,6 +115,8 @@ public class SemanticPass extends VisitorAdaptor {
 		progName.obj = Tab.insert(Obj.Prog, progName.getPName(), Tab.noType);
 		Tab.openScope();     	
 	}
+	
+	//DECLARATION VISITORS========================================
 	
 	public void visit(VarDeclType varDeclType){
 		tempGlobVarType=varDeclType.getType().struct;
@@ -190,10 +217,10 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(MethodDecl methodDecl) {
 		if (!returnFound && currentMethod.getType() != Tab.noType) {
-			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funcija " + currentMethod.getName() + " nema return iskaz!", null);
+			report_error("Funcija " + currentMethod.getName() + " nema return iskaz", methodDecl);
 		}
 		
-		if(currentMethodName.equals("main")){	//TODO: dodaj da se proverava da main nema parametre
+		if((currentMethodName.equals("main")) && (currentMethod.getLevel()==0)){	//TODO: dodaj da se proverava da main nema parametre
 			mainFound=true;
 		}
 		
@@ -219,23 +246,180 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.openScope();
 		report_info("Obrada funkcije " + methodVoidType.getMethName()+", objekat u tabeli simbola "+currentMethod.toString(), methodVoidType);
 	}
-/*
-	public void visit(Assignment assignment) {
-		if (!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType()))
-			report_error("Greska na liniji " + assignment.getLine() + " : " + " nekompatibilni tipovi u dodeli vrednosti ", null);
-	}
 
-	public void visit(PrintStmt printStmt){
-		printCallCount++;    	
-	}
-
-	public void visit(ReturnExpr returnExpr){
+	//STATEMENT VISITORS====================================
+	
+	public void visit(ReturnExprStmt returnExpr){
 		returnFound = true;
 		Struct currMethType = currentMethod.getType();
 		if (!currMethType.compatibleWith(returnExpr.getExpr().struct)) {
-			report_error("Greska na liniji " + returnExpr.getLine() + " : " + "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije " + currentMethod.getName(), null);
+			report_error("Tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije " + currentMethod.getName(), returnExpr);
 		}			  	     	
 	}
+	
+	public void visit(SingleDesignator designator){
+		Obj obj = Tab.find(designator.getName());
+		if (obj == Tab.noObj) { 
+			report_error("Ime "+designator.getName()+" nije deklarisano", designator);
+		}
+		designator.obj = obj;
+	}
+	
+	public void visit(AnotherExprDesignator designator){
+		if (designator.getDesignator().obj.getType().getKind()!=Struct.Array){
+			report_error("Designator "+designator.obj.getName()+" nije niz", designator);
+		}
+		if (designator.getExpr().struct!=Tab.intType){
+			report_error("Parametri niza moraju biti tipa int", designator);
+		}
+		designator.obj=designator.getDesignator().obj;
+	}
+	
+	public void visit(AnotherExpr expr) {
+		Struct te = expr.getExpr().struct;
+		Struct t = expr.getTerm().struct;
+		if (te.equals(t) && te == Tab.intType)
+			expr.struct = te;
+		else {
+			report_error("Nekompatibilni tipovi u izrazu za sabiranje", expr);
+			expr.struct = Tab.noType;
+		} 
+	}
+	
+	public void visit(SinglePosExpr expr){
+		Struct t=expr.getTerm().struct;
+		expr.struct=t;
+	}
+	
+	public void visit(SingleNegExpr expr){
+		Struct t=expr.getTerm().struct;
+		if(t==Tab.intType){
+			expr.struct=t;
+		}
+		else{
+			report_error("Nekompatibilan tip", expr);
+			expr.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(AnotherTerm term){
+		Struct t=term.getTerm().struct;
+		Struct fac=term.getFactor().struct;
+		if(t.equals(fac) && t==Tab.intType){
+			term.struct=t;
+		}
+		else{
+			report_error("Nekompatibilan tip u izrazu za mnozenje", term);
+			term.struct = Tab.noType;
+		}
+	}
+	
+	public void visit(SingleTerm term){
+		Struct t=term.getFactor().struct;
+		term.struct=t;
+	}
+	
+	public void visit(NumberConstFactor factor){
+		factor.struct=Tab.intType;
+	}
+	
+	public void visit(CharConstFactor factor){
+		factor.struct=Tab.charType;
+	}
+	
+	public void visit(BoolConstFactor factor){
+		factor.struct=booleanStr;
+	}
+	
+	public void visit(DesignatorNoActFactor factor){
+		factor.struct=checkIfArrayIsOkInStatement(factor.getDesignator(), factor);
+	}
+	
+	public void visit(DesignatorActFactor factor){
+		Obj func = factor.getDesignator().obj;
+		if (Obj.Meth == func.getKind()) { 
+			report_info("Pronadjen poziv funkcije " + func.getName(), factor);
+			factor.struct=func.getType();
+			//RESULT = func.getType();
+		} 
+		else {
+			report_error("Ime nije funkcija", factor);
+			factor.struct=Tab.noType;
+			//RESULT = Tab.noType;
+		} 
+	}
+	
+	public void visit(NewExprFactor factor){
+		if(factor.getExpr().struct!=Tab.intType){
+			report_error("Izraz za adresiranje niza nije kompatibilan", factor);
+			factor.struct=Tab.noType;
+		}
+		else{
+			factor.struct=factor.getType().struct;
+		}
+	}
+	
+	public void visit(ExprFactor factor){
+		factor.struct=factor.getExpr().struct;
+	}
+	
+	public void visit(DesignatorStatementExpr desStatement){
+		Struct desig=checkIfArrayIsOkInStatement(desStatement.getDesignator(), desStatement);
+		Struct expr=desStatement.getExpr().struct;
+		if (!expr.assignableTo(desig)){
+			report_error("Nekompatibilni tipovi u dodeli vrednosti", desStatement);
+		}
+	}
+	
+	public void visit(DesignatorStatementPP ppStatement){
+		Struct desig=checkIfArrayIsOkInStatement(ppStatement.getDesignator(), ppStatement);
+		if(desig!=Tab.intType){
+			report_error("Nekompatibilni tip u ++ operaciji", ppStatement);
+		}
+	}
+	
+	public void visit(DesignatorStatementMM ppStatement){
+		Struct desig=checkIfArrayIsOkInStatement(ppStatement.getDesignator(), ppStatement);
+		if(desig!=Tab.intType){
+			report_error("Nekompatibilni tip u -- operaciji", ppStatement);
+		}
+	}
+	
+	public void visit(PrintNoNumStmt printStatement){
+		if(printStatement.getExpr().struct!=Tab.charType && printStatement.getExpr().struct!=Tab.intType &&
+				printStatement.getExpr().struct!=booleanStr){
+			report_error("Pogresan tip u print operaciji", printStatement);
+		}
+	}
+	
+	public void visit(PrintNumStmt printStatement){
+		if(printStatement.getExpr().struct!=Tab.charType && printStatement.getExpr().struct!=Tab.intType &&
+				printStatement.getExpr().struct!=booleanStr){
+			report_error("Pogresan tip u print operaciji", printStatement);
+		}
+	}
+	
+	public void visit(ReadStmt readStmt){
+		Struct tip=checkIfArrayIsOkInStatement(readStmt.getDesignator(), readStmt);
+		if(tip!=Tab.charType && tip!=Tab.intType && tip!=booleanStr){
+			report_error("Pogresan tip u read operaciji", readStmt);
+		}
+	}
+	
+	public void visit(DesignatorStatementActP procCall){
+		Obj func = procCall.getDesignator().obj;
+		if (Obj.Meth == func.getKind()) { 
+			report_info("Pronadjen poziv funkcije " + func.getName(), procCall);
+			//RESULT = func.getType();
+		} 
+		else {
+			report_error("Ime nije funkcija", procCall);
+			//RESULT = Tab.noType;
+		}     	
+	} 
+	
+	/*
+
 
 	public void visit(ProcCall procCall){
 		Obj func = procCall.getDesignator().obj;
@@ -249,32 +433,6 @@ public class SemanticPass extends VisitorAdaptor {
 		}     	
 	}    
 
-	public void visit(AddExpr addExpr) {
-		Struct te = addExpr.getExpr().struct;
-		Struct t = addExpr.getTerm().struct;
-		if (te.equals(t) && te == Tab.intType)
-			addExpr.struct = te;
-		else {
-			report_error("Greska na liniji "+ addExpr.getLine()+" : nekompatibilni tipovi u izrazu za sabiranje.", null);
-			addExpr.struct = Tab.noType;
-		} 
-	}
-
-	public void visit(TermExpr termExpr) {
-		termExpr.struct = termExpr.getTerm().struct;
-	}
-
-	public void visit(Term term) {
-		term.struct = term.getFactor().struct;    	
-	}
-
-	public void visit(Const cnst){
-		cnst.struct = Tab.intType;    	
-	}
-	
-	public void visit(Var var) {
-		var.struct = var.getDesignator().obj.getType();
-	}
 
 	public void visit(FuncCall funcCall){
 		Obj func = funcCall.getDesignator().obj;
@@ -289,13 +447,6 @@ public class SemanticPass extends VisitorAdaptor {
 
 	}
 
-	public void visit(Designator designator){
-		Obj obj = Tab.find(designator.getName());
-		if (obj == Tab.noObj) { 
-			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getName()+" nije deklarisano! ", null);
-		}
-		designator.obj = obj;
-	}
 	*/
 	public boolean passed() {
 		return !errorDetected;
@@ -354,6 +505,21 @@ public class SemanticPass extends VisitorAdaptor {
 			}
 		}
 		return true;
+	}
+	
+	public Struct checkIfArrayIsOkInStatement(Designator designator, SyntaxNode info){
+		Struct ret=Tab.noType;
+		if(designator.obj.getType().getKind()==Struct.Array){
+			/*if (!(designator instanceof AnotherExprDesignator)){
+				report_error("Mora se navesti element niza", info);
+				return ret;
+			}*/
+			ret=designator.obj.getType().getElemType();
+		}
+		else{
+			ret=designator.obj.getType();
+		}
+		return ret;
 	}
 	
 }

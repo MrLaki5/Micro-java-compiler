@@ -1,0 +1,25 @@
+program ImeMogaProgramaa
+	const bool mjoc=false, puf=true;
+	int prom[], d[], c, kul[];
+	int kk;
+	char bool;
+	const char grr="to bre";
+{	
+
+	char prog2()
+	bool a[], b[], c;
+	int d;
+	{
+		return "";
+	}
+
+	void main() 
+	int a[],d;
+	bool c;
+	{
+		a[1]=1*5+4+2+3+a;[1]
+		a[1]++;
+		a[2]--;
+		print("nessto");
+	}
+}
