@@ -1,0 +1,176 @@
+INFO  11:33:07,772 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  11:33:07,835 - #2 program
+INFO  11:33:07,835 - #43 ImeMogaProgramaa
+INFO  11:33:07,835 - #15 const
+INFO  11:33:07,835 - #43 bool
+INFO  11:33:07,835 - #43 mjoc
+INFO  11:33:07,835 - #29 =
+INFO  11:33:07,835 - #44 false
+INFO  11:33:07,835 - #33 ,
+INFO  11:33:07,850 - #43 puf
+INFO  11:33:07,850 - #29 =
+INFO  11:33:07,850 - #44 true
+INFO  11:33:07,850 - #32 ;
+INFO  11:33:07,850 - #43 int
+INFO  11:33:07,850 - #43 prom
+INFO  11:33:07,850 - #37 [
+INFO  11:33:07,850 - #38 ]
+INFO  11:33:07,850 - #33 ,
+INFO  11:33:07,850 - #43 d
+INFO  11:33:07,850 - #37 [
+INFO  11:33:07,850 - #38 ]
+INFO  11:33:07,850 - #33 ,
+INFO  11:33:07,850 - #43 c
+INFO  11:33:07,850 - #33 ,
+INFO  11:33:07,850 - #43 kul
+INFO  11:33:07,850 - #37 [
+INFO  11:33:07,850 - #38 ]
+INFO  11:33:07,850 - #32 ;
+INFO  11:33:07,850 - #43 int
+INFO  11:33:07,850 - #43 kk
+INFO  11:33:07,850 - #32 ;
+INFO  11:33:07,850 - #15 const
+INFO  11:33:07,850 - #43 char
+INFO  11:33:07,850 - #43 grr
+INFO  11:33:07,850 - #29 =
+INFO  11:33:07,850 - #45 "to bre"
+INFO  11:33:07,850 - #32 ;
+INFO  11:33:07,850 - #39 {
+INFO  11:33:07,850 - #43 int
+INFO  11:33:07,866 - #43 prog2
+INFO  11:33:07,866 - #35 (
+INFO  11:33:07,866 - #36 )
+INFO  11:33:07,866 - #43 bool
+INFO  11:33:07,866 - #43 a
+INFO  11:33:07,866 - #37 [
+INFO  11:33:07,866 - #38 ]
+INFO  11:33:07,866 - #33 ,
+INFO  11:33:07,866 - #43 b
+INFO  11:33:07,866 - #37 [
+INFO  11:33:07,866 - #38 ]
+INFO  11:33:07,866 - #33 ,
+INFO  11:33:07,866 - #43 c
+INFO  11:33:07,866 - #32 ;
+INFO  11:33:07,866 - #43 int
+INFO  11:33:07,866 - #43 d
+INFO  11:33:07,866 - #32 ;
+INFO  11:33:07,866 - #39 {
+INFO  11:33:07,866 - #9 return
+INFO  11:33:07,866 - #42 23
+INFO  11:33:07,866 - #32 ;
+INFO  11:33:07,866 - #40 }
+INFO  11:33:07,866 - #10 void
+INFO  11:33:07,866 - #43 main
+INFO  11:33:07,866 - #35 (
+INFO  11:33:07,866 - #36 )
+INFO  11:33:07,866 - #43 int
+INFO  11:33:07,866 - #43 a
+INFO  11:33:07,866 - #37 [
+INFO  11:33:07,866 - #38 ]
+INFO  11:33:07,866 - #33 ,
+INFO  11:33:07,866 - #43 d
+INFO  11:33:07,866 - #32 ;
+INFO  11:33:07,866 - #43 bool
+INFO  11:33:07,866 - #43 c
+INFO  11:33:07,866 - #32 ;
+INFO  11:33:07,881 - #39 {
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #29 =
+INFO  11:33:07,881 - #6 new
+INFO  11:33:07,881 - #43 int
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 5
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 1
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #29 =
+INFO  11:33:07,881 - #42 1
+INFO  11:33:07,881 - #18 *
+INFO  11:33:07,881 - #42 5
+INFO  11:33:07,881 - #16 +
+INFO  11:33:07,881 - #42 4
+INFO  11:33:07,881 - #16 +
+INFO  11:33:07,881 - #42 2
+INFO  11:33:07,881 - #16 +
+INFO  11:33:07,881 - #42 3
+INFO  11:33:07,881 - #16 +
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 1
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 1
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #30 ++
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 2
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #31 --
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 3
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #29 =
+INFO  11:33:07,881 - #35 (
+INFO  11:33:07,881 - #42 3
+INFO  11:33:07,881 - #16 +
+INFO  11:33:07,881 - #43 d
+INFO  11:33:07,881 - #36 )
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #7 print
+INFO  11:33:07,881 - #35 (
+INFO  11:33:07,881 - #44 true
+INFO  11:33:07,881 - #33 ,
+INFO  11:33:07,881 - #42 5
+INFO  11:33:07,881 - #36 )
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #8 read
+INFO  11:33:07,881 - #35 (
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 1
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #36 )
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #43 a
+INFO  11:33:07,881 - #37 [
+INFO  11:33:07,881 - #42 3
+INFO  11:33:07,881 - #38 ]
+INFO  11:33:07,881 - #29 =
+INFO  11:33:07,881 - #43 prog2
+INFO  11:33:07,881 - #35 (
+INFO  11:33:07,881 - #36 )
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,881 - #43 main
+INFO  11:33:07,881 - #35 (
+INFO  11:33:07,881 - #36 )
+INFO  11:33:07,881 - #32 ;
+INFO  11:33:07,913 - #40 }
+INFO  11:33:07,913 - #40 }
+INFO  11:33:07,928 - Deklarisana konstanta puf, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@123ab24: linija 17
+INFO  11:33:07,928 - Deklarisana konstanta mjoc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@c8afef: linija 2
+INFO  11:33:07,928 - Deklarisan niz prom, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@169c6ba: linija 3
+INFO  11:33:07,928 - Deklarisan niz d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@daef40: linija 3
+INFO  11:33:07,928 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@f41634: linija 3
+INFO  11:33:07,928 - Deklarisan niz kul, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1c27452: linija 3
+INFO  11:33:07,944 - Deklarisana promenljiva kk, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@2b2c86: linija 4
+INFO  11:33:07,944 - Deklarisana konstanta grr, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@11a67ec: linija 5
+INFO  11:33:07,944 - Obrada funkcije prog2, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1ed828d: linija 8
+INFO  11:33:07,944 - Deklarisan niz b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@10d0686: linija 9
+INFO  11:33:07,944 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@3d45bd: linija 9
+INFO  11:33:07,944 - Deklarisan niz a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@7c7811: linija 9
+INFO  11:33:07,944 - Deklarisana promenljiva d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1ec78b9: linija 10
+INFO  11:33:07,944 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@3869f4: linija 15
+INFO  11:33:07,944 - Deklarisana promenljiva d, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@38d7a3: linija 16
+INFO  11:33:07,944 - Deklarisan niz a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1f99a05: linija 16
+INFO  11:33:07,944 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1440df3: linija 17
+INFO  11:33:07,944 - Pronadjen poziv funkcije prog2: linija 26
+INFO  11:33:07,944 - Pronadjen poziv funkcije main: linija 27

@@ -1,0 +1,8 @@
+program ImeMogaProgramaa
+{	
+
+	void main() 
+	{
+		print(1);
+	}
+}

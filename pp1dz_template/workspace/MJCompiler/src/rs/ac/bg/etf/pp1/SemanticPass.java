@@ -469,7 +469,7 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void checkAndInitConst(boolean isConstType, String name, SyntaxNode info){
 		if(isConstType){
-			Obj varNode = Tab.insert(Obj.Con, name, tempGlobVarType);
+			Obj varNode = Tab.insert(Obj.Con, name, tempConstType);
 			report_info("Deklarisana konstanta "+ name+", objekat u tabeli simbola "+varNode.toString(), info);
 		}
 		else{

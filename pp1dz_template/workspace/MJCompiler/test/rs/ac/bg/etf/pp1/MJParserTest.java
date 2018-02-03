@@ -16,6 +16,7 @@ import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
+import rs.etf.pp1.symboltable.visitors.SymbolTableVisitor;
 
 public class MJParserTest {
 
@@ -49,18 +50,32 @@ public class MJParserTest {
 			MJParser p = new MJParser(lexer);
 			
 			Symbol sim=p.parse();
-			Tab.init();
-			Struct booleanStr=new Struct(Struct.Int);
-			Tab.insert(Obj.Type, "bool", booleanStr);
-			SemanticPass semanticCheck=new SemanticPass(booleanStr);
-			SyntaxNode prog = (SyntaxNode)(sim.value);
-			prog.traverseBottomUp(semanticCheck);
 			
-			
-			if(!p.errorDetected && semanticCheck.passed()){				
-				//log.info(((rs.ac.bg.etf.pp1.ast.Program)prog).toString(""));			
+			if(!p.errorDetected){
+				//log.info(((rs.ac.bg.etf.pp1.ast.Program)prog).toString(""));
+				Tab.init();
+				Struct booleanStr=new Struct(Struct.Int);
+				Tab.insert(Obj.Type, "bool", booleanStr);
+				SemanticPass semanticCheck=new SemanticPass(booleanStr);
+				SyntaxNode prog = (SyntaxNode)(sim.value);
+				prog.traverseBottomUp(semanticCheck);
+				if(semanticCheck.passed()){
+					Tab.dump();
+					File objFile = new File(args[1]);
+		        	log.info("Generating bytecode file: " + objFile.getAbsolutePath());
+		        	if (objFile.exists())
+		        		objFile.delete();
+		        	
+		        	// Code generation...
+		        	CodeGenerator codeGenerator = new CodeGenerator();
+		        	prog.traverseBottomUp(codeGenerator);
+		        	Code.dataSize = semanticCheck.nVars;
+		        	Code.mainPc = codeGenerator.getMainPc();
+		        	Code.write(new FileOutputStream(objFile));
+		        	log.info("Parsiranje uspesno zavrseno!");
+				}
 			}
-			
+						
 			/*
 	        Symbol s = p.parse();  //pocetak parsiranja
 	        SyntaxNode prog = (SyntaxNode)(s.value);

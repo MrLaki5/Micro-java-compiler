@@ -1,0 +1,16 @@
+INFO  01:20:31,361 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  01:20:31,393 - #2 program
+INFO  01:20:31,393 - #43 ImeMogaProgramaa
+INFO  01:20:31,393 - #39 {
+INFO  01:20:31,393 - #10 void
+INFO  01:20:31,408 - #43 main
+INFO  01:20:31,408 - #35 (
+INFO  01:20:31,408 - #36 )
+INFO  01:20:31,408 - #39 {
+INFO  01:20:31,408 - #7 print
+INFO  01:20:31,408 - #35 (
+INFO  01:20:31,408 - #42 1
+INFO  01:20:31,408 - #36 )
+INFO  01:20:31,408 - #32 ;
+INFO  01:20:31,408 - #40 }
+INFO  01:20:31,408 - #40 }

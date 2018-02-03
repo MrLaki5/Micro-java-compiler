@@ -7,6 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="rs.etf.pp1.mj.runtime.Run"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-debug test\program.mj"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-debug test\program.obj"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MJCompiler"/>
 </launchConfiguration>

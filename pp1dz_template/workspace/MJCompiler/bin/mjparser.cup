@@ -291,7 +291,7 @@ Factor ::= (DesignatorNoActFactor) Designator:d
 		   |
 		   (NumberConstFactor) NUMBER
 		   |
-		   (CharConstFactor) CHAR
+		   (CharConstFactor) CHAR:c
 		   |
 		   (BoolConstFactor) BOOL
 		   |
