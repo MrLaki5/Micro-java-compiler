@@ -1,0 +1,20 @@
+program ImeMogaProgramaa
+
+const int p=5;
+
+{	
+
+	void fja()
+	int a;
+	{
+		print(5);
+		a=2;
+	}
+
+	void main()
+	int a;
+	bool b; 
+	{
+		fja();
+	}
+}

@@ -1,0 +1,40 @@
+INFO  17:39:42,474 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  17:39:42,517 - #2 program
+INFO  17:39:42,517 - #43 ImeMogaProgramaa
+INFO  17:39:42,517 - #39 {
+INFO  17:39:42,517 - #10 void
+INFO  17:39:42,517 - #43 main
+INFO  17:39:42,517 - #35 (
+INFO  17:39:42,517 - #36 )
+INFO  17:39:42,517 - #43 int
+INFO  17:39:42,517 - #43 a
+INFO  17:39:42,517 - #32 ;
+INFO  17:39:42,517 - #39 {
+INFO  17:39:42,517 - #43 a
+INFO  17:39:42,517 - #29 =
+INFO  17:39:42,517 - #43 a
+INFO  17:39:42,517 - #17 -
+INFO  17:39:42,517 - #42 2
+INFO  17:39:42,531 - #32 ;
+INFO  17:39:42,531 - #43 a
+INFO  17:39:42,531 - #29 =
+INFO  17:39:42,531 - #17 -
+INFO  17:39:42,531 - #42 3
+INFO  17:39:42,531 - #32 ;
+INFO  17:39:42,531 - #7 print
+INFO  17:39:42,531 - #35 (
+INFO  17:39:42,531 - #43 a
+INFO  17:39:42,531 - #36 )
+INFO  17:39:42,531 - #32 ;
+INFO  17:39:42,531 - #43 a
+INFO  17:39:42,531 - #29 =
+INFO  17:39:42,531 - #43 a
+INFO  17:39:42,531 - #17 -
+INFO  17:39:42,531 - #42 2
+INFO  17:39:42,531 - #32 ;
+INFO  17:39:42,531 - #40 }
+INFO  17:39:42,531 - #40 }
+INFO  17:39:42,531 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 4
+INFO  17:39:42,531 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 5
+INFO  17:39:42,531 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  17:39:42,545 - Parsiranje uspesno zavrseno!

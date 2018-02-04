@@ -1,0 +1,63 @@
+INFO  17:56:39,229 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  17:56:39,292 - #2 program
+INFO  17:56:39,292 - #43 ImeMogaProgramaa
+INFO  17:56:39,292 - #39 {
+INFO  17:56:39,292 - #10 void
+INFO  17:56:39,292 - #43 main
+INFO  17:56:39,292 - #35 (
+INFO  17:56:39,292 - #36 )
+INFO  17:56:39,292 - #43 int
+INFO  17:56:39,292 - #43 a
+INFO  17:56:39,292 - #32 ;
+INFO  17:56:39,292 - #39 {
+INFO  17:56:39,292 - #43 a
+INFO  17:56:39,292 - #29 =
+INFO  17:56:39,292 - #43 a
+INFO  17:56:39,292 - #17 -
+INFO  17:56:39,292 - #42 2
+INFO  17:56:39,339 - #32 ;
+INFO  17:56:39,339 - #43 a
+INFO  17:56:39,339 - #29 =
+INFO  17:56:39,339 - #17 -
+INFO  17:56:39,339 - #42 3
+INFO  17:56:39,339 - #32 ;
+INFO  17:56:39,339 - #7 print
+INFO  17:56:39,339 - #35 (
+INFO  17:56:39,339 - #43 a
+INFO  17:56:39,339 - #36 )
+INFO  17:56:39,339 - #32 ;
+INFO  17:56:39,339 - #43 a
+INFO  17:56:39,339 - #29 =
+INFO  17:56:39,339 - #43 a
+INFO  17:56:39,339 - #17 -
+INFO  17:56:39,339 - #42 2
+INFO  17:56:39,339 - #32 ;
+INFO  17:56:39,339 - #7 print
+INFO  17:56:39,339 - #35 (
+INFO  17:56:39,339 - #43 a
+INFO  17:56:39,339 - #36 )
+INFO  17:56:39,339 - #32 ;
+INFO  17:56:39,339 - #43 a
+INFO  17:56:39,339 - #29 =
+INFO  17:56:39,339 - #35 (
+INFO  17:56:39,339 - #42 2
+INFO  17:56:39,339 - #16 +
+INFO  17:56:39,339 - #42 3
+INFO  17:56:39,354 - #18 *
+INFO  17:56:39,354 - #42 5
+INFO  17:56:39,354 - #36 )
+INFO  17:56:39,354 - #32 ;
+INFO  17:56:39,354 - #43 a
+INFO  17:56:39,354 - #30 ++
+INFO  17:56:39,354 - #32 ;
+INFO  17:56:39,354 - #7 print
+INFO  17:56:39,354 - #35 (
+INFO  17:56:39,354 - #43 a
+INFO  17:56:39,354 - #36 )
+INFO  17:56:39,354 - #32 ;
+INFO  17:56:39,354 - #40 }
+INFO  17:56:39,354 - #40 }
+INFO  17:56:39,354 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 4
+INFO  17:56:39,370 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 5
+INFO  17:56:39,370 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  17:56:39,386 - Parsiranje uspesno zavrseno!

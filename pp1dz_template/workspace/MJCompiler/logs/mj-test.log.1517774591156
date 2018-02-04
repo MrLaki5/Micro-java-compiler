@@ -1,0 +1,50 @@
+INFO  21:02:27,204 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  21:02:27,251 - #2 program
+INFO  21:02:27,251 - #43 ImeMogaProgramaa
+INFO  21:02:27,251 - #15 const
+INFO  21:02:27,251 - #43 int
+INFO  21:02:27,251 - #43 p
+INFO  21:02:27,251 - #29 =
+INFO  21:02:27,266 - #42 5
+INFO  21:02:27,266 - #32 ;
+INFO  21:02:27,266 - #39 {
+INFO  21:02:27,266 - #10 void
+INFO  21:02:27,266 - #43 fja
+INFO  21:02:27,266 - #35 (
+INFO  21:02:27,266 - #36 )
+INFO  21:02:27,266 - #39 {
+INFO  21:02:27,266 - #7 print
+INFO  21:02:27,266 - #35 (
+INFO  21:02:27,266 - #42 5
+INFO  21:02:27,266 - #36 )
+INFO  21:02:27,266 - #32 ;
+INFO  21:02:27,266 - #9 return
+INFO  21:02:27,266 - #32 ;
+INFO  21:02:27,266 - #40 }
+INFO  21:02:27,266 - #10 void
+INFO  21:02:27,266 - #43 main
+INFO  21:02:27,266 - #35 (
+INFO  21:02:27,266 - #36 )
+INFO  21:02:27,266 - #43 int
+INFO  21:02:27,266 - #43 a
+INFO  21:02:27,266 - #32 ;
+INFO  21:02:27,282 - #43 bool
+INFO  21:02:27,282 - #43 b
+INFO  21:02:27,282 - #32 ;
+INFO  21:02:27,282 - #39 {
+INFO  21:02:27,282 - #43 fja
+INFO  21:02:27,282 - #35 (
+INFO  21:02:27,282 - #36 )
+INFO  21:02:27,282 - #32 ;
+INFO  21:02:27,282 - #9 return
+INFO  21:02:27,282 - #32 ;
+INFO  21:02:27,282 - #40 }
+INFO  21:02:27,282 - #40 }
+INFO  21:02:27,282 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  21:02:27,282 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+INFO  21:02:27,282 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 13
+INFO  21:02:27,282 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  21:02:27,282 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 15
+INFO  21:02:27,282 - Pronadjen poziv funkcije fja: linija 17
+INFO  21:02:27,282 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  21:02:27,297 - Parsiranje uspesno zavrseno!

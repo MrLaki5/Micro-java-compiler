@@ -1,0 +1,55 @@
+INFO  21:32:49,124 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  21:32:49,171 - #2 program
+INFO  21:32:49,171 - #43 ImeMogaProgramaa
+INFO  21:32:49,171 - #15 const
+INFO  21:32:49,194 - #43 int
+INFO  21:32:49,194 - #43 p
+INFO  21:32:49,194 - #29 =
+INFO  21:32:49,194 - #42 5
+INFO  21:32:49,194 - #32 ;
+INFO  21:32:49,194 - #39 {
+INFO  21:32:49,194 - #10 void
+INFO  21:32:49,194 - #43 fja
+INFO  21:32:49,194 - #35 (
+INFO  21:32:49,194 - #36 )
+INFO  21:32:49,194 - #39 {
+INFO  21:32:49,194 - #7 print
+INFO  21:32:49,194 - #35 (
+INFO  21:32:49,194 - #42 5
+INFO  21:32:49,194 - #36 )
+INFO  21:32:49,194 - #32 ;
+INFO  21:32:49,194 - #9 return
+INFO  21:32:49,194 - #32 ;
+INFO  21:32:49,194 - #40 }
+INFO  21:32:49,194 - #10 void
+INFO  21:32:49,194 - #43 main
+INFO  21:32:49,194 - #35 (
+INFO  21:32:49,194 - #36 )
+INFO  21:32:49,194 - #43 int
+INFO  21:32:49,194 - #43 a
+INFO  21:32:49,194 - #32 ;
+INFO  21:32:49,194 - #43 bool
+INFO  21:32:49,194 - #43 b
+INFO  21:32:49,194 - #32 ;
+INFO  21:32:49,194 - #39 {
+INFO  21:32:49,194 - #43 p
+INFO  21:32:49,194 - #29 =
+INFO  21:32:49,194 - #43 p
+INFO  21:32:49,194 - #16 +
+INFO  21:32:49,194 - #42 2
+INFO  21:32:49,241 - #32 ;
+INFO  21:32:49,241 - #43 fja
+INFO  21:32:49,241 - #35 (
+INFO  21:32:49,241 - #36 )
+INFO  21:32:49,241 - #32 ;
+INFO  21:32:49,241 - #9 return
+INFO  21:32:49,241 - #32 ;
+INFO  21:32:49,241 - #40 }
+INFO  21:32:49,241 - #40 }
+INFO  21:32:49,265 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  21:32:49,265 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+INFO  21:32:49,265 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 13
+INFO  21:32:49,265 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  21:32:49,265 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 15
+ERROR 21:32:49,265 - Konstanti ne moze biti dodeljena vrednost: linija 17
+INFO  21:32:49,265 - Pronadjen poziv funkcije fja: linija 18

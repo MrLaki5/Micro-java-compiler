@@ -1,0 +1,50 @@
+INFO  21:30:07,429 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  21:30:07,475 - #2 program
+INFO  21:30:07,499 - #43 ImeMogaProgramaa
+INFO  21:30:07,499 - #15 const
+INFO  21:30:07,499 - #43 int
+INFO  21:30:07,499 - #43 p
+INFO  21:30:07,499 - #29 =
+INFO  21:30:07,499 - #42 5
+INFO  21:30:07,499 - #32 ;
+INFO  21:30:07,499 - #39 {
+INFO  21:30:07,499 - #10 void
+INFO  21:30:07,499 - #43 fja
+INFO  21:30:07,499 - #35 (
+INFO  21:30:07,499 - #36 )
+INFO  21:30:07,499 - #39 {
+INFO  21:30:07,499 - #7 print
+INFO  21:30:07,499 - #35 (
+INFO  21:30:07,499 - #42 5
+INFO  21:30:07,499 - #36 )
+INFO  21:30:07,499 - #32 ;
+INFO  21:30:07,499 - #40 }
+INFO  21:30:07,499 - #10 void
+INFO  21:30:07,499 - #43 main
+INFO  21:30:07,499 - #35 (
+INFO  21:30:07,499 - #36 )
+INFO  21:30:07,499 - #43 int
+INFO  21:30:07,499 - #43 a
+INFO  21:30:07,499 - #32 ;
+INFO  21:30:07,523 - #43 bool
+INFO  21:30:07,523 - #43 b
+INFO  21:30:07,523 - #32 ;
+INFO  21:30:07,523 - #39 {
+INFO  21:30:07,523 - #43 p
+INFO  21:30:07,523 - #31 --
+INFO  21:30:07,523 - #32 ;
+INFO  21:30:07,523 - #43 fja
+INFO  21:30:07,523 - #35 (
+INFO  21:30:07,523 - #36 )
+INFO  21:30:07,523 - #32 ;
+INFO  21:30:07,545 - #9 return
+INFO  21:30:07,545 - #32 ;
+INFO  21:30:07,545 - #40 }
+INFO  21:30:07,545 - #40 }
+INFO  21:30:07,545 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  21:30:07,545 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+INFO  21:30:07,545 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 12
+INFO  21:30:07,545 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 13
+INFO  21:30:07,545 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 14
+ERROR 21:30:07,545 - Konstanti ne moze biti dodeljena vrednost: linija 16
+INFO  21:30:07,545 - Pronadjen poziv funkcije fja: linija 17

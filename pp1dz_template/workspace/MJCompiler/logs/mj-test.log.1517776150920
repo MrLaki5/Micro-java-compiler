@@ -1,0 +1,47 @@
+INFO  21:03:26,626 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  21:03:26,672 - #2 program
+INFO  21:03:26,672 - #43 ImeMogaProgramaa
+INFO  21:03:26,672 - #15 const
+INFO  21:03:26,688 - #43 int
+INFO  21:03:26,688 - #43 p
+INFO  21:03:26,688 - #29 =
+INFO  21:03:26,688 - #42 5
+INFO  21:03:26,688 - #32 ;
+INFO  21:03:26,688 - #39 {
+INFO  21:03:26,688 - #43 int
+INFO  21:03:26,688 - #43 fja
+INFO  21:03:26,688 - #35 (
+INFO  21:03:26,688 - #36 )
+INFO  21:03:26,688 - #39 {
+INFO  21:03:26,688 - #7 print
+INFO  21:03:26,688 - #35 (
+INFO  21:03:26,688 - #42 5
+INFO  21:03:26,688 - #36 )
+INFO  21:03:26,688 - #32 ;
+INFO  21:03:26,688 - #40 }
+INFO  21:03:26,704 - #10 void
+INFO  21:03:26,704 - #43 main
+INFO  21:03:26,704 - #35 (
+INFO  21:03:26,704 - #36 )
+INFO  21:03:26,704 - #43 int
+INFO  21:03:26,704 - #43 a
+INFO  21:03:26,704 - #32 ;
+INFO  21:03:26,704 - #43 bool
+INFO  21:03:26,704 - #43 b
+INFO  21:03:26,704 - #32 ;
+INFO  21:03:26,704 - #39 {
+INFO  21:03:26,704 - #43 fja
+INFO  21:03:26,704 - #35 (
+INFO  21:03:26,704 - #36 )
+INFO  21:03:26,704 - #32 ;
+INFO  21:03:26,704 - #9 return
+INFO  21:03:26,704 - #32 ;
+INFO  21:03:26,704 - #40 }
+INFO  21:03:26,704 - #40 }
+INFO  21:03:26,719 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  21:03:26,719 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+ERROR 21:03:26,719 - Funcija fja nema return iskaz: linija 7
+INFO  21:03:26,719 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 12
+INFO  21:03:26,719 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 13
+INFO  21:03:26,719 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 14
+INFO  21:03:26,719 - Pronadjen poziv funkcije fja: linija 16

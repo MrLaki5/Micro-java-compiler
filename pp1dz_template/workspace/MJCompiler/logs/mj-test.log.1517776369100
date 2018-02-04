@@ -1,0 +1,57 @@
+INFO  21:32:03,233 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  21:32:03,304 - #2 program
+INFO  21:32:03,304 - #43 ImeMogaProgramaa
+INFO  21:32:03,304 - #15 const
+INFO  21:32:03,304 - #43 int
+INFO  21:32:03,304 - #43 p
+INFO  21:32:03,304 - #29 =
+INFO  21:32:03,304 - #42 5
+INFO  21:32:03,304 - #32 ;
+INFO  21:32:03,304 - #39 {
+INFO  21:32:03,304 - #10 void
+INFO  21:32:03,327 - #43 fja
+INFO  21:32:03,327 - #35 (
+INFO  21:32:03,327 - #36 )
+INFO  21:32:03,350 - #39 {
+INFO  21:32:03,350 - #7 print
+INFO  21:32:03,350 - #35 (
+INFO  21:32:03,350 - #42 5
+INFO  21:32:03,350 - #36 )
+INFO  21:32:03,350 - #32 ;
+INFO  21:32:03,350 - #9 return
+INFO  21:32:03,350 - #42 5
+INFO  21:32:03,350 - #32 ;
+INFO  21:32:03,350 - #40 }
+INFO  21:32:03,350 - #10 void
+INFO  21:32:03,350 - #43 main
+INFO  21:32:03,350 - #35 (
+INFO  21:32:03,350 - #36 )
+INFO  21:32:03,350 - #43 int
+INFO  21:32:03,350 - #43 a
+INFO  21:32:03,350 - #32 ;
+INFO  21:32:03,350 - #43 bool
+INFO  21:32:03,350 - #43 b
+INFO  21:32:03,350 - #32 ;
+INFO  21:32:03,350 - #39 {
+INFO  21:32:03,350 - #43 p
+INFO  21:32:03,350 - #29 =
+INFO  21:32:03,350 - #43 p
+INFO  21:32:03,350 - #16 +
+INFO  21:32:03,350 - #42 2
+INFO  21:32:03,350 - #32 ;
+INFO  21:32:03,350 - #43 fja
+INFO  21:32:03,350 - #35 (
+INFO  21:32:03,350 - #36 )
+INFO  21:32:03,350 - #32 ;
+INFO  21:32:03,350 - #9 return
+INFO  21:32:03,350 - #32 ;
+INFO  21:32:03,350 - #40 }
+INFO  21:32:03,350 - #40 }
+INFO  21:32:03,374 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  21:32:03,374 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+ERROR 21:32:03,374 - Tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije fja: linija 10
+INFO  21:32:03,374 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 13
+INFO  21:32:03,374 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  21:32:03,374 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 15
+ERROR 21:32:03,374 - Konstanti ne moze biti dodeljena vrednost: linija 17
+INFO  21:32:03,374 - Pronadjen poziv funkcije fja: linija 18

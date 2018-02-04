@@ -1,0 +1,14 @@
+program ImeMogaProgramaa
+{	
+
+	void main()
+	int a; 
+	{
+		a=2;
+		a--;
+		print(a);
+		a++;
+		print(a);
+		
+	}
+}

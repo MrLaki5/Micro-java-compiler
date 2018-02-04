@@ -1,0 +1,16 @@
+program ImeMogaProgramaa
+{	
+
+	void main()
+	int a; 
+	{
+		a=a-2;
+		a=-3;
+		print(a);
+		a=a-2;
+		print(a);
+		a=(2+3);
+		a++;
+		print(a);
+	}
+}

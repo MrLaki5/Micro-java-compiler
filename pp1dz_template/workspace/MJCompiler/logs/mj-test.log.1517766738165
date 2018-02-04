@@ -1,0 +1,83 @@
+INFO  18:48:52,587 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  18:48:52,638 - #2 program
+INFO  18:48:52,638 - #43 ImeMogaProgramaa
+INFO  18:48:52,638 - #15 const
+INFO  18:48:52,649 - #43 int
+INFO  18:48:52,649 - #43 p
+INFO  18:48:52,649 - #29 =
+INFO  18:48:52,649 - #42 5
+INFO  18:48:52,649 - #32 ;
+INFO  18:48:52,649 - #39 {
+INFO  18:48:52,649 - #10 void
+INFO  18:48:52,649 - #43 main
+INFO  18:48:52,649 - #35 (
+INFO  18:48:52,649 - #36 )
+INFO  18:48:52,649 - #43 int
+INFO  18:48:52,649 - #43 a
+INFO  18:48:52,649 - #32 ;
+INFO  18:48:52,649 - #43 bool
+INFO  18:48:52,649 - #43 b
+INFO  18:48:52,649 - #32 ;
+INFO  18:48:52,649 - #39 {
+INFO  18:48:52,649 - #43 a
+INFO  18:48:52,649 - #29 =
+INFO  18:48:52,649 - #43 a
+INFO  18:48:52,649 - #17 -
+INFO  18:48:52,649 - #42 2
+INFO  18:48:52,649 - #32 ;
+INFO  18:48:52,649 - #43 a
+INFO  18:48:52,660 - #29 =
+INFO  18:48:52,660 - #17 -
+INFO  18:48:52,660 - #42 3
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #7 print
+INFO  18:48:52,660 - #35 (
+INFO  18:48:52,660 - #43 a
+INFO  18:48:52,660 - #36 )
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #43 a
+INFO  18:48:52,660 - #29 =
+INFO  18:48:52,660 - #43 a
+INFO  18:48:52,660 - #17 -
+INFO  18:48:52,660 - #42 2
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #7 print
+INFO  18:48:52,660 - #35 (
+INFO  18:48:52,660 - #43 a
+INFO  18:48:52,660 - #36 )
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #43 a
+INFO  18:48:52,660 - #29 =
+INFO  18:48:52,660 - #35 (
+INFO  18:48:52,660 - #42 2
+INFO  18:48:52,660 - #16 +
+INFO  18:48:52,660 - #42 3
+INFO  18:48:52,660 - #19 /
+INFO  18:48:52,660 - #42 3
+INFO  18:48:52,660 - #36 )
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #43 a
+INFO  18:48:52,660 - #30 ++
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #7 print
+INFO  18:48:52,660 - #35 (
+INFO  18:48:52,660 - #45 "m"
+INFO  18:48:52,660 - #36 )
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #43 b
+INFO  18:48:52,660 - #29 =
+INFO  18:48:52,660 - #44 false
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #7 print
+INFO  18:48:52,660 - #35 (
+INFO  18:48:52,660 - #43 p
+INFO  18:48:52,660 - #36 )
+INFO  18:48:52,660 - #32 ;
+INFO  18:48:52,660 - #40 }
+INFO  18:48:52,660 - #40 }
+INFO  18:48:52,660 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  18:48:52,660 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+INFO  18:48:52,660 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 8
+INFO  18:48:52,671 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 9
+INFO  18:48:52,671 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  18:48:52,671 - Parsiranje uspesno zavrseno!

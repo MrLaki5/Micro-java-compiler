@@ -1,0 +1,56 @@
+INFO  17:51:01,842 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  17:51:01,905 - #2 program
+INFO  17:51:01,905 - #43 ImeMogaProgramaa
+INFO  17:51:01,905 - #39 {
+INFO  17:51:01,905 - #10 void
+INFO  17:51:01,905 - #43 main
+INFO  17:51:01,905 - #35 (
+INFO  17:51:01,905 - #36 )
+INFO  17:51:01,905 - #43 int
+INFO  17:51:01,905 - #43 a
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #39 {
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #29 =
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #17 -
+INFO  17:51:01,926 - #42 2
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #29 =
+INFO  17:51:01,926 - #17 -
+INFO  17:51:01,926 - #42 3
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #7 print
+INFO  17:51:01,926 - #35 (
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #36 )
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #29 =
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #17 -
+INFO  17:51:01,926 - #42 2
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #7 print
+INFO  17:51:01,926 - #35 (
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #36 )
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #29 =
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #17 -
+INFO  17:51:01,926 - #42 2
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #7 print
+INFO  17:51:01,926 - #35 (
+INFO  17:51:01,926 - #43 a
+INFO  17:51:01,926 - #36 )
+INFO  17:51:01,926 - #32 ;
+INFO  17:51:01,926 - #40 }
+INFO  17:51:01,926 - #40 }
+INFO  17:51:01,947 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 4
+INFO  17:51:01,947 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 5
+INFO  17:51:01,947 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  17:51:01,969 - Parsiranje uspesno zavrseno!

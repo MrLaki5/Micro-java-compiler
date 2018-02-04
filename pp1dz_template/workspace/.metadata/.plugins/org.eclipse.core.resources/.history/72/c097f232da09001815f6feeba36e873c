@@ -1,0 +1,22 @@
+program ImeMogaProgramaa
+
+const int p=5;
+
+{	
+
+	void main()
+	int a;
+	bool b; 
+	{
+		a=a-2;
+		p=-3;
+		print(a);
+		a=a-2;
+		print(a);
+		a=(2+3/3);
+		a++;
+		print("m");
+		b=false;
+		print(p);
+	}
+}

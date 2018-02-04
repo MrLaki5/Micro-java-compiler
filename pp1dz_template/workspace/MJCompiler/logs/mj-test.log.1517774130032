@@ -1,0 +1,52 @@
+INFO  20:55:20,110 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  20:55:20,157 - #2 program
+INFO  20:55:20,157 - #43 ImeMogaProgramaa
+INFO  20:55:20,157 - #15 const
+INFO  20:55:20,157 - #43 int
+INFO  20:55:20,157 - #43 p
+INFO  20:55:20,157 - #29 =
+INFO  20:55:20,157 - #42 5
+INFO  20:55:20,157 - #32 ;
+INFO  20:55:20,157 - #39 {
+INFO  20:55:20,157 - #10 void
+INFO  20:55:20,157 - #43 fja
+INFO  20:55:20,157 - #35 (
+INFO  20:55:20,157 - #36 )
+INFO  20:55:20,173 - #43 int
+INFO  20:55:20,173 - #43 c
+INFO  20:55:20,173 - #32 ;
+INFO  20:55:20,173 - #39 {
+INFO  20:55:20,173 - #7 print
+INFO  20:55:20,173 - #35 (
+INFO  20:55:20,173 - #43 p
+INFO  20:55:20,173 - #36 )
+INFO  20:55:20,173 - #32 ;
+INFO  20:55:20,173 - #9 return
+INFO  20:55:20,173 - #32 ;
+INFO  20:55:20,173 - #40 }
+INFO  20:55:20,173 - #10 void
+INFO  20:55:20,173 - #43 main
+INFO  20:55:20,173 - #35 (
+INFO  20:55:20,173 - #36 )
+INFO  20:55:20,173 - #43 int
+INFO  20:55:20,173 - #43 a
+INFO  20:55:20,173 - #32 ;
+INFO  20:55:20,173 - #43 bool
+INFO  20:55:20,173 - #43 b
+INFO  20:55:20,173 - #32 ;
+INFO  20:55:20,173 - #39 {
+INFO  20:55:20,173 - #43 fja
+INFO  20:55:20,173 - #35 (
+INFO  20:55:20,173 - #36 )
+INFO  20:55:20,173 - #32 ;
+INFO  20:55:20,173 - #40 }
+INFO  20:55:20,173 - #40 }
+INFO  20:55:20,188 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  20:55:20,188 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+INFO  20:55:20,188 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 8
+INFO  20:55:20,188 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  20:55:20,188 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 15
+INFO  20:55:20,188 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 16
+INFO  20:55:20,188 - Pronadjen poziv funkcije fja: linija 18
+INFO  20:55:20,188 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  20:55:20,203 - Parsiranje uspesno zavrseno!

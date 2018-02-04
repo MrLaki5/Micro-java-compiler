@@ -1,15 +1,21 @@
 program ImeMogaProgramaa
+
+const int p=5;
+
 {	
 
-	void main()
-	int a; 
+	int fja()
 	{
-		a=7%3*4+1;
-		print(1);
-		print(3);
+		print(4);
+		return 5;
+	}
+
+	void main()
+	int a;
+	bool b; 
+	{
+		a=fja();
 		print(a);
-		a++;
-		a--;
-		print(a);
+		return;
 	}
 }

@@ -1,0 +1,10 @@
+program ImeMogaProgramaa
+{	
+
+	void main()
+	int a; 
+	{
+		a=2;
+		a--;
+	}
+}

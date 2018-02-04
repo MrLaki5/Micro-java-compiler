@@ -2,14 +2,21 @@ package rs.ac.bg.etf.pp1;
 
 import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.MethodVarCounter;
+import rs.ac.bg.etf.pp1.ast.AnotherConstDecl;
 import rs.ac.bg.etf.pp1.ast.AnotherExpr;
 import rs.ac.bg.etf.pp1.ast.AnotherTerm;
+import rs.ac.bg.etf.pp1.ast.BoolConstFactor;
+import rs.ac.bg.etf.pp1.ast.BooleanValue;
 import rs.ac.bg.etf.pp1.ast.CharConstFactor;
+import rs.ac.bg.etf.pp1.ast.ConstDecl;
+import rs.ac.bg.etf.pp1.ast.DesignatorActFactor;
 import rs.ac.bg.etf.pp1.ast.DesignatorNoActFactor;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementActP;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementMM;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementPP;
 import rs.ac.bg.etf.pp1.ast.DivMulop;
+import rs.ac.bg.etf.pp1.ast.IntegerValue;
 import rs.ac.bg.etf.pp1.ast.MethodDecl;
 import rs.ac.bg.etf.pp1.ast.MethodType;
 import rs.ac.bg.etf.pp1.ast.MethodTypeName;
@@ -18,9 +25,12 @@ import rs.ac.bg.etf.pp1.ast.MulMulop;
 import rs.ac.bg.etf.pp1.ast.NumberConstFactor;
 import rs.ac.bg.etf.pp1.ast.PlusAddop;
 import rs.ac.bg.etf.pp1.ast.PrintNoNumStmt;
+import rs.ac.bg.etf.pp1.ast.ReadStmt;
 import rs.ac.bg.etf.pp1.ast.ReturnExprStmt;
 import rs.ac.bg.etf.pp1.ast.ReturnNoExprStmt;
 import rs.ac.bg.etf.pp1.ast.SingleDesignator;
+import rs.ac.bg.etf.pp1.ast.SingleNegExpr;
+import rs.ac.bg.etf.pp1.ast.StringValue;
 import rs.ac.bg.etf.pp1.ast.SyntaxNode;
 import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
 import rs.etf.pp1.mj.runtime.Code;
@@ -33,6 +43,11 @@ public class CodeGenerator extends VisitorAdaptor {
 	private int varCount;
 	private int paramCnt;
 	private int mainPc;
+	private Struct booleanStr;
+	
+	public CodeGenerator(Struct booleanStr){
+		this.booleanStr=booleanStr;
+	}
 	
 	public int getMainPc() {
 		return mainPc;
@@ -99,8 +114,14 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.print);
 		}
 		else{
-			Code.loadConst(1);		
-			Code.put(Code.bprint);
+			if(t==booleanStr){
+				Code.loadConst(5);
+				Code.put(Code.print);
+			}
+			else{
+				Code.loadConst(1);		
+				Code.put(Code.bprint);
+			}
 		}
 		
 	}
@@ -113,12 +134,26 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.load(new Obj(Obj.Con, "", Tab.charType, factor.getC1().charAt(1), 0));
 	}
 	
+	public void visit(BoolConstFactor factor){
+		if(factor.getB1().equals("true")){
+			Code.load(new Obj(Obj.Con, "", booleanStr, 1, 0));
+		}
+		else{
+			Code.load(new Obj(Obj.Con, "", booleanStr, 0, 0));
+		}
+	}
+	
 	public void visit(SingleDesignator desig) {
-		Code.load(desig.obj);
+		if(!(desig.getParent() instanceof DesignatorStatementActP)){
+			if(!(desig.getParent() instanceof DesignatorActFactor)){
+				Code.load(desig.obj);
+			}
+		}
 	}
 	
 	public void visit(DesignatorStatementExpr designatorStatementExpr) {
 		Code.store(designatorStatementExpr.getDesignator().obj);
+		Code.put(Code.pop);
 	}
 	
 	public void visit(AnotherExpr addExpr) {
@@ -128,6 +163,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		else{
 			Code.put(Code.sub);
 		}
+	}
+	
+	public void visit(SingleNegExpr negExpr){
+		Code.put(Code.neg);
 	}
 	
 	public void visit(AnotherTerm term){
@@ -156,10 +195,55 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.store(statement.getDesignator().obj);
 	}
 	
+	public void visit(ReadStmt statement){
+		Code.put(Code.read);
+		Code.store(statement.getDesignator().obj);
+	}
+	
+	public void visit(DesignatorStatementActP FuncCall) {
+		Obj functionObj = FuncCall.getDesignator().obj;
+		int offset = functionObj.getAdr() - Code.pc; 
+		Code.put(Code.call);
+		Code.put2(offset);
+	}
+	
+	public void visit(DesignatorActFactor FuncCall) {
+		Obj functionObj = FuncCall.getDesignator().obj;
+		int offset = functionObj.getAdr() - Code.pc; 
+		Code.put(Code.call);
+		Code.put2(offset);
+	}
+	
+	
 	/*
-	@Override
+	public void visit(BooleanValue boolVal){
+		if(boolVal.getValueType().equals("true")){
+			Code.load(new Obj(Obj.Con, "", booleanStr, 1, 0));
+		}
+		else{
+			Code.load(new Obj(Obj.Con, "", booleanStr, 0, 0));
+		}
+	}
 	
+	public void visit(IntegerValue intVal){
+		Code.load(new Obj(Obj.Con, "", Tab.intType, intVal.getValueType(), 0));
+	}
 	
+	public void visit(StringValue charVal){
+		Code.load(new Obj(Obj.Con, "", Tab.charType, charVal.getValueType().charAt(1), 0));
+	}
+	
+	public void visit(ConstDecl constDecl){
+		Obj constTemp=Tab.find(constDecl.getVarName());
+		Code.store(constTemp);
+	}
+	
+	public void visit(AnotherConstDecl constDecl){
+		Obj constTemp=Tab.find(constDecl.getVarName());
+		Code.store(constTemp);
+	}
+	*/
+	/*
 	@Override
 	public void visit(VarDecl VarDecl) {
 		varCount++;
@@ -170,13 +254,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		paramCnt++;
 	}	
 	
-	
-	@Override
-	
-	
-	@Override
-	
-	
 	@Override
 	public void visit(FuncCall FuncCall) {
 		Obj functionObj = FuncCall.getDesignator().obj;
@@ -184,12 +261,5 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.call);
 		Code.put2(offset);
 	}
-	
-	@Override
-	
-	
-	@Override
-	
-	
 	*/
 }

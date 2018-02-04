@@ -1,0 +1,18 @@
+program ImeMogaProgramaa
+{	
+
+	void main()
+	int a; 
+	{
+		a=7%3*4+1;
+		a=-a;
+		print(1);
+		print(3);
+		print(a);
+		a++;
+		a--;
+		read(a);
+		a++;
+		print(a);
+	}
+}

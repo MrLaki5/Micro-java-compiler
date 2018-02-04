@@ -170,7 +170,27 @@ public class SemanticPass extends VisitorAdaptor {
 			return;
 		}
 		boolean isConstType=constDecl.getConstValue().struct.equals(tempConstType);
-		checkAndInitConst(isConstType, tempName, constDecl);
+		Obj temp=checkAndInitConst(isConstType, tempName, constDecl);
+		if(temp!=null){
+			if(constDecl.getConstValue() instanceof IntegerValue){
+				temp.setAdr(((IntegerValue)constDecl.getConstValue()).getValueType());
+			}
+			else{
+				if(constDecl.getConstValue() instanceof StringValue){
+					temp.setAdr(((StringValue)constDecl.getConstValue()).getValueType().charAt(1));
+				}
+				else{
+					if(constDecl.getConstValue() instanceof BooleanValue){
+						if(((BooleanValue)constDecl.getConstValue()).getValueType().equals("true")){
+							temp.setAdr(1);
+						}
+						else{
+							temp.setAdr(0);
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	public void visit(AnotherConstDecl constDecl){
@@ -179,7 +199,27 @@ public class SemanticPass extends VisitorAdaptor {
 			return;
 		}
 		boolean isConstType=constDecl.getConstValue().struct.equals(tempConstType);
-		checkAndInitConst(isConstType, tempName, constDecl);
+		Obj temp=checkAndInitConst(isConstType, tempName, constDecl);
+		if(temp!=null){
+			if(constDecl.getConstValue() instanceof IntegerValue){
+				temp.setAdr(((IntegerValue)constDecl.getConstValue()).getValueType());
+			}
+			else{
+				if(constDecl.getConstValue() instanceof StringValue){
+					temp.setAdr(((StringValue)constDecl.getConstValue()).getValueType().charAt(1));
+				}
+				else{
+					if(constDecl.getConstValue() instanceof BooleanValue){
+						if(((BooleanValue)constDecl.getConstValue()).getValueType().equals("true")){
+							temp.setAdr(1);
+						}
+						else{
+							temp.setAdr(0);
+						}
+					}
+				}
+			}
+		}
 	}
 
 	public void visit(ConstDeclType constType){
@@ -364,6 +404,9 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public void visit(DesignatorStatementExpr desStatement){
+		if(checkIfConst(desStatement.getDesignator().obj, desStatement)){
+			return;
+		}
 		Struct desig=checkIfArrayIsOkInStatement(desStatement.getDesignator(), desStatement);
 		Struct expr=desStatement.getExpr().struct;
 		if (!expr.assignableTo(desig)){
@@ -372,6 +415,9 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public void visit(DesignatorStatementPP ppStatement){
+		if(checkIfConst(ppStatement.getDesignator().obj, ppStatement)){
+			return;
+		}
 		Struct desig=checkIfArrayIsOkInStatement(ppStatement.getDesignator(), ppStatement);
 		if(desig!=Tab.intType){
 			report_error("Nekompatibilni tip u ++ operaciji", ppStatement);
@@ -379,6 +425,9 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	public void visit(DesignatorStatementMM ppStatement){
+		if(checkIfConst(ppStatement.getDesignator().obj, ppStatement)){
+			return;
+		}
 		Struct desig=checkIfArrayIsOkInStatement(ppStatement.getDesignator(), ppStatement);
 		if(desig!=Tab.intType){
 			report_error("Nekompatibilni tip u -- operaciji", ppStatement);
@@ -467,13 +516,15 @@ public class SemanticPass extends VisitorAdaptor {
 		report_info(pomS+ name+", objekat u tabeli simbola "+varNode.toString(), info);
 	}
 	
-	public void checkAndInitConst(boolean isConstType, String name, SyntaxNode info){
+	public Obj checkAndInitConst(boolean isConstType, String name, SyntaxNode info){
 		if(isConstType){
 			Obj varNode = Tab.insert(Obj.Con, name, tempConstType);
 			report_info("Deklarisana konstanta "+ name+", objekat u tabeli simbola "+varNode.toString(), info);
+			return varNode;
 		}
 		else{
 			report_error("Konstanti "+name+" nije dodeljen ispravan tip", info);
+			return null;
 		}
 	}
 	
@@ -520,6 +571,14 @@ public class SemanticPass extends VisitorAdaptor {
 			ret=designator.obj.getType();
 		}
 		return ret;
+	}
+	
+	public boolean checkIfConst(Obj objectT, SyntaxNode info){
+		if(objectT.getKind()==objectT.Con){
+			report_error("Konstanti ne moze biti dodeljena vrednost", info);
+			return true;
+		}
+		return false;
 	}
 	
 }
