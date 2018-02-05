@@ -1,0 +1,24 @@
+program ImeMogaProgramaa
+
+const int p=5;
+
+{	
+
+	int fja()
+	{
+		print(4);
+		return 5;
+	}
+
+	void main()
+	int a;
+	bool b; 
+	{
+		
+		chr(12);
+	
+		a=fja();
+		print(a);
+		return;
+	}
+}

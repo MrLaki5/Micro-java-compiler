@@ -1,0 +1,28 @@
+program ImeMogaProgramaa
+
+const int p=5;
+
+{	
+
+	int fja()
+	{
+		print(4);
+		return p;
+	}
+
+	void main()
+	int a, niz[];
+	int p;
+	char c, nizc[];
+	bool b; 
+	{
+		b=1;
+		niz= new int[4];
+		nizc= new char[5];
+		p=7;
+		print(p);
+		a=fja();
+		print(a);
+		return;
+	}
+}

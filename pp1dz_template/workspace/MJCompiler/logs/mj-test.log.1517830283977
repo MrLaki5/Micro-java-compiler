@@ -1,0 +1,47 @@
+INFO  12:31:09,367 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  12:31:09,398 - #2 program
+INFO  12:31:09,398 - #43 ImeMogaProgramaa
+INFO  12:31:09,398 - #15 const
+INFO  12:31:09,398 - #43 int
+INFO  12:31:09,398 - #43 p
+INFO  12:31:09,414 - #29 =
+INFO  12:31:09,414 - #42 5
+INFO  12:31:09,414 - #32 ;
+INFO  12:31:09,414 - #39 {
+INFO  12:31:09,414 - #43 int
+INFO  12:31:09,414 - #43 fja
+INFO  12:31:09,414 - #35 (
+INFO  12:31:09,414 - #36 )
+INFO  12:31:09,414 - #39 {
+INFO  12:31:09,414 - #7 print
+INFO  12:31:09,414 - #35 (
+INFO  12:31:09,414 - #42 4
+INFO  12:31:09,414 - #36 )
+INFO  12:31:09,414 - #32 ;
+INFO  12:31:09,414 - #9 return
+INFO  12:31:09,414 - #43 p
+INFO  12:31:09,414 - #32 ;
+INFO  12:31:09,414 - #40 }
+INFO  12:31:09,414 - #10 void
+INFO  12:31:09,414 - #43 main
+INFO  12:31:09,414 - #35 (
+INFO  12:31:09,414 - #36 )
+INFO  12:31:09,414 - #43 int
+INFO  12:31:09,414 - #43 a
+INFO  12:31:09,414 - #33 ,
+INFO  12:31:09,414 - #43 niz
+INFO  12:31:09,414 - #37 [
+INFO  12:31:09,414 - #38 ]
+INFO  12:31:09,414 - #32 ;
+INFO  12:31:09,414 - #43 int
+INFO  12:31:09,414 - #43 p
+INFO  12:31:09,414 - #32 ;
+INFO  12:31:09,414 - #43 char
+INFO  12:31:09,414 - #43 c
+INFO  12:31:09,414 - #33 ,
+INFO  12:31:09,414 - #43 nizc
+INFO  12:31:09,414 - #37 [
+INFO  12:31:09,414 - #38 ]
+INFO  12:31:09,414 - #43 bool
+ERROR 12:31:09,414 - Sintaksna greska na liniji 17
+ERROR 12:31:09,414 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 17

@@ -1,0 +1,101 @@
+INFO  12:31:46,976 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  12:31:47,008 - #2 program
+INFO  12:31:47,008 - #43 ImeMogaProgramaa
+INFO  12:31:47,008 - #15 const
+INFO  12:31:47,023 - #43 int
+INFO  12:31:47,023 - #43 p
+INFO  12:31:47,023 - #29 =
+INFO  12:31:47,023 - #42 5
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #39 {
+INFO  12:31:47,023 - #43 int
+INFO  12:31:47,023 - #43 fja
+INFO  12:31:47,023 - #35 (
+INFO  12:31:47,023 - #36 )
+INFO  12:31:47,023 - #39 {
+INFO  12:31:47,023 - #7 print
+INFO  12:31:47,023 - #35 (
+INFO  12:31:47,023 - #42 4
+INFO  12:31:47,023 - #36 )
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #9 return
+INFO  12:31:47,023 - #43 p
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #40 }
+INFO  12:31:47,023 - #10 void
+INFO  12:31:47,023 - #43 main
+INFO  12:31:47,023 - #35 (
+INFO  12:31:47,023 - #36 )
+INFO  12:31:47,023 - #43 int
+INFO  12:31:47,023 - #43 a
+INFO  12:31:47,023 - #33 ,
+INFO  12:31:47,023 - #43 niz
+INFO  12:31:47,023 - #37 [
+INFO  12:31:47,023 - #38 ]
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #43 int
+INFO  12:31:47,023 - #43 p
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #43 char
+INFO  12:31:47,023 - #43 c
+INFO  12:31:47,023 - #33 ,
+INFO  12:31:47,023 - #43 nizc
+INFO  12:31:47,023 - #37 [
+INFO  12:31:47,023 - #38 ]
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #43 bool
+INFO  12:31:47,023 - #43 b
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #39 {
+INFO  12:31:47,023 - #43 niz
+INFO  12:31:47,023 - #29 =
+INFO  12:31:47,023 - #6 new
+INFO  12:31:47,023 - #43 int
+INFO  12:31:47,023 - #37 [
+INFO  12:31:47,023 - #42 4
+INFO  12:31:47,023 - #38 ]
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #43 nizc
+INFO  12:31:47,023 - #29 =
+INFO  12:31:47,023 - #6 new
+INFO  12:31:47,023 - #43 char
+INFO  12:31:47,023 - #37 [
+INFO  12:31:47,023 - #42 5
+INFO  12:31:47,023 - #38 ]
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #43 p
+INFO  12:31:47,023 - #29 =
+INFO  12:31:47,023 - #42 7
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #7 print
+INFO  12:31:47,023 - #35 (
+INFO  12:31:47,023 - #43 p
+INFO  12:31:47,023 - #36 )
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #43 a
+INFO  12:31:47,023 - #29 =
+INFO  12:31:47,023 - #43 fja
+INFO  12:31:47,023 - #35 (
+INFO  12:31:47,023 - #36 )
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #7 print
+INFO  12:31:47,023 - #35 (
+INFO  12:31:47,023 - #43 a
+INFO  12:31:47,023 - #36 )
+INFO  12:31:47,023 - #32 ;
+INFO  12:31:47,023 - #9 return
+INFO  12:31:47,039 - #32 ;
+INFO  12:31:47,039 - #40 }
+INFO  12:31:47,039 - #40 }
+INFO  12:31:47,039 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  12:31:47,039 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+INFO  12:31:47,039 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 13
+INFO  12:31:47,039 - Deklarisan niz niz, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  12:31:47,039 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 14
+INFO  12:31:47,039 - Deklarisana promenljiva p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 15
+INFO  12:31:47,039 - Deklarisan niz nizc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 16
+INFO  12:31:47,039 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 16
+INFO  12:31:47,039 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 17
+INFO  12:31:47,039 - Pronadjen poziv funkcije fja: linija 23
+INFO  12:31:47,055 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  12:31:47,211 - Parsiranje uspesno zavrseno!

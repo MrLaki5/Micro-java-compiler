@@ -4,6 +4,7 @@ import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.MethodVarCounter;
 import rs.ac.bg.etf.pp1.ast.AnotherConstDecl;
 import rs.ac.bg.etf.pp1.ast.AnotherExpr;
+import rs.ac.bg.etf.pp1.ast.AnotherExprDesignator;
 import rs.ac.bg.etf.pp1.ast.AnotherTerm;
 import rs.ac.bg.etf.pp1.ast.BoolConstFactor;
 import rs.ac.bg.etf.pp1.ast.BooleanValue;
@@ -22,9 +23,11 @@ import rs.ac.bg.etf.pp1.ast.MethodType;
 import rs.ac.bg.etf.pp1.ast.MethodTypeName;
 import rs.ac.bg.etf.pp1.ast.MethodVoidType;
 import rs.ac.bg.etf.pp1.ast.MulMulop;
+import rs.ac.bg.etf.pp1.ast.NewExprFactor;
 import rs.ac.bg.etf.pp1.ast.NumberConstFactor;
 import rs.ac.bg.etf.pp1.ast.PlusAddop;
 import rs.ac.bg.etf.pp1.ast.PrintNoNumStmt;
+import rs.ac.bg.etf.pp1.ast.PrintNumStmt;
 import rs.ac.bg.etf.pp1.ast.ReadStmt;
 import rs.ac.bg.etf.pp1.ast.ReturnExprStmt;
 import rs.ac.bg.etf.pp1.ast.ReturnNoExprStmt;
@@ -43,6 +46,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	private int varCount;
 	private int paramCnt;
 	private int mainPc;
+	private boolean arrayIs=false;
 	private Struct booleanStr;
 	
 	public CodeGenerator(Struct booleanStr){
@@ -122,8 +126,26 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.loadConst(1);		
 				Code.put(Code.bprint);
 			}
+		}	
+	}
+	
+	public void visit(PrintNumStmt printStmt) {
+		Struct t=printStmt.getExpr().struct;
+		Code.load(new Obj(Obj.Con, "", Tab.intType, printStmt.getN2(), 0));	
+		if(t==Tab.intType){
+			//Code.loadConst(5);
+			Code.put(Code.print);
 		}
-		
+		else{
+			if(t==booleanStr){
+				//Code.loadConst(5);
+				Code.put(Code.print);
+			}
+			else{
+				//Code.loadConst(1);		
+				Code.put(Code.bprint);
+			}
+		}	
 	}
 	
 	public void visit(NumberConstFactor factor) {
@@ -143,17 +165,39 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	
+	public void visit(NewExprFactor factor){
+		Code.put(Code.newarray);
+		if(factor.getType().struct==Tab.charType){
+			Code.put(0);
+		}
+		else{
+			Code.put(1);
+		}
+		arrayIs=true;
+	}
+	
 	public void visit(SingleDesignator desig) {
 		if(!(desig.getParent() instanceof DesignatorStatementActP)){
 			if(!(desig.getParent() instanceof DesignatorActFactor)){
-				Code.load(desig.obj);
+					Code.load(desig.obj);
 			}
 		}
 	}
 	
+	public void visit(AnotherExprDesignator desig){
+		if(!(desig.getParent() instanceof DesignatorStatementExpr)){
+			Code.put(Code.baload);
+		}
+	}
+	
 	public void visit(DesignatorStatementExpr designatorStatementExpr) {
-		Code.store(designatorStatementExpr.getDesignator().obj);
-		Code.put(Code.pop);
+		if(designatorStatementExpr.getDesignator() instanceof SingleDesignator){
+			Code.store(designatorStatementExpr.getDesignator().obj);
+			Code.put(Code.pop);
+		}
+		else{
+			Code.put(Code.bastore);
+		}
 	}
 	
 	public void visit(AnotherExpr addExpr) {
@@ -198,6 +242,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(ReadStmt statement){
 		Code.put(Code.read);
 		Code.store(statement.getDesignator().obj);
+		Code.put(Code.pop);
 	}
 	
 	public void visit(DesignatorStatementActP FuncCall) {

@@ -1,0 +1,13 @@
+INFO  14:06:04,243 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  14:06:04,353 - #2 program
+INFO  14:06:04,353 - #43 ImeMogaProgramaa
+INFO  14:06:04,353 - #15 const
+INFO  14:06:04,353 - #43 int
+INFO  14:06:04,353 - #43 p
+INFO  14:06:04,353 - #29 =
+INFO  14:06:04,353 - #42 2
+INFO  14:06:04,353 - #32 ;
+INFO  14:06:04,353 - #43 int
+INFO  14:06:04,369 - #42 322
+ERROR 14:06:04,369 - Sintaksna greska na liniji 4
+ERROR 14:06:04,369 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4

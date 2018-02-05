@@ -1,0 +1,24 @@
+program ImeMogaProgramaa
+
+const int p=5;
+
+{	
+
+	int fja()
+	{
+		print(4);
+		return p;
+	}
+
+	void main()
+	int a, niz[];
+	int p;
+	char c, nizc[];
+	bool b; 
+	{
+		niz= new int[4];
+		niz[0]=3;
+		print(niz[0],20);
+		return;
+	}
+}

@@ -15,9 +15,6 @@
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclAfterComma"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ArrayPart"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IsArray"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherExprDesignator"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PrintNumStmt"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.NewExprFactor"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ExprFactor"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VisitorAdaptor"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherVarDecl"/>
@@ -36,7 +33,6 @@
 <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.Tab"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.CharConstFactor"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorNoActFactor"/>
-<fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PlusAddop"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherExpr"/>
@@ -57,4 +53,9 @@
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorStatementActP"/>
 <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Obj"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorActFactor"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.NewExprFactor"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherExprDesignator"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.CodeGenerator"/>
+<fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PrintNumStmt"/>
 </qualifiedTypeNameHistroy>

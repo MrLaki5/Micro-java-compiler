@@ -1,0 +1,104 @@
+INFO  12:45:27,554 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  12:45:27,899 - #2 program
+INFO  12:45:27,899 - #43 ImeMogaProgramaa
+INFO  12:45:27,899 - #15 const
+INFO  12:45:27,914 - #43 int
+INFO  12:45:27,914 - #43 p
+INFO  12:45:27,914 - #29 =
+INFO  12:45:27,914 - #42 5
+INFO  12:45:27,914 - #32 ;
+INFO  12:45:27,914 - #39 {
+INFO  12:45:27,914 - #43 int
+INFO  12:45:27,914 - #43 fja
+INFO  12:45:27,914 - #35 (
+INFO  12:45:27,914 - #36 )
+INFO  12:45:27,914 - #39 {
+INFO  12:45:27,914 - #7 print
+INFO  12:45:27,930 - #35 (
+INFO  12:45:27,930 - #42 4
+INFO  12:45:27,930 - #36 )
+INFO  12:45:27,930 - #32 ;
+INFO  12:45:27,930 - #9 return
+INFO  12:45:27,930 - #43 p
+INFO  12:45:27,930 - #32 ;
+INFO  12:45:27,930 - #40 }
+INFO  12:45:27,930 - #10 void
+INFO  12:45:27,930 - #43 main
+INFO  12:45:27,930 - #35 (
+INFO  12:45:27,930 - #36 )
+INFO  12:45:27,930 - #43 int
+INFO  12:45:27,930 - #43 a
+INFO  12:45:27,945 - #33 ,
+INFO  12:45:27,961 - #43 niz
+INFO  12:45:27,961 - #37 [
+INFO  12:45:27,961 - #38 ]
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #43 int
+INFO  12:45:27,961 - #43 p
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #43 char
+INFO  12:45:27,961 - #43 c
+INFO  12:45:27,961 - #33 ,
+INFO  12:45:27,961 - #43 nizc
+INFO  12:45:27,961 - #37 [
+INFO  12:45:27,961 - #38 ]
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #43 bool
+INFO  12:45:27,961 - #43 b
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #39 {
+INFO  12:45:27,961 - #43 b
+INFO  12:45:27,961 - #29 =
+INFO  12:45:27,961 - #42 1
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #43 niz
+INFO  12:45:27,961 - #29 =
+INFO  12:45:27,961 - #6 new
+INFO  12:45:27,961 - #43 int
+INFO  12:45:27,961 - #37 [
+INFO  12:45:27,961 - #42 4
+INFO  12:45:27,961 - #38 ]
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #43 nizc
+INFO  12:45:27,961 - #29 =
+INFO  12:45:27,961 - #6 new
+INFO  12:45:27,961 - #43 char
+INFO  12:45:27,961 - #37 [
+INFO  12:45:27,961 - #42 5
+INFO  12:45:27,961 - #38 ]
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #43 p
+INFO  12:45:27,961 - #29 =
+INFO  12:45:27,961 - #42 7
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #7 print
+INFO  12:45:27,961 - #35 (
+INFO  12:45:27,961 - #43 p
+INFO  12:45:27,961 - #36 )
+INFO  12:45:27,961 - #32 ;
+INFO  12:45:27,961 - #43 a
+INFO  12:45:27,961 - #29 =
+INFO  12:45:27,961 - #43 fja
+INFO  12:45:27,961 - #35 (
+INFO  12:45:27,961 - #36 )
+INFO  12:45:27,977 - #32 ;
+INFO  12:45:27,977 - #7 print
+INFO  12:45:27,977 - #35 (
+INFO  12:45:27,977 - #43 a
+INFO  12:45:27,977 - #36 )
+INFO  12:45:27,977 - #32 ;
+INFO  12:45:27,977 - #9 return
+INFO  12:45:27,977 - #32 ;
+INFO  12:45:27,977 - #40 }
+INFO  12:45:27,977 - #40 }
+INFO  12:45:28,008 - Deklarisana konstanta p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  12:45:28,008 - Obrada funkcije fja, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 7
+INFO  12:45:28,008 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 13
+INFO  12:45:28,008 - Deklarisan niz niz, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  12:45:28,008 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 14
+INFO  12:45:28,008 - Deklarisana promenljiva p, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 15
+INFO  12:45:28,008 - Deklarisan niz nizc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 16
+INFO  12:45:28,008 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 16
+INFO  12:45:28,008 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 17
+ERROR 12:45:28,008 - Nekompatibilni tipovi u dodeli vrednosti: linija 19
+INFO  12:45:28,008 - Pronadjen poziv funkcije fja: linija 24
