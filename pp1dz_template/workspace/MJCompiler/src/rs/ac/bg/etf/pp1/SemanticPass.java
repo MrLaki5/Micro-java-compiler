@@ -12,9 +12,13 @@ import rs.ac.bg.etf.pp1.ast.AnotherVarDecl;
 import rs.ac.bg.etf.pp1.ast.ArrayPart;
 import rs.ac.bg.etf.pp1.ast.BoolConstFactor;
 import rs.ac.bg.etf.pp1.ast.BooleanValue;
+import rs.ac.bg.etf.pp1.ast.BreakStmt;
 import rs.ac.bg.etf.pp1.ast.CharConstFactor;
+import rs.ac.bg.etf.pp1.ast.CondFactNoRelop;
+import rs.ac.bg.etf.pp1.ast.CondFactRelop;
 import rs.ac.bg.etf.pp1.ast.ConstDecl;
 import rs.ac.bg.etf.pp1.ast.ConstDeclType;
+import rs.ac.bg.etf.pp1.ast.ContinueStmt;
 import rs.ac.bg.etf.pp1.ast.Designator;
 import rs.ac.bg.etf.pp1.ast.DesignatorActFactor;
 import rs.ac.bg.etf.pp1.ast.DesignatorNoActFactor;
@@ -22,6 +26,9 @@ import rs.ac.bg.etf.pp1.ast.DesignatorStatementActP;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementMM;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementPP;
+import rs.ac.bg.etf.pp1.ast.DoWhileStart;
+import rs.ac.bg.etf.pp1.ast.DoWhileStmt;
+import rs.ac.bg.etf.pp1.ast.EqualsRelop;
 import rs.ac.bg.etf.pp1.ast.ExprFactor;
 import rs.ac.bg.etf.pp1.ast.FormalParamDecl;
 import rs.ac.bg.etf.pp1.ast.GlobalVarDeclElem;
@@ -35,6 +42,7 @@ import rs.ac.bg.etf.pp1.ast.MethodType;
 import rs.ac.bg.etf.pp1.ast.MethodTypeName;
 import rs.ac.bg.etf.pp1.ast.MethodVoidType;
 import rs.ac.bg.etf.pp1.ast.NewExprFactor;
+import rs.ac.bg.etf.pp1.ast.NotEqualsRelop;
 import rs.ac.bg.etf.pp1.ast.NumberConstFactor;
 import rs.ac.bg.etf.pp1.ast.PomProcCallOne;
 import rs.ac.bg.etf.pp1.ast.PrintNoNumStmt;
@@ -80,6 +88,7 @@ public class SemanticPass extends VisitorAdaptor {
 	String reservedWords[]={"eol", "chr", "ord", "len"};
 	java.util.List<Elem> listaParametaraGlob=new java.util.ArrayList<Elem>();
 	int currElem=-1;
+	int doWhileCnt=0;
 	
 
 	Logger log = Logger.getLogger(getClass());
@@ -578,6 +587,50 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public boolean passed() {
 		return !errorDetected;
+	}
+	
+	//CONDITIONS============================================================================
+	
+	public void visit(CondFactNoRelop condFactor){
+		if(condFactor.getExpr().struct!=booleanStr){
+			report_error("Faktor mora biti bool tipa", condFactor);
+		}
+	}
+	
+	public void visit(CondFactRelop condFactor){
+		if(condFactor.getExpr().struct==booleanStr || condFactor.getExpr1().struct==booleanStr){
+			report_error("Faktor sa relopom ne moze biti bool tipa", condFactor);
+		}
+		if(!(condFactor.getExpr().struct.assignableTo(condFactor.getExpr1().struct))){
+			report_error("Izrazi u faktoru nisu kompatibilni", condFactor);
+		}
+		if((condFactor.getExpr().struct.getKind()==Struct.Array) ||(condFactor.getExpr1().struct.getKind()==Struct.Array)){
+			if(!(condFactor.getRelop() instanceof EqualsRelop)){
+				if(!(condFactor.getRelop() instanceof NotEqualsRelop)){
+					report_error("Uz faktor niza mogu samo == i !=", condFactor);
+				}
+			}
+		}
+	}
+	
+	public void visit(DoWhileStart stat){
+		doWhileCnt++;
+	}
+	
+	public void visit(DoWhileStmt stat){
+		doWhileCnt--;
+	}
+	
+	public void visit(BreakStmt stat){
+		if(doWhileCnt==0){
+			report_error("Break mora biti u do while petlji", stat);
+		}
+	}
+	
+	public void visit(ContinueStmt stat){
+		if(doWhileCnt==0){
+			report_error("Continue mora biti u do while petlji", stat);
+		}
 	}
 	
 	//LOGIC METHODS==========================================================================

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 6/1/2018 13:5:46
+// 6/1/2018 17:30:53
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -82,6 +82,7 @@ public interface Visitor {
     public void visit(DesignatorStatementPP DesignatorStatementPP);
     public void visit(DesignatorStatementActP DesignatorStatementActP);
     public void visit(DesignatorStatementExpr DesignatorStatementExpr);
+    public void visit(DoWhileStart DoWhileStart);
     public void visit(BraceStmt BraceStmt);
     public void visit(PrintNumStmt PrintNumStmt);
     public void visit(PrintNoNumStmt PrintNoNumStmt);

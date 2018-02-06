@@ -43,11 +43,18 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class CodeGenerator extends VisitorAdaptor {
 	
+	public class Elem{
+		java.util.List<Integer> tf=new java.util.ArrayList<Integer>();
+		java.util.List<Integer> jmpif=new java.util.ArrayList<Integer>();
+	}
+	
 	private int varCount;
 	private int paramCnt;
 	private int mainPc;
 	private boolean arrayIs=false;
 	private Struct booleanStr;
+	private java.util.List<Elem> globalLista= new java.util.ArrayList<Elem>();
+	private int globalCounter=0;
 	
 	public CodeGenerator(Struct booleanStr){
 		this.booleanStr=booleanStr;
@@ -93,6 +100,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		//int fpCntInt=MethodTypeName.obj.getLevel();
 		
 		// Generate the entry.
+		
 		Code.put(Code.enter);
 		Code.put(fpCnt.getCount());
 		Code.put(varCnt.getCount() + fpCnt.getCount());
@@ -248,17 +256,35 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(DesignatorStatementActP FuncCall) {
-		Obj functionObj = FuncCall.getDesignator().obj;
-		int offset = functionObj.getAdr() - Code.pc; 
-		Code.put(Code.call);
-		Code.put2(offset);
+		Obj functionObj = FuncCall.getDesignator().obj;		
+		String methodName= functionObj.getName();
+		if(methodName.equals("len")){
+			Code.put(Code.arraylength);
+		}
+		else{
+			if(methodName.equals("chr") || methodName.equals("ord")){
+				return;
+			}
+			int offset = functionObj.getAdr() - Code.pc; 
+			Code.put(Code.call);
+			Code.put2(offset);
+		}
 	}
 	
 	public void visit(DesignatorActFactor FuncCall) {
-		Obj functionObj = FuncCall.getDesignator().obj;
-		int offset = functionObj.getAdr() - Code.pc; 
-		Code.put(Code.call);
-		Code.put2(offset);
+		Obj functionObj = FuncCall.getDesignator().obj;		
+		String methodName= functionObj.getName();
+		if(methodName.equals("len")){
+			Code.put(Code.arraylength);
+		}
+		else{
+			if(methodName.equals("chr") || methodName.equals("ord")){
+				return;
+			}
+			int offset = functionObj.getAdr() - Code.pc; 
+			Code.put(Code.call);
+			Code.put2(offset);
+		}
 	}
 	
 	

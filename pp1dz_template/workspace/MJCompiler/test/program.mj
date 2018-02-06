@@ -18,12 +18,14 @@ program test301
 
 	void main()
 	int aa;
-	char bb[], b;
+	char bb[], b[];
 	{	
-		bb=new char[3];
-		bb[1]='T';
-		nesto(bb);
-		aa=funkcija(5,bb);
+		if (){
+		
+		}
+		else{
+		
+		}
 	}
 }
 

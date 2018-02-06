@@ -63,7 +63,7 @@ terminal String IDENT, BOOL, CHAR;
 nonterminal /*Program, ProgName, */DeclList, DeclVarOnlyList, ConstDeclList, VarDecl, VarDeclList, VarDeclType, VarDeclPTwo;
 nonterminal	ClassDecl, ExtendsPart, ClassMethodDecl, MethodDeclList, FormPars, FormalParamList, GlobalVarType, ConstDeclType;
 nonterminal FormalParamDecl, StatementList, Statement, DesignatorStatement, ActList, ActPars, Condition, CondTerm, CondFact;
-nonterminal Relop, Addop, Mulop, ArrayPart, GlobalVarDecl, GlobalVarDeclList, GlobalVarOne, GlobalVarTwo, PomProcCallOne;
+nonterminal Relop, Addop, Mulop, ArrayPart, GlobalVarDecl, GlobalVarDeclList, GlobalVarOne, GlobalVarTwo, PomProcCallOne, DoWhileStart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl, Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue, Expr, Term, Factor;
@@ -223,7 +223,7 @@ Statement ::= (Assignment) DesignatorStatement
 			  |
 			  (IsStmtElseError) IF LPAREN error RPAREN Statement ELSE Statement
 			  |
-			  (DoWhileStmt) DO Statement WHILE LPAREN Condition RPAREN SEMI
+			  (DoWhileStmt) DoWhileStart Statement WHILE LPAREN Condition RPAREN SEMI
 			  |
 			  (BreakStmt) BREAK SEMI
 			  |
@@ -244,6 +244,9 @@ Statement ::= (Assignment) DesignatorStatement
 			  (ErrAssignment) Designator EQUAL error SEMI
 			  {: parser.log.debug("Uspesan oporavak od greske pri dodeli vrednosti."); :}*/
 			  ;
+			  
+DoWhileStart ::= (DoWhileStart) DO
+;
 			  
 DesignatorStatement ::= (DesignatorStatementExpr) Designator EQUAL Expr SEMI
 						|

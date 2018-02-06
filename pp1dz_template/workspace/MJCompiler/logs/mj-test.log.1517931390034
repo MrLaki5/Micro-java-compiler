@@ -1,0 +1,96 @@
+INFO  16:33:21,220 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:33:21,281 - #2 program
+INFO  16:33:21,282 - #43 test301
+INFO  16:33:21,282 - #43 int
+INFO  16:33:21,283 - #43 a
+INFO  16:33:21,284 - #32 ;
+INFO  16:33:21,288 - #39 {
+INFO  16:33:21,289 - #10 void
+INFO  16:33:21,289 - #43 nesto
+INFO  16:33:21,289 - #35 (
+INFO  16:33:21,289 - #43 char
+INFO  16:33:21,289 - #43 a
+INFO  16:33:21,290 - #37 [
+INFO  16:33:21,290 - #38 ]
+INFO  16:33:21,290 - #36 )
+INFO  16:33:21,291 - #39 {
+INFO  16:33:21,292 - #7 print
+INFO  16:33:21,293 - #35 (
+INFO  16:33:21,293 - #43 a
+INFO  16:33:21,293 - #37 [
+INFO  16:33:21,293 - #42 1
+INFO  16:33:21,294 - #38 ]
+INFO  16:33:21,295 - #36 )
+INFO  16:33:21,295 - #32 ;
+INFO  16:33:21,295 - #40 }
+INFO  16:33:21,295 - #43 int
+INFO  16:33:21,296 - #43 funkcija
+INFO  16:33:21,296 - #35 (
+INFO  16:33:21,297 - #43 int
+INFO  16:33:21,297 - #43 c
+INFO  16:33:21,297 - #33 ,
+INFO  16:33:21,297 - #43 char
+INFO  16:33:21,297 - #43 a
+INFO  16:33:21,297 - #37 [
+INFO  16:33:21,297 - #38 ]
+INFO  16:33:21,297 - #36 )
+INFO  16:33:21,297 - #39 {
+INFO  16:33:21,298 - #43 nesto
+INFO  16:33:21,298 - #35 (
+INFO  16:33:21,298 - #43 a
+INFO  16:33:21,298 - #36 )
+INFO  16:33:21,299 - #32 ;
+INFO  16:33:21,299 - #9 return
+INFO  16:33:21,300 - #43 c
+INFO  16:33:21,300 - #32 ;
+INFO  16:33:21,300 - #40 }
+INFO  16:33:21,300 - #10 void
+INFO  16:33:21,300 - #43 main
+INFO  16:33:21,302 - #35 (
+INFO  16:33:21,302 - #36 )
+INFO  16:33:21,302 - #43 int
+INFO  16:33:21,302 - #43 aa
+INFO  16:33:21,303 - #32 ;
+INFO  16:33:21,303 - #43 char
+INFO  16:33:21,305 - #43 bb
+INFO  16:33:21,305 - #37 [
+INFO  16:33:21,305 - #38 ]
+INFO  16:33:21,305 - #33 ,
+INFO  16:33:21,305 - #43 b
+INFO  16:33:21,305 - #32 ;
+INFO  16:33:21,305 - #39 {
+INFO  16:33:21,306 - #43 a
+INFO  16:33:21,306 - #29 =
+INFO  16:33:21,306 - #42 120
+INFO  16:33:21,306 - #32 ;
+INFO  16:33:21,306 - #7 print
+INFO  16:33:21,306 - #35 (
+INFO  16:33:21,306 - #43 ord
+INFO  16:33:21,306 - #35 (
+INFO  16:33:21,306 - #43 chr
+INFO  16:33:21,306 - #35 (
+INFO  16:33:21,306 - #43 a
+INFO  16:33:21,306 - #36 )
+INFO  16:33:21,306 - #36 )
+INFO  16:33:21,306 - #36 )
+INFO  16:33:21,306 - #32 ;
+INFO  16:33:21,306 - #43 aa
+INFO  16:33:21,306 - #35 (
+INFO  16:33:21,306 - #36 )
+INFO  16:33:21,308 - #32 ;
+INFO  16:33:21,308 - #40 }
+INFO  16:33:21,308 - #40 }
+INFO  16:33:21,317 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  16:33:21,318 - Obrada funkcije nesto, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 9
+INFO  16:33:21,318 - Deklarisan niz a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 9
+INFO  16:33:21,318 - Obrada funkcije funkcija, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 13
+INFO  16:33:21,319 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 13
+INFO  16:33:21,319 - Deklarisan niz a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 13
+INFO  16:33:21,322 - Pronadjen poziv funkcije nesto: linija 15
+INFO  16:33:21,324 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 19
+INFO  16:33:21,324 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 20
+INFO  16:33:21,324 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 21
+INFO  16:33:21,325 - Deklarisan niz bb, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@6c5a9e: linija 21
+INFO  16:33:21,325 - Pronadjen poziv funkcije chr: linija 24
+INFO  16:33:21,325 - Pronadjen poziv funkcije ord: linija 24
+ERROR 16:33:21,325 - Ime nije funkcija: linija 25

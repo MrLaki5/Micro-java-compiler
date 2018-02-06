@@ -93,6 +93,7 @@ nonterminal GlobalVarDeclList GlobalVarDeclList;
 nonterminal GlobalVarOne GlobalVarOne;
 nonterminal GlobalVarTwo GlobalVarTwo;
 nonterminal PomProcCallOne PomProcCallOne;
+nonterminal DoWhileStart DoWhileStart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl, Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue, Expr, Term, Factor;
@@ -252,7 +253,7 @@ Statement ::= (Assignment) DesignatorStatement:D1 {: RESULT=new Assignment(D1); 
 			  |
 			  (IsStmtElseError) IF LPAREN error RPAREN Statement:S1 ELSE Statement:S2 {: RESULT=new IsStmtElseError(S1, S2); RESULT.setLine(S1left); :}
 			  |
-			  (DoWhileStmt) DO Statement:S1 WHILE LPAREN Condition:C2 RPAREN SEMI {: RESULT=new DoWhileStmt(S1, C2); RESULT.setLine(S1left); :}
+			  (DoWhileStmt) DoWhileStart:D1 Statement:S2 WHILE LPAREN Condition:C3 RPAREN SEMI {: RESULT=new DoWhileStmt(D1, S2, C3); RESULT.setLine(D1left); :}
 			  |
 			  (BreakStmt) BREAK SEMI {: RESULT=new BreakStmt(); :}
 			  |
@@ -273,6 +274,9 @@ Statement ::= (Assignment) DesignatorStatement:D1 {: RESULT=new Assignment(D1); 
 			  (ErrAssignment) Designator EQUAL error SEMI
 			  {: parser.log.debug("Uspesan oporavak od greske pri dodeli vrednosti."); :}*/
 			  ;
+			  
+DoWhileStart ::= (DoWhileStart) DO {: RESULT=new DoWhileStart(); :}
+;
 			  
 DesignatorStatement ::= (DesignatorStatementExpr) Designator:D1 EQUAL Expr:E2 SEMI {: RESULT=new DesignatorStatementExpr(D1, E2); RESULT.setLine(D1left); :}
 						|
