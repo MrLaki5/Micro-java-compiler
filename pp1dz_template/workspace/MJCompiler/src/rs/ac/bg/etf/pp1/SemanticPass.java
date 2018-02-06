@@ -1,6 +1,9 @@
 package rs.ac.bg.etf.pp1;
+
+
 import org.apache.log4j.Logger;
 
+import rs.ac.bg.etf.pp1.ast.AnotherActPars;
 import rs.ac.bg.etf.pp1.ast.AnotherConstDecl;
 import rs.ac.bg.etf.pp1.ast.AnotherExpr;
 import rs.ac.bg.etf.pp1.ast.AnotherExprDesignator;
@@ -20,6 +23,7 @@ import rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementMM;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementPP;
 import rs.ac.bg.etf.pp1.ast.ExprFactor;
+import rs.ac.bg.etf.pp1.ast.FormalParamDecl;
 import rs.ac.bg.etf.pp1.ast.GlobalVarDeclElem;
 import rs.ac.bg.etf.pp1.ast.GlobalVarOneNoErr;
 import rs.ac.bg.etf.pp1.ast.GlobalVarTwoNoErr;
@@ -32,12 +36,14 @@ import rs.ac.bg.etf.pp1.ast.MethodTypeName;
 import rs.ac.bg.etf.pp1.ast.MethodVoidType;
 import rs.ac.bg.etf.pp1.ast.NewExprFactor;
 import rs.ac.bg.etf.pp1.ast.NumberConstFactor;
+import rs.ac.bg.etf.pp1.ast.PomProcCallOne;
 import rs.ac.bg.etf.pp1.ast.PrintNoNumStmt;
 import rs.ac.bg.etf.pp1.ast.PrintNumStmt;
 import rs.ac.bg.etf.pp1.ast.ProgName;
 import rs.ac.bg.etf.pp1.ast.Program;
 import rs.ac.bg.etf.pp1.ast.ReadStmt;
 import rs.ac.bg.etf.pp1.ast.ReturnExprStmt;
+import rs.ac.bg.etf.pp1.ast.SingleActPars;
 import rs.ac.bg.etf.pp1.ast.SingleDesignator;
 import rs.ac.bg.etf.pp1.ast.SingleNegExpr;
 import rs.ac.bg.etf.pp1.ast.SinglePosExpr;
@@ -55,8 +61,13 @@ import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class SemanticPass extends VisitorAdaptor {
+	
+	public class Elem{
+		public java.util.List<Struct> lista=new java.util.ArrayList<Struct>();
+	}
 
 	Struct booleanStr;
+	int paramCount=0;
 	boolean errorDetected = false;
 	int printCallCount = 0;
 	Obj currentMethod = null;
@@ -67,6 +78,9 @@ public class SemanticPass extends VisitorAdaptor {
 	boolean returnFound = false;
 	int nVars;
 	String reservedWords[]={"eol", "chr", "ord", "len"};
+	java.util.List<Elem> listaParametaraGlob=new java.util.ArrayList<Elem>();
+	int currElem=-1;
+	
 
 	Logger log = Logger.getLogger(getClass());
 	
@@ -255,10 +269,15 @@ public class SemanticPass extends VisitorAdaptor {
 		}  
 	}
 	
+	//METHOD DECLARATIONS================================================================================
+	
 	public void visit(MethodDecl methodDecl) {
 		if (!returnFound && currentMethod.getType() != Tab.noType) {
 			report_error("Funcija " + currentMethod.getName() + " nema return iskaz", methodDecl);
 		}
+		
+		currentMethod.setLevel(paramCount);
+		paramCount=0;
 		
 		if((currentMethodName.equals("main")) && (currentMethod.getLevel()==0)){	//TODO: dodaj da se proverava da main nema parametre
 			mainFound=true;
@@ -270,6 +289,7 @@ public class SemanticPass extends VisitorAdaptor {
 		returnFound = false;
 		currentMethod = null;
 		currentMethodName="";
+		//listaParametara.clear();
 	}
 
 	public void visit(MethodType methodType) {
@@ -286,7 +306,32 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.openScope();
 		report_info("Obrada funkcije " + methodVoidType.getMethName()+", objekat u tabeli simbola "+currentMethod.toString(), methodVoidType);
 	}
-
+	
+	public void visit(FormalParamDecl paramDecl){
+		paramCount++;
+		tempGlobVarType=paramDecl.getType().struct;
+		boolean isArray=paramDecl.getArrayPart() instanceof IsArray;
+		String tempName=paramDecl.getParName();
+		if(!checkIdent(tempName, paramDecl, 0)){
+			return;
+		}
+		checkAndInitArray(isArray, tempName, paramDecl);
+		tempGlobVarType=null;
+	}
+	
+	public void visit(SingleActPars pars){
+		listaParametaraGlob.get(currElem).lista.add(pars.getExpr().struct);
+	}
+	
+	public void visit(AnotherActPars pars){
+		listaParametaraGlob.get(currElem).lista.add(pars.getExpr().struct);
+	}
+	
+	public void visit(PomProcCallOne callOne){
+		listaParametaraGlob.add(new Elem());
+		currElem++;
+	}
+	
 	//STATEMENT VISITORS====================================
 	
 	public void visit(ReturnExprStmt returnExpr){
@@ -379,7 +424,39 @@ public class SemanticPass extends VisitorAdaptor {
 		Obj func = factor.getDesignator().obj;
 		if (Obj.Meth == func.getKind()) { 
 			report_info("Pronadjen poziv funkcije " + func.getName(), factor);
+			
 			factor.struct=func.getType();
+			
+			java.util.Collection<Obj> kolekcija=func.getLocalSymbols();
+			int paramNum=func.getLevel();
+			if(paramNum==listaParametaraGlob.get(currElem).lista.size()){
+				int i=0;
+				for (Obj obj : kolekcija) {
+					if(i==paramNum){
+						break;
+					}
+					Struct tempStr=obj.getType();
+					if(tempStr.getKind()==Struct.Array){
+						tempStr=tempStr.getElemType();
+						String imeDesiga=factor.getDesignator().obj.getName();
+						if(imeDesiga.equals("len")){
+							tempStr=listaParametaraGlob.get(currElem).lista.get(i);
+						}
+					}
+					if(!(tempStr.equals(listaParametaraGlob.get(currElem).lista.get(i)))){
+						report_error("Parametri se ne poklapaju u funkciji " + func.getName(), factor);
+						factor.struct=Tab.noType;
+						break;
+					}
+					i++;
+				}
+			}
+			else{
+				report_error("Pogresan broj parametara funkcije " + func.getName(), factor);
+				factor.struct=Tab.noType;
+			}
+
+			
 			//RESULT = func.getType();
 		} 
 		else {
@@ -387,6 +464,8 @@ public class SemanticPass extends VisitorAdaptor {
 			factor.struct=Tab.noType;
 			//RESULT = Tab.noType;
 		} 
+		listaParametaraGlob.remove(currElem);
+		currElem--;
 	}
 	
 	public void visit(NewExprFactor factor){
@@ -460,11 +539,41 @@ public class SemanticPass extends VisitorAdaptor {
 		if (Obj.Meth == func.getKind()) { 
 			report_info("Pronadjen poziv funkcije " + func.getName(), procCall);
 			//RESULT = func.getType();
+			
+			java.util.Collection<Obj> kolekcija=func.getLocalSymbols();
+			int paramNum=func.getLevel();
+			if(paramNum==listaParametaraGlob.get(currElem).lista.size()){
+				int i=0;
+				for (Obj obj : kolekcija) {
+					if(i==paramNum){
+						break;
+					}
+					Struct tempStr=obj.getType();
+					if(tempStr.getKind()==Struct.Array){
+						tempStr=tempStr.getElemType();
+						String imeDesiga=procCall.getDesignator().obj.getName();
+						if(imeDesiga.equals("len")){
+							tempStr=listaParametaraGlob.get(currElem).lista.get(i);
+						}
+					}
+					if(!(tempStr.equals(listaParametaraGlob.get(currElem).lista.get(i)))){
+						report_error("Parametri se ne poklapaju u funkciji " + func.getName(), procCall);
+						break;
+					}
+					i++;
+				}
+			}
+			else{
+				report_error("Pogresan broj parametara funkcije " + func.getName(), procCall);
+			}
+			
 		} 
 		else {
 			report_error("Ime nije funkcija", procCall);
 			//RESULT = Tab.noType;
-		}     	
+		}
+		listaParametaraGlob.remove(currElem);
+		currElem--;
 	} 
 	
 	public boolean passed() {

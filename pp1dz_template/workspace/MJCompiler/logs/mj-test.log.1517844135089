@@ -1,0 +1,12 @@
+INFO  16:21:43,059 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:21:43,150 - #2 program
+INFO  16:21:43,151 - #43 test301
+INFO  16:21:43,151 - #39 {
+INFO  16:21:43,155 - #10 void
+INFO  16:21:43,156 - #43 funkcija
+INFO  16:21:43,157 - #35 (
+INFO  16:21:43,157 - #43 int
+INFO  16:21:43,157 - #43 int
+INFO  16:21:43,161 - #43 int
+ERROR 16:21:43,161 - Sintaksna greska na liniji 9
+ERROR 16:21:43,161 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9

@@ -90,6 +90,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		FormParamCounter fpCnt = new FormParamCounter();
 		methodNode.traverseTopDown(fpCnt);
 		
+		//int fpCntInt=MethodTypeName.obj.getLevel();
+		
 		// Generate the entry.
 		Code.put(Code.enter);
 		Code.put(fpCnt.getCount());
@@ -153,7 +155,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(CharConstFactor factor){
-		Code.load(new Obj(Obj.Con, "", Tab.charType, factor.getC1().charAt(1), 0));
+		Code.load(new Obj(Obj.Con, "", Tab.charType, factor.getC().charAt(1), 0));
 	}
 	
 	public void visit(BoolConstFactor factor){

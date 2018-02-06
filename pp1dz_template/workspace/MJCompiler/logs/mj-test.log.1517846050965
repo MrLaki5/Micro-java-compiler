@@ -1,0 +1,47 @@
+INFO  16:53:24,184 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:53:24,230 - #2 program
+INFO  16:53:24,230 - #43 test301
+INFO  16:53:24,230 - #43 int
+INFO  16:53:24,230 - #43 a
+INFO  16:53:24,246 - #33 ,
+INFO  16:53:24,246 - #42 21
+ERROR 16:53:24,246 - Sintaksna greska na liniji 5
+INFO  16:53:24,246 - #32 ;
+INFO  16:53:24,246 - #43 char
+INFO  16:53:24,246 - #43 c
+INFO  16:53:24,246 - #37 [
+INFO  16:53:24,246 - #32 ;
+ERROR 16:53:24,246 - Sintaksna greska na liniji 6
+INFO  16:53:24,246 - #39 {
+INFO  16:53:24,246 - #10 void
+INFO  16:53:24,246 - #43 funkcija
+INFO  16:53:24,246 - #35 (
+INFO  16:53:24,246 - #43 int
+INFO  16:53:24,246 - #43 b
+INFO  16:53:24,246 - #37 [
+INFO  16:53:24,246 - #38 ]
+INFO  16:53:24,246 - #36 )
+INFO  16:53:24,246 - #39 {
+INFO  16:53:24,246 - #40 }
+INFO  16:53:24,246 - #10 void
+INFO  16:53:24,246 - #43 main
+INFO  16:53:24,246 - #35 (
+INFO  16:53:24,246 - #43 int
+INFO  16:53:24,246 - #43 a
+INFO  16:53:24,246 - #36 )
+INFO  16:53:24,246 - #39 {
+INFO  16:53:24,246 - #5 if
+INFO  16:53:24,246 - #35 (
+INFO  16:53:24,246 - #17 -
+INFO  16:53:24,246 - #42 23
+INFO  16:53:24,246 - #17 -
+INFO  16:53:24,246 - #36 )
+ERROR 16:53:24,246 - Sintaksna greska na liniji 16
+INFO  16:53:24,246 - #39 {
+INFO  16:53:24,262 - #3 break
+INFO  16:53:24,262 - #32 ;
+INFO  16:53:24,262 - #40 }
+INFO  16:53:24,262 - #40 }
+ERROR 16:53:24,262 - Sintaksna greska na liniji 23
+INFO  16:53:24,262 - #40 }
+ERROR 16:53:24,262 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 27

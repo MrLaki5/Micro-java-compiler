@@ -1,0 +1,39 @@
+INFO  10:57:59,953 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  10:58:00,000 - #2 program
+INFO  10:58:00,000 - #43 test301
+INFO  10:58:00,000 - #43 int
+INFO  10:58:00,000 - #43 a
+INFO  10:58:00,000 - #32 ;
+INFO  10:58:00,000 - #39 {
+INFO  10:58:00,000 - #43 int
+INFO  10:58:00,000 - #43 funkcija
+INFO  10:58:00,000 - #35 (
+INFO  10:58:00,000 - #43 int
+INFO  10:58:00,000 - #43 a
+INFO  10:58:00,000 - #36 )
+INFO  10:58:00,000 - #39 {
+INFO  10:58:00,000 - #9 return
+INFO  10:58:00,000 - #42 5
+INFO  10:58:00,000 - #32 ;
+INFO  10:58:00,000 - #40 }
+INFO  10:58:00,000 - #10 void
+INFO  10:58:00,000 - #43 main
+INFO  10:58:00,000 - #35 (
+INFO  10:58:00,000 - #36 )
+INFO  10:58:00,000 - #43 char
+INFO  10:58:00,000 - #43 aa
+INFO  10:58:00,000 - #32 ;
+INFO  10:58:00,000 - #39 {
+INFO  10:58:00,000 - #43 funkcija
+INFO  10:58:00,000 - #35 (
+INFO  10:58:00,000 - #43 aa
+INFO  10:58:00,000 - #36 )
+INFO  10:58:00,000 - #32 ;
+INFO  10:58:00,000 - #40 }
+INFO  10:58:00,000 - #40 }
+INFO  10:58:00,016 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  10:58:00,016 - Obrada funkcije funkcija, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+INFO  10:58:00,016 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 8
+INFO  10:58:00,016 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  10:58:00,016 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 15
+INFO  10:58:00,016 - Pronadjen poziv funkcije funkcija: linija 17

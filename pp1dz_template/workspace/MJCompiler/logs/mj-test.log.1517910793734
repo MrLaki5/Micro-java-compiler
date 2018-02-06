@@ -1,0 +1,42 @@
+INFO  10:52:45,171 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  10:52:45,218 - #2 program
+INFO  10:52:45,218 - #43 test301
+INFO  10:52:45,218 - #43 int
+INFO  10:52:45,218 - #43 a
+INFO  10:52:45,234 - #32 ;
+INFO  10:52:45,250 - #39 {
+INFO  10:52:45,250 - #43 int
+INFO  10:52:45,250 - #43 funkcija
+INFO  10:52:45,250 - #35 (
+INFO  10:52:45,250 - #36 )
+INFO  10:52:45,250 - #39 {
+INFO  10:52:45,250 - #9 return
+INFO  10:52:45,250 - #42 5
+INFO  10:52:45,250 - #32 ;
+INFO  10:52:45,250 - #40 }
+INFO  10:52:45,250 - #10 void
+INFO  10:52:45,250 - #43 main
+INFO  10:52:45,250 - #35 (
+INFO  10:52:45,250 - #43 int
+INFO  10:52:45,250 - #43 a
+INFO  10:52:45,250 - #36 )
+INFO  10:52:45,250 - #43 char
+INFO  10:52:45,250 - #43 aa
+INFO  10:52:45,266 - #32 ;
+INFO  10:52:45,266 - #39 {
+INFO  10:52:45,266 - #43 aa
+INFO  10:52:45,266 - #29 =
+INFO  10:52:45,266 - #43 funkcija
+INFO  10:52:45,266 - #35 (
+INFO  10:52:45,266 - #36 )
+INFO  10:52:45,266 - #32 ;
+INFO  10:52:45,266 - #40 }
+INFO  10:52:45,266 - #40 }
+INFO  10:52:45,281 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  10:52:45,281 - Obrada funkcije funkcija, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+INFO  10:52:45,281 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 14
+INFO  10:52:45,281 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 14
+INFO  10:52:45,281 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 15
+INFO  10:52:45,281 - Pronadjen poziv funkcije funkcija: linija 18
+ERROR 10:52:45,281 - Nekompatibilni tipovi u dodeli vrednosti: linija 18
+ERROR 10:52:45,281 - Main nije pronadjen u programu

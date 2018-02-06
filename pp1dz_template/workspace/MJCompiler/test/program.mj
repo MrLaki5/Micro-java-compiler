@@ -2,50 +2,28 @@
 
 program test301
 
-	const int jedan = 1;
-	const int pet = 5;
-
-	int niz[];
-	
-	char nizch[];
-	
+	int a;
 {
-	void main()	int bodovi;
+
+
+	void nesto(char a[]){
+		print(a[1]);
+	}
+
+	int funkcija(int c, char a[])
 	{
-	
-		bodovi = 0;
-		bodovi++;
-		bodovi = bodovi + jedan;
-		bodovi = bodovi * pet;
-		bodovi--;
-		print(bodovi); 
-			
-		
-		niz = new int[2];
-		niz[0] = pet;
-		niz[1] = 10;
-		bodovi = niz[1]/niz[0];
-		print(bodovi); 
-		print(niz[1]);
-		
-		
-		nizch = new char[3];
-		nizch[0] = 'a';
-		nizch[jedan] = 'b';
-		nizch[pet - 3] = 'c';
-		print( nizch[2 - 1]);
-		print( nizch[jedan * 2]);
-			
-		
-		bodovi = bodovi + ((pet * jedan - 1) * 2 - (3 % 2 + 3 * 2 - 3) - 1 * 0); 
-		print(bodovi);
-			
-			
-		read(bodovi);
-		bodovi = bodovi + 1;
-		print(bodovi);
-			
-	
+		nesto(a);
+		return c;
+	}
+
+	void main()
+	int aa;
+	char bb[], b;
+	{	
+		bb=new char[3];
+		bb[1]='T';
+		nesto(bb);
+		aa=funkcija(5,bb);
 	}
 }
 

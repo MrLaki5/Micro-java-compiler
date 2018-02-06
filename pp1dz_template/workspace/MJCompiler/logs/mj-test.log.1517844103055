@@ -1,0 +1,26 @@
+INFO  16:21:31,417 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:21:31,465 - #2 program
+INFO  16:21:31,466 - #43 test301
+INFO  16:21:31,466 - #39 {
+INFO  16:21:31,468 - #10 void
+INFO  16:21:31,469 - #43 funkcija
+INFO  16:21:31,469 - #35 (
+INFO  16:21:31,469 - #43 int
+INFO  16:21:31,469 - #43 a
+INFO  16:21:31,471 - #33 ,
+INFO  16:21:31,473 - #43 int
+INFO  16:21:31,474 - #43 b
+INFO  16:21:31,474 - #36 )
+INFO  16:21:31,474 - #39 {
+INFO  16:21:31,477 - #40 }
+INFO  16:21:31,478 - #10 void
+INFO  16:21:31,479 - #43 main
+INFO  16:21:31,479 - #35 (
+INFO  16:21:31,480 - #36 )
+INFO  16:21:31,480 - #39 {
+INFO  16:21:31,482 - #40 }
+INFO  16:21:31,484 - #40 }
+INFO  16:21:31,491 - Obrada funkcije funkcija, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 9
+INFO  16:21:31,491 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 14
+INFO  16:21:31,493 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  16:21:31,504 - Parsiranje uspesno zavrseno!

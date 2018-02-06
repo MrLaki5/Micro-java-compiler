@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.Program"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.SyntaxNode"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ProgName"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDecl"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.Type"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.GlobalVarDeclElem"/>
@@ -58,4 +55,9 @@
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.CodeGenerator"/>
 <fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PrintNumStmt"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.FormalParamDecl"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.SingleActPars"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherActPars"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PomProcCallOne"/>
 </qualifiedTypeNameHistroy>

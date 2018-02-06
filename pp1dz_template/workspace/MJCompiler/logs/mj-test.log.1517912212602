@@ -1,0 +1,54 @@
+INFO  11:07:42,781 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  11:07:42,844 - #2 program
+INFO  11:07:42,844 - #43 test301
+INFO  11:07:42,844 - #43 int
+INFO  11:07:42,844 - #43 a
+INFO  11:07:42,844 - #32 ;
+INFO  11:07:42,859 - #39 {
+INFO  11:07:42,859 - #43 int
+INFO  11:07:42,859 - #43 funkcija
+INFO  11:07:42,859 - #35 (
+INFO  11:07:42,859 - #43 int
+INFO  11:07:42,859 - #43 a
+INFO  11:07:42,859 - #33 ,
+INFO  11:07:42,859 - #43 char
+INFO  11:07:42,859 - #43 b
+INFO  11:07:42,859 - #37 [
+INFO  11:07:42,859 - #38 ]
+INFO  11:07:42,859 - #36 )
+INFO  11:07:42,859 - #39 {
+INFO  11:07:42,859 - #9 return
+INFO  11:07:42,859 - #42 5
+INFO  11:07:42,859 - #32 ;
+INFO  11:07:42,859 - #40 }
+INFO  11:07:42,859 - #10 void
+INFO  11:07:42,859 - #43 main
+INFO  11:07:42,859 - #35 (
+INFO  11:07:42,859 - #36 )
+INFO  11:07:42,859 - #43 int
+INFO  11:07:42,859 - #43 aa
+INFO  11:07:42,875 - #32 ;
+INFO  11:07:42,875 - #43 char
+INFO  11:07:42,875 - #43 bb
+INFO  11:07:42,875 - #37 [
+INFO  11:07:42,875 - #38 ]
+INFO  11:07:42,875 - #32 ;
+INFO  11:07:42,875 - #39 {
+INFO  11:07:42,875 - #43 funkcija
+INFO  11:07:42,875 - #35 (
+INFO  11:07:42,875 - #43 aa
+INFO  11:07:42,875 - #33 ,
+INFO  11:07:42,875 - #43 bb
+INFO  11:07:42,875 - #36 )
+INFO  11:07:42,875 - #32 ;
+INFO  11:07:42,875 - #40 }
+INFO  11:07:42,875 - #40 }
+INFO  11:07:42,875 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  11:07:42,875 - Obrada funkcije funkcija, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+INFO  11:07:42,875 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 8
+INFO  11:07:42,875 - Deklarisan niz b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 8
+INFO  11:07:42,890 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 14
+INFO  11:07:42,890 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 15
+INFO  11:07:42,890 - Deklarisan niz bb, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 16
+INFO  11:07:42,890 - Pronadjen poziv funkcije funkcija: linija 18
+ERROR 11:07:42,890 - Parametri se ne poklapaju u funkciji funkcija: linija 18

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/1/2018 8:41:41
+// 6/1/2018 13:5:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -72,6 +72,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(AnotherCondTerm AnotherCondTerm) { visit(); }
     public void visit(SingleCondition SingleCondition) { visit(); }
     public void visit(AnotherCondition AnotherCondition) { visit(); }
+    public void visit(PomProcCallOne PomProcCallOne) { visit(); }
     public void visit(SingleActPars SingleActPars) { visit(); }
     public void visit(AnotherActPars AnotherActPars) { visit(); }
     public void visit(NoActList NoActList) { visit(); }
@@ -90,12 +91,16 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ContinueStmt ContinueStmt) { visit(); }
     public void visit(BreakStmt BreakStmt) { visit(); }
     public void visit(DoWhileStmt DoWhileStmt) { visit(); }
+    public void visit(IsStmtElseError IsStmtElseError) { visit(); }
     public void visit(IfStmtElse IfStmtElse) { visit(); }
+    public void visit(IfStmtNoElseError IfStmtNoElseError) { visit(); }
     public void visit(IfStmtNoElse IfStmtNoElse) { visit(); }
     public void visit(Assignment Assignment) { visit(); }
     public void visit(NoStmt NoStmt) { visit(); }
     public void visit(Statements Statements) { visit(); }
     public void visit(FormalParamDecl FormalParamDecl) { visit(); }
+    public void visit(ErrorOneFormalParamDecl ErrorOneFormalParamDecl) { visit(); }
+    public void visit(ErrorTwoFormalParamDecl ErrorTwoFormalParamDecl) { visit(); }
     public void visit(SingleFormalParamDecl SingleFormalParamDecl) { visit(); }
     public void visit(FormalParamDecls FormalParamDecls) { visit(); }
     public void visit(NoFormParam NoFormParam) { visit(); }

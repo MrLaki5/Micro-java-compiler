@@ -1,0 +1,43 @@
+INFO  16:48:00,871 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:48:00,949 - #2 program
+INFO  16:48:00,949 - #43 test301
+INFO  16:48:00,949 - #43 int
+INFO  16:48:00,949 - #43 a
+INFO  16:48:00,949 - #33 ,
+INFO  16:48:00,965 - #42 21
+ERROR 16:48:00,965 - Sintaksna greska na liniji 5
+INFO  16:48:00,965 - #32 ;
+INFO  16:48:00,965 - #43 char
+INFO  16:48:00,965 - #43 c
+INFO  16:48:00,965 - #37 [
+INFO  16:48:00,965 - #32 ;
+ERROR 16:48:00,965 - Sintaksna greska na liniji 6
+INFO  16:48:00,965 - #39 {
+INFO  16:48:00,965 - #10 void
+INFO  16:48:00,965 - #43 funkcija
+INFO  16:48:00,965 - #35 (
+INFO  16:48:00,965 - #43 int
+INFO  16:48:00,965 - #33 ,
+ERROR 16:48:00,980 - Sintaksna greska na liniji 9
+INFO  16:48:00,980 - #43 int
+INFO  16:48:00,980 - #43 b
+INFO  16:48:00,980 - #37 [
+INFO  16:48:00,980 - #38 ]
+INFO  16:48:00,980 - #36 )
+INFO  16:48:00,980 - #39 {
+INFO  16:48:00,980 - #40 }
+INFO  16:48:00,980 - #10 void
+INFO  16:48:00,980 - #43 main
+INFO  16:48:00,980 - #35 (
+INFO  16:48:00,980 - #43 int
+INFO  16:48:00,980 - #43 a
+INFO  16:48:00,980 - #36 )
+INFO  16:48:00,980 - #39 {
+INFO  16:48:00,980 - #5 if
+INFO  16:48:00,980 - #35 (
+INFO  16:48:00,980 - #43 nesto
+INFO  16:48:00,980 - #36 )
+INFO  16:48:00,980 - #39 {
+INFO  16:48:00,980 - #40 }
+INFO  16:48:00,980 - #40 }
+INFO  16:48:00,980 - #40 }

@@ -1,0 +1,27 @@
+INFO  16:31:38,379 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  16:31:38,467 - #2 program
+INFO  16:31:38,468 - #43 test301
+INFO  16:31:38,468 - #39 {
+INFO  16:31:38,469 - #10 void
+INFO  16:31:38,470 - #43 funkcija
+INFO  16:31:38,470 - #35 (
+INFO  16:31:38,470 - #43 int
+INFO  16:31:38,470 - #33 ,
+ERROR 16:31:38,471 - Sintaksna greska na liniji 9
+INFO  16:31:38,471 - #43 int
+INFO  16:31:38,471 - #43 b
+INFO  16:31:38,472 - #37 [
+INFO  16:31:38,476 - #38 ]
+INFO  16:31:38,479 - #33 ,
+INFO  16:31:38,481 - #42 23
+ERROR 16:31:38,481 - Sintaksna greska na liniji 9
+INFO  16:31:38,482 - #36 )
+INFO  16:31:38,482 - #39 {
+INFO  16:31:38,482 - #40 }
+INFO  16:31:38,484 - #10 void
+INFO  16:31:38,487 - #43 main
+INFO  16:31:38,487 - #35 (
+INFO  16:31:38,487 - #36 )
+INFO  16:31:38,488 - #39 {
+INFO  16:31:38,488 - #40 }
+INFO  16:31:38,488 - #40 }

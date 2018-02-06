@@ -92,6 +92,7 @@ nonterminal GlobalVarDecl GlobalVarDecl;
 nonterminal GlobalVarDeclList GlobalVarDeclList;
 nonterminal GlobalVarOne GlobalVarOne;
 nonterminal GlobalVarTwo GlobalVarTwo;
+nonterminal PomProcCallOne PomProcCallOne;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl, Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue, Expr, Term, Factor;
@@ -211,7 +212,7 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESUL
 					(NoMethodDecl) {: RESULT=new NoMethodDecl(); :}/* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeName:methName LPAREN FormPars:F1 RPAREN DeclVarOnlyList:D2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(methName, F1, D2, S3); RESULT.setLine(methNameleft); :} 
+MethodDecl ::= (MethodDecl) MethodTypeName:methName LPAREN FormPars:F1 DeclVarOnlyList:D2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(methName, F1, D2, S3); RESULT.setLine(methNameleft); :} 
 			   ;
 
 MethodTypeName ::= (MethodType) Type:retType IDENT:methName {: RESULT=new MethodType(retType, methName); RESULT.setLine(retTypeleft); :}
@@ -219,14 +220,18 @@ MethodTypeName ::= (MethodType) Type:retType IDENT:methName {: RESULT=new Method
 				   (MethodVoidType) VOID IDENT:methName {: RESULT=new MethodVoidType(methName); RESULT.setLine(methNameleft); :}
 				   ;
 				   
-FormPars ::= (FormParams) FormalParamList:F1 {: RESULT=new FormParams(F1); RESULT.setLine(F1left); :} 
+FormPars ::= (FormParams) FormalParamList:F1 {: RESULT=new FormParams(F1); RESULT.setLine(F1left); :}
 			 | 
-			 (NoFormParam) {: RESULT=new NoFormParam(); :} /* epsilon */ 
+			 (NoFormParam) RPAREN {: RESULT=new NoFormParam(); :} 
 			 ;
 
-FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:F2 {: RESULT=new FormalParamDecls(F1, F2); RESULT.setLine(F1left); :}
+FormalParamList ::= (FormalParamDecls) FormalParamDecl:F1 COMMA FormalParamList:F2 {: RESULT=new FormalParamDecls(F1, F2); RESULT.setLine(F1left); :}
 					|
-					(SingleFormalParamDecl) FormalParamDecl:F1 {: RESULT=new SingleFormalParamDecl(F1); RESULT.setLine(F1left); :}
+					(SingleFormalParamDecl) FormalParamDecl:F1 RPAREN {: RESULT=new SingleFormalParamDecl(F1); RESULT.setLine(F1left); :}
+					|
+					(ErrorTwoFormalParamDecl) error COMMA FormalParamList:F1 {: RESULT=new ErrorTwoFormalParamDecl(F1); RESULT.setLine(F1left); :}
+					|
+					(ErrorOneFormalParamDecl) error RPAREN {: RESULT=new ErrorOneFormalParamDecl(); :}
 					;
 					
 FormalParamDecl ::= (FormalParamDecl) Type:parType IDENT:parName ArrayPart:A1 {: RESULT=new FormalParamDecl(parType, parName, A1); RESULT.setLine(parTypeleft); :}
@@ -241,7 +246,11 @@ Statement ::= (Assignment) DesignatorStatement:D1 {: RESULT=new Assignment(D1); 
 			  |
 			  (IfStmtNoElse) IF LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new IfStmtNoElse(C1, S2); RESULT.setLine(C1left); :}
 			  |
+			  (IfStmtNoElseError) IF LPAREN error RPAREN Statement:S1 {: RESULT=new IfStmtNoElseError(S1); RESULT.setLine(S1left); :}
+			  |
 			  (IfStmtElse) IF LPAREN Condition:C1 RPAREN Statement:S2 ELSE Statement:S3 {: RESULT=new IfStmtElse(C1, S2, S3); RESULT.setLine(C1left); :}
+			  |
+			  (IsStmtElseError) IF LPAREN error RPAREN Statement:S1 ELSE Statement:S2 {: RESULT=new IsStmtElseError(S1, S2); RESULT.setLine(S1left); :}
 			  |
 			  (DoWhileStmt) DO Statement:S1 WHILE LPAREN Condition:C2 RPAREN SEMI {: RESULT=new DoWhileStmt(S1, C2); RESULT.setLine(S1left); :}
 			  |
@@ -267,7 +276,7 @@ Statement ::= (Assignment) DesignatorStatement:D1 {: RESULT=new Assignment(D1); 
 			  
 DesignatorStatement ::= (DesignatorStatementExpr) Designator:D1 EQUAL Expr:E2 SEMI {: RESULT=new DesignatorStatementExpr(D1, E2); RESULT.setLine(D1left); :}
 						|
-						(DesignatorStatementActP) Designator:D1 LPAREN ActList:A2 RPAREN SEMI {: RESULT=new DesignatorStatementActP(D1, A2); RESULT.setLine(D1left); :}
+						(DesignatorStatementActP) Designator:D1 PomProcCallOne:P2 ActList:A3 RPAREN SEMI {: RESULT=new DesignatorStatementActP(D1, P2, A3); RESULT.setLine(D1left); :}
 						|
 						(DesignatorStatementPP) Designator:D1 PP SEMI {: RESULT=new DesignatorStatementPP(D1); RESULT.setLine(D1left); :}
 						|
@@ -285,6 +294,9 @@ ActPars ::= (AnotherActPars) ActPars:A1 COMMA Expr:E2 {: RESULT=new AnotherActPa
 			|
 			(SingleActPars) Expr:E1 {: RESULT=new SingleActPars(E1); RESULT.setLine(E1left); :}
 			;
+
+PomProcCallOne::= (PomProcCallOne) LPAREN {: RESULT=new PomProcCallOne(); :}
+;
 
 Condition ::= (AnotherCondition) Condition:C1 LOGOR CondTerm:C2 {: RESULT=new AnotherCondition(C1, C2); RESULT.setLine(C1left); :}
 			  |
@@ -315,11 +327,11 @@ Term ::= (AnotherTerm) Term:T1 Mulop:M2 Factor:t {: RESULT=new AnotherTerm(T1, M
 		 
 Factor ::= (DesignatorNoActFactor) Designator:d {: RESULT=new DesignatorNoActFactor(d); RESULT.setLine(dleft); :}
 		   |
-		   (DesignatorActFactor) Designator:d LPAREN ActList:A1 RPAREN {: RESULT=new DesignatorActFactor(d, A1); RESULT.setLine(dleft); :}
+		   (DesignatorActFactor) Designator:d PomProcCallOne:P1 ActList:A2 RPAREN {: RESULT=new DesignatorActFactor(d, P1, A2); RESULT.setLine(dleft); :}
 		   |
 		   (NumberConstFactor) NUMBER:N1 {: RESULT=new NumberConstFactor(N1); RESULT.setLine(N1left); :}
 		   |
-		   (CharConstFactor) CHAR:C1 {: RESULT=new CharConstFactor(C1); RESULT.setLine(C1left); :}
+		   (CharConstFactor) CHAR:c {: RESULT=new CharConstFactor(c); RESULT.setLine(cleft); :}
 		   |
 		   (BoolConstFactor) BOOL:B1 {: RESULT=new BoolConstFactor(B1); RESULT.setLine(B1left); :}
 		   |

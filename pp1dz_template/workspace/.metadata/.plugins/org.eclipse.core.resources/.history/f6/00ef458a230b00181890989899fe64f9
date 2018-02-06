@@ -1,0 +1,22 @@
+// Test301
+
+program test301
+
+	int a;
+{
+
+	int funkcija()
+	{
+		return 5;
+	}
+
+
+	void main(int a)
+	char aa;
+	{
+		
+		aa=funkcija();
+	}
+}
+
+

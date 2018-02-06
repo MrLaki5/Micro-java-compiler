@@ -16,7 +16,7 @@ public class CounterVisitor extends VisitorAdaptor {
 	public static class FormParamCounter extends CounterVisitor {
 
 		public void visit(FormalParamDecl formParamDecl1) {
-			//count++;
+			count++;
 		}		
 	}
 	

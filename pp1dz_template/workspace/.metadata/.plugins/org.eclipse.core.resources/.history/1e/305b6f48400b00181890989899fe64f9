@@ -1,0 +1,26 @@
+// Test301
+
+program test301
+
+	int a;
+{
+
+	int funkcija(int c, char a)
+	{
+		a='x';
+		return c;
+	}
+
+	char nesto(bool pom){
+		return 'x';
+	}
+
+	void main()
+	int aa;
+	char bb[], b;
+	{	
+		aa=funkcija(5,'a');
+	}
+}
+
+
