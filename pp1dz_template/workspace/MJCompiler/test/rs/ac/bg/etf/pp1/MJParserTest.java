@@ -52,7 +52,7 @@ public class MJParserTest {
 			Symbol sim=p.parse();
 			
 			if(!p.errorDetected){
-				//log.info(((rs.ac.bg.etf.pp1.ast.Program)prog).toString(""));
+				//log.info(((rs.ac.bg.etf.pp1.ast.Program)sim.value).toString(""));
 				Tab.init();
 				Struct booleanStr=new Struct(Struct.Int);
 				Tab.insert(Obj.Type, "bool", booleanStr);

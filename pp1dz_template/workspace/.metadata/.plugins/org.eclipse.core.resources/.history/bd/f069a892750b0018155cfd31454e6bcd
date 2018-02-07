@@ -1,0 +1,408 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
+import rs.ac.bg.etf.pp1.CounterVisitor.MethodVarCounter;
+import rs.ac.bg.etf.pp1.ast.AnotherCondTerm;
+import rs.ac.bg.etf.pp1.ast.AnotherConstDecl;
+import rs.ac.bg.etf.pp1.ast.AnotherExpr;
+import rs.ac.bg.etf.pp1.ast.AnotherExprDesignator;
+import rs.ac.bg.etf.pp1.ast.AnotherTerm;
+import rs.ac.bg.etf.pp1.ast.BoolConstFactor;
+import rs.ac.bg.etf.pp1.ast.BooleanValue;
+import rs.ac.bg.etf.pp1.ast.CharConstFactor;
+import rs.ac.bg.etf.pp1.ast.CondFactNoRelop;
+import rs.ac.bg.etf.pp1.ast.CondFactRelop;
+import rs.ac.bg.etf.pp1.ast.ConstDecl;
+import rs.ac.bg.etf.pp1.ast.DesignatorActFactor;
+import rs.ac.bg.etf.pp1.ast.DesignatorNoActFactor;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementActP;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementMM;
+import rs.ac.bg.etf.pp1.ast.DesignatorStatementPP;
+import rs.ac.bg.etf.pp1.ast.DivMulop;
+import rs.ac.bg.etf.pp1.ast.ElseStart;
+import rs.ac.bg.etf.pp1.ast.EqualsRelop;
+import rs.ac.bg.etf.pp1.ast.GreaterEqualRelop;
+import rs.ac.bg.etf.pp1.ast.GreaterRelop;
+import rs.ac.bg.etf.pp1.ast.IfStart;
+import rs.ac.bg.etf.pp1.ast.IfStartThis;
+import rs.ac.bg.etf.pp1.ast.IfStmtElse;
+import rs.ac.bg.etf.pp1.ast.IfStmtNoElse;
+import rs.ac.bg.etf.pp1.ast.IntegerValue;
+import rs.ac.bg.etf.pp1.ast.LogorNT;
+import rs.ac.bg.etf.pp1.ast.LowerRelop;
+import rs.ac.bg.etf.pp1.ast.MethodDecl;
+import rs.ac.bg.etf.pp1.ast.MethodType;
+import rs.ac.bg.etf.pp1.ast.MethodTypeName;
+import rs.ac.bg.etf.pp1.ast.MethodVoidType;
+import rs.ac.bg.etf.pp1.ast.MulMulop;
+import rs.ac.bg.etf.pp1.ast.NewExprFactor;
+import rs.ac.bg.etf.pp1.ast.NotEqualsRelop;
+import rs.ac.bg.etf.pp1.ast.NumberConstFactor;
+import rs.ac.bg.etf.pp1.ast.PlusAddop;
+import rs.ac.bg.etf.pp1.ast.PrintNoNumStmt;
+import rs.ac.bg.etf.pp1.ast.PrintNumStmt;
+import rs.ac.bg.etf.pp1.ast.ReadStmt;
+import rs.ac.bg.etf.pp1.ast.ReturnExprStmt;
+import rs.ac.bg.etf.pp1.ast.ReturnNoExprStmt;
+import rs.ac.bg.etf.pp1.ast.SingleCondition;
+import rs.ac.bg.etf.pp1.ast.SingleDesignator;
+import rs.ac.bg.etf.pp1.ast.SingleNegExpr;
+import rs.ac.bg.etf.pp1.ast.StringValue;
+import rs.ac.bg.etf.pp1.ast.SyntaxNode;
+import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	public class Elem{
+		java.util.List<Integer> tf=new java.util.ArrayList<Integer>();
+		java.util.List<Integer> jmpif=new java.util.ArrayList<Integer>();
+	}
+	
+	private int varCount;
+	private int paramCnt;
+	private int mainPc;
+	private boolean arrayIs=false;
+	private Struct booleanStr;
+	private java.util.List<Elem> globalLista= new java.util.ArrayList<Elem>();
+	private int globalCounter=-1;
+	
+	public CodeGenerator(Struct booleanStr){
+		this.booleanStr=booleanStr;
+	}
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+
+	public void visit(MethodVoidType MethodTypeName) {
+		if ("main".equalsIgnoreCase(MethodTypeName.obj.getName())) {
+			mainPc = Code.pc;
+		}
+		MethodTypeName.obj.setAdr(Code.pc);
+		
+		// Collect arguments and local variables.
+		SyntaxNode methodNode = MethodTypeName.getParent();
+		MethodVarCounter varCnt = new MethodVarCounter();
+		methodNode.traverseTopDown(varCnt);
+		FormParamCounter fpCnt = new FormParamCounter();
+		methodNode.traverseTopDown(fpCnt);
+		
+		// Generate the entry.
+		Code.put(Code.enter);
+		Code.put(fpCnt.getCount());
+		Code.put(varCnt.getCount() + fpCnt.getCount());
+	}
+	
+
+	public void visit(MethodType MethodTypeName) {
+		if ("main".equalsIgnoreCase(MethodTypeName.obj.getName())) {
+			mainPc = Code.pc;
+		}
+		MethodTypeName.obj.setAdr(Code.pc);
+		
+		// Collect arguments and local variables.
+		SyntaxNode methodNode = MethodTypeName.getParent();
+		MethodVarCounter varCnt = new MethodVarCounter();
+		methodNode.traverseTopDown(varCnt);
+		FormParamCounter fpCnt = new FormParamCounter();
+		methodNode.traverseTopDown(fpCnt);
+		
+		//int fpCntInt=MethodTypeName.obj.getLevel();
+		
+		// Generate the entry.
+		
+		Code.put(Code.enter);
+		Code.put(fpCnt.getCount());
+		Code.put(varCnt.getCount() + fpCnt.getCount());
+	}
+	
+	public void visit(MethodDecl MethodDecl) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	public void visit(ReturnExprStmt ReturnExpr) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	public void visit(ReturnNoExprStmt ReturnNoExpr) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	public void visit(PrintNoNumStmt printStmt) {
+		Struct t=printStmt.getExpr().struct;
+		if(t==Tab.intType){
+			Code.loadConst(5);
+			Code.put(Code.print);
+		}
+		else{
+			if(t==booleanStr){
+				Code.loadConst(5);
+				Code.put(Code.print);
+			}
+			else{
+				Code.loadConst(1);		
+				Code.put(Code.bprint);
+			}
+		}	
+	}
+	
+	public void visit(PrintNumStmt printStmt) {
+		Struct t=printStmt.getExpr().struct;
+		Code.load(new Obj(Obj.Con, "", Tab.intType, printStmt.getN2(), 0));	
+		if(t==Tab.intType){
+			//Code.loadConst(5);
+			Code.put(Code.print);
+		}
+		else{
+			if(t==booleanStr){
+				//Code.loadConst(5);
+				Code.put(Code.print);
+			}
+			else{
+				//Code.loadConst(1);		
+				Code.put(Code.bprint);
+			}
+		}	
+	}
+	
+	public void visit(NumberConstFactor factor) {
+		Code.load(new Obj(Obj.Con, "", Tab.intType, factor.getN1(), 0));		
+	}
+	
+	public void visit(CharConstFactor factor){
+		Code.load(new Obj(Obj.Con, "", Tab.charType, factor.getC().charAt(1), 0));
+	}
+	
+	public void visit(BoolConstFactor factor){
+		if(factor.getB1().equals("true")){
+			Code.load(new Obj(Obj.Con, "", booleanStr, 1, 0));
+		}
+		else{
+			Code.load(new Obj(Obj.Con, "", booleanStr, 0, 0));
+		}
+	}
+	
+	public void visit(NewExprFactor factor){
+		Code.put(Code.newarray);
+		if(factor.getType().struct==Tab.charType){
+			Code.put(0);
+		}
+		else{
+			Code.put(1);
+		}
+		arrayIs=true;
+	}
+	
+	public void visit(SingleDesignator desig) {
+		if(!(desig.getParent() instanceof DesignatorStatementActP)){
+			if(!(desig.getParent() instanceof DesignatorActFactor)){
+					Code.load(desig.obj);
+			}
+		}
+	}
+	
+	public void visit(AnotherExprDesignator desig){
+		if(!(desig.getParent() instanceof DesignatorStatementExpr)){
+			Code.put(Code.baload);
+		}
+	}
+	
+	public void visit(DesignatorStatementExpr designatorStatementExpr) {
+		if(designatorStatementExpr.getDesignator() instanceof SingleDesignator){
+			Code.store(designatorStatementExpr.getDesignator().obj);
+			Code.put(Code.pop);
+		}
+		else{
+			Code.put(Code.bastore);
+		}
+	}
+	
+	public void visit(AnotherExpr addExpr) {
+		if (addExpr.getAddop() instanceof PlusAddop){
+			Code.put(Code.add);
+		}
+		else{
+			Code.put(Code.sub);
+		}
+	}
+	
+	public void visit(SingleNegExpr negExpr){
+		Code.put(Code.neg);
+	}
+	
+	public void visit(AnotherTerm term){
+		if (term.getMulop() instanceof MulMulop){
+			Code.put(Code.mul);
+		}
+		else{
+			if(term.getMulop() instanceof DivMulop){
+				Code.put(Code.div);
+			}
+			else{
+				Code.put(Code.rem);
+			}
+		}
+	}
+	
+	public void visit(DesignatorStatementPP statement){
+		Code.load(new Obj(Obj.Con, "", Tab.intType, 1, 0));
+		Code.put(Code.add);
+		Code.store(statement.getDesignator().obj);
+	}
+	
+	public void visit(DesignatorStatementMM statement){
+		Code.load(new Obj(Obj.Con, "", Tab.intType, 1, 0));
+		Code.put(Code.sub);
+		Code.store(statement.getDesignator().obj);
+	}
+	
+	public void visit(ReadStmt statement){
+		Code.put(Code.read);
+		Code.store(statement.getDesignator().obj);
+		Code.put(Code.pop);
+	}
+	
+	public void visit(DesignatorStatementActP FuncCall) {
+		Obj functionObj = FuncCall.getDesignator().obj;		
+		String methodName= functionObj.getName();
+		if(methodName.equals("len")){
+			Code.put(Code.arraylength);
+		}
+		else{
+			if(methodName.equals("chr") || methodName.equals("ord")){
+				return;
+			}
+			int offset = functionObj.getAdr() - Code.pc; 
+			Code.put(Code.call);
+			Code.put2(offset);
+		}
+	}
+	
+	public void visit(DesignatorActFactor FuncCall) {
+		Obj functionObj = FuncCall.getDesignator().obj;		
+		String methodName= functionObj.getName();
+		if(methodName.equals("len")){
+			Code.put(Code.arraylength);
+		}
+		else{
+			if(methodName.equals("chr") || methodName.equals("ord")){
+				return;
+			}
+			int offset = functionObj.getAdr() - Code.pc; 
+			Code.put(Code.call);
+			Code.put2(offset);
+		}
+	}
+	
+	
+	//CONDITIONS===================================================================
+	
+	public void visit(LogorNT logor){
+		for (int elem : globalLista.get(globalCounter).tf) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).tf.clear();
+	}
+	
+	//-----
+	
+	public void visit(IfStartThis ifst){
+		for (int elem : globalLista.get(globalCounter).jmpif) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).jmpif.clear();
+	}
+	
+	public void visit(IfStart ifst){
+		globalLista.add(new Elem());
+		globalCounter++;
+	}
+	
+	public void visit(ElseStart elseSt){
+		globalLista.get(globalCounter).jmpif.add(Code.pc);
+		Code.putJump(0);
+		
+		for (int elem : globalLista.get(globalCounter).tf) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).tf.clear();
+	}
+	
+	//-----
+	
+	public void visit(IfStmtNoElse ine){
+		for (int elem : globalLista.get(globalCounter).tf) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).tf.clear();
+		globalLista.remove(globalCounter);
+		globalCounter--;
+	}
+	
+	public void visit(IfStmtElse ie){
+		for (int elem : globalLista.get(globalCounter).jmpif) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).jmpif.clear();
+		globalLista.remove(globalCounter);
+		globalCounter--;
+	}
+	
+	//-----
+	
+	public void visit(AnotherCondTerm term){
+		globalLista.get(globalCounter).jmpif.add(Code.pc);
+		Code.putJump(0);
+	}
+	
+	public void visit(SingleCondition term){
+		globalLista.get(globalCounter).jmpif.add(Code.pc);
+		Code.putJump(0);
+	}
+	
+	//-----
+	
+	public void visit(CondFactNoRelop condF){
+		globalLista.get(globalCounter).tf.add(Code.pc);
+		Code.putFalseJump(Code.eq, 0);
+	}
+	
+	public void visit(CondFactRelop condF){
+		SyntaxNode temp=condF.getRelop();
+		globalLista.get(globalCounter).tf.add(Code.pc+1);
+		if(temp instanceof EqualsRelop){
+			Code.putFalseJump(Code.eq, 0);
+		}
+		else{
+			if(temp instanceof NotEqualsRelop){
+				Code.putFalseJump(Code.ne, 0);
+			}
+			else{
+				if(temp instanceof GreaterRelop){
+					Code.putFalseJump(Code.gt, 0);
+				}
+				else{
+					if(temp instanceof GreaterEqualRelop){
+						Code.putFalseJump(Code.ge, 0);
+					}
+					else{
+						if(temp instanceof LowerRelop){
+							Code.putFalseJump(Code.lt, 0);
+						}
+						else{
+							Code.putFalseJump(Code.le, 0);
+						}
+					}
+				}
+			}
+		}	
+	}
+}

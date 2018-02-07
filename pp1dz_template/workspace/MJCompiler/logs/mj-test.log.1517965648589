@@ -1,0 +1,112 @@
+INFO  02:06:57,870 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\semantikTest.mj
+INFO  02:06:57,933 - #2 program
+INFO  02:06:57,933 - #43 HelloWorld
+INFO  02:06:57,933 - #43 char
+INFO  02:06:57,933 - #43 niz
+INFO  02:06:57,933 - #37 [
+INFO  02:06:57,933 - #38 ]
+INFO  02:06:57,933 - #32 ;
+INFO  02:06:57,948 - #43 int
+INFO  02:06:57,948 - #43 counter
+INFO  02:06:57,948 - #32 ;
+INFO  02:06:57,948 - #39 {
+INFO  02:06:57,948 - #10 void
+INFO  02:06:57,948 - #43 ispisi
+INFO  02:06:57,948 - #35 (
+INFO  02:06:57,948 - #43 char
+INFO  02:06:57,948 - #43 c
+INFO  02:06:57,948 - #36 )
+INFO  02:06:57,948 - #39 {
+INFO  02:06:57,948 - #7 print
+INFO  02:06:57,948 - #35 (
+INFO  02:06:57,948 - #43 c
+INFO  02:06:57,948 - #36 )
+INFO  02:06:57,948 - #32 ;
+INFO  02:06:57,948 - #40 }
+INFO  02:06:57,948 - #10 void
+INFO  02:06:57,948 - #43 main
+INFO  02:06:57,948 - #35 (
+INFO  02:06:57,948 - #36 )
+INFO  02:06:57,948 - #39 {
+INFO  02:06:57,948 - #43 niz
+INFO  02:06:57,948 - #29 =
+INFO  02:06:57,948 - #6 new
+INFO  02:06:57,948 - #43 char
+INFO  02:06:57,948 - #37 [
+INFO  02:06:57,948 - #42 5
+INFO  02:06:57,948 - #38 ]
+INFO  02:06:57,948 - #32 ;
+INFO  02:06:57,948 - #43 niz
+INFO  02:06:57,948 - #37 [
+INFO  02:06:57,948 - #42 0
+INFO  02:06:57,948 - #38 ]
+INFO  02:06:57,948 - #29 =
+INFO  02:06:57,948 - #43 h
+INFO  02:06:57,948 - #32 ;
+INFO  02:06:57,948 - #43 niz
+INFO  02:06:57,948 - #37 [
+INFO  02:06:57,948 - #42 1
+INFO  02:06:57,948 - #38 ]
+INFO  02:06:57,948 - #29 =
+INFO  02:06:57,964 - #43 e
+INFO  02:06:57,964 - #32 ;
+INFO  02:06:57,964 - #43 niz
+INFO  02:06:57,964 - #37 [
+INFO  02:06:57,964 - #42 2
+INFO  02:06:57,964 - #38 ]
+INFO  02:06:57,964 - #29 =
+INFO  02:06:57,964 - #43 l
+INFO  02:06:57,964 - #32 ;
+INFO  02:06:57,964 - #43 niz
+INFO  02:06:57,964 - #37 [
+INFO  02:06:57,964 - #42 3
+INFO  02:06:57,964 - #38 ]
+INFO  02:06:57,964 - #29 =
+INFO  02:06:57,964 - #43 l
+INFO  02:06:57,964 - #32 ;
+INFO  02:06:57,964 - #43 niz
+INFO  02:06:57,964 - #37 [
+INFO  02:06:57,964 - #42 4
+INFO  02:06:57,964 - #38 ]
+INFO  02:06:57,964 - #29 =
+INFO  02:06:57,964 - #43 o
+INFO  02:06:57,964 - #32 ;
+INFO  02:06:57,964 - #11 do
+INFO  02:06:57,964 - #39 {
+INFO  02:06:57,964 - #43 ispisi
+INFO  02:06:57,964 - #35 (
+INFO  02:06:57,964 - #43 niz
+INFO  02:06:57,964 - #37 [
+INFO  02:06:57,964 - #43 counter
+INFO  02:06:57,964 - #38 ]
+INFO  02:06:57,964 - #36 )
+INFO  02:06:57,964 - #32 ;
+INFO  02:06:57,964 - #43 counter
+INFO  02:06:57,964 - #30 ++
+INFO  02:06:57,964 - #32 ;
+INFO  02:06:57,964 - #40 }
+INFO  02:06:57,964 - #12 while
+INFO  02:06:57,964 - #35 (
+INFO  02:06:57,964 - #43 counter
+INFO  02:06:57,964 - #25 <
+INFO  02:06:57,964 - #42 5
+INFO  02:06:57,964 - #36 )
+INFO  02:06:57,964 - #32 ;
+INFO  02:06:57,964 - #40 }
+INFO  02:06:57,964 - #40 }
+INFO  02:06:57,980 - Deklarisan niz niz, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  02:06:57,980 - Deklarisana promenljiva counter, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 4
+INFO  02:06:57,980 - Obrada funkcije ispisi, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 8
+INFO  02:06:57,980 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 8
+INFO  02:06:58,011 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 14
+ERROR 02:06:58,011 - Ime h nije deklarisano: linija 17
+ERROR 02:06:58,011 - Nekompatibilni tipovi u dodeli vrednosti: linija 17
+ERROR 02:06:58,011 - Ime e nije deklarisano: linija 18
+ERROR 02:06:58,011 - Nekompatibilni tipovi u dodeli vrednosti: linija 18
+ERROR 02:06:58,011 - Ime l nije deklarisano: linija 19
+ERROR 02:06:58,011 - Nekompatibilni tipovi u dodeli vrednosti: linija 19
+ERROR 02:06:58,011 - Ime l nije deklarisano: linija 20
+ERROR 02:06:58,011 - Nekompatibilni tipovi u dodeli vrednosti: linija 20
+ERROR 02:06:58,011 - Ime o nije deklarisano: linija 21
+ERROR 02:06:58,011 - Nekompatibilni tipovi u dodeli vrednosti: linija 21
+INFO  02:06:58,011 - Pronadjen poziv funkcije ispisi: linija 24

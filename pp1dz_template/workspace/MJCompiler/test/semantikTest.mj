@@ -1,0 +1,29 @@
+program HelloWorld
+
+char niz[];
+int counter;
+{
+
+	
+	void ispisi(char c)
+	{
+		print(c, 20);
+	}
+	
+	
+	void main()
+	{
+		niz= new char[5];
+		niz[0]='h';
+		niz[1]='e';
+		niz[2]='l';
+		niz[3]='l';
+		niz[4]='o';
+		
+		do{
+			ispisi(niz[counter]);
+			counter++;
+		}while(counter<5);
+	}
+}
+

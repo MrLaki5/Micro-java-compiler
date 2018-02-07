@@ -1,0 +1,141 @@
+INFO  02:05:55,183 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\semantikTest2.mj
+INFO  02:05:55,229 - #2 program
+INFO  02:05:55,229 - #43 P
+INFO  02:05:55,229 - #43 int
+INFO  02:05:55,229 - #43 a
+INFO  02:05:55,229 - #33 ,
+INFO  02:05:55,229 - #43 abc
+INFO  02:05:55,246 - #37 [
+INFO  02:05:55,246 - #38 ]
+INFO  02:05:55,246 - #32 ;
+INFO  02:05:55,246 - #43 char
+INFO  02:05:55,246 - #43 ab
+INFO  02:05:55,246 - #37 [
+INFO  02:05:55,246 - #38 ]
+INFO  02:05:55,246 - #32 ;
+INFO  02:05:55,246 - #39 {
+INFO  02:05:55,246 - #43 int
+INFO  02:05:55,246 - #43 sum
+INFO  02:05:55,246 - #35 (
+INFO  02:05:55,246 - #43 int
+INFO  02:05:55,246 - #43 a
+INFO  02:05:55,246 - #33 ,
+INFO  02:05:55,246 - #43 char
+INFO  02:05:55,246 - #43 b
+INFO  02:05:55,246 - #36 )
+INFO  02:05:55,246 - #39 {
+INFO  02:05:55,246 - #5 if
+INFO  02:05:55,246 - #35 (
+INFO  02:05:55,246 - #44 true
+INFO  02:05:55,246 - #21 ==
+INFO  02:05:55,246 - #42 1
+INFO  02:05:55,246 - #27 &&
+INFO  02:05:55,246 - #43 a
+INFO  02:05:55,246 - #36 )
+INFO  02:05:55,246 - #39 {
+INFO  02:05:55,246 - #40 }
+INFO  02:05:55,246 - #9 return
+INFO  02:05:55,246 - #43 z
+INFO  02:05:55,246 - #16 +
+INFO  02:05:55,246 - #43 d
+INFO  02:05:55,246 - #32 ;
+INFO  02:05:55,246 - #40 }
+INFO  02:05:55,246 - #10 void
+INFO  02:05:55,246 - #43 main
+INFO  02:05:55,246 - #35 (
+INFO  02:05:55,261 - #43 int
+INFO  02:05:55,261 - #43 abc
+INFO  02:05:55,261 - #36 )
+INFO  02:05:55,261 - #43 char
+INFO  02:05:55,261 - #43 pom
+INFO  02:05:55,261 - #32 ;
+INFO  02:05:55,261 - #39 {
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #29 =
+INFO  02:05:55,261 - #44 true
+INFO  02:05:55,261 - #32 ;
+INFO  02:05:55,261 - #43 sum
+INFO  02:05:55,261 - #35 (
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #33 ,
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #36 )
+INFO  02:05:55,261 - #32 ;
+INFO  02:05:55,261 - #43 pom
+INFO  02:05:55,261 - #29 =
+INFO  02:05:55,261 - #43 sum
+INFO  02:05:55,261 - #35 (
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #33 ,
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #33 ,
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #36 )
+INFO  02:05:55,261 - #32 ;
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #29 =
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #16 +
+INFO  02:05:55,261 - #43 b
+INFO  02:05:55,261 - #32 ;
+INFO  02:05:55,261 - #43 a
+INFO  02:05:55,261 - #29 =
+INFO  02:05:55,261 - #42 2
+INFO  02:05:55,261 - #19 /
+INFO  02:05:55,261 - #42 4
+INFO  02:05:55,277 - #32 ;
+INFO  02:05:55,277 - #43 pom
+INFO  02:05:55,277 - #29 =
+INFO  02:05:55,277 - #17 -
+INFO  02:05:55,277 - #45 'x'
+INFO  02:05:55,277 - #32 ;
+INFO  02:05:55,277 - #43 a
+INFO  02:05:55,277 - #29 =
+INFO  02:05:55,277 - #42 2
+INFO  02:05:55,277 - #18 *
+INFO  02:05:55,277 - #44 true
+INFO  02:05:55,277 - #16 +
+INFO  02:05:55,277 - #45 'x'
+INFO  02:05:55,277 - #16 +
+INFO  02:05:55,277 - #42 5
+INFO  02:05:55,277 - #16 +
+INFO  02:05:55,277 - #42 7
+INFO  02:05:55,277 - #32 ;
+INFO  02:05:55,277 - #3 break
+INFO  02:05:55,277 - #32 ;
+INFO  02:05:55,277 - #40 }
+INFO  02:05:55,277 - #40 }
+INFO  02:05:55,292 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  02:05:55,292 - Deklarisan niz abc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 3
+INFO  02:05:55,292 - Deklarisan niz ab, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 4
+INFO  02:05:55,292 - Obrada funkcije sum, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 9
+INFO  02:05:55,292 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 9
+INFO  02:05:55,292 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 9
+ERROR 02:05:55,292 - Faktor sa relopom ne moze biti bool tipa: linija 12
+ERROR 02:05:55,292 - Izrazi u faktoru nisu kompatibilni: linija 12
+ERROR 02:05:55,292 - Faktor mora biti bool tipa: linija 12
+ERROR 02:05:55,307 - Ime z nije deklarisano: linija 16
+ERROR 02:05:55,307 - Ime d nije deklarisano: linija 16
+ERROR 02:05:55,307 - Nekompatibilni tipovi u izrazu za sabiranje: linija 16
+ERROR 02:05:55,307 - Tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije sum: linija 16
+INFO  02:05:55,307 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 20
+INFO  02:05:55,307 - Deklarisana promenljiva abc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 20
+INFO  02:05:55,307 - Deklarisana promenljiva pom, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 21
+ERROR 02:05:55,307 - Nekompatibilni tipovi u dodeli vrednosti: linija 23
+INFO  02:05:55,496 - Pronadjen poziv funkcije sum: linija 24
+ERROR 02:05:55,496 - Parametri se ne poklapaju u funkciji sum: linija 24
+INFO  02:05:55,496 - Pronadjen poziv funkcije sum: linija 25
+ERROR 02:05:55,496 - Pogresan broj parametara funkcije sum: linija 25
+ERROR 02:05:55,496 - Nekompatibilni tipovi u dodeli vrednosti: linija 25
+ERROR 02:05:55,496 - Ime b nije deklarisano: linija 26
+ERROR 02:05:55,496 - Nekompatibilni tipovi u izrazu za sabiranje: linija 26
+ERROR 02:05:55,496 - Nekompatibilni tipovi u dodeli vrednosti: linija 26
+ERROR 02:05:55,496 - Nekompatibilan tip: linija 28
+ERROR 02:05:55,496 - Nekompatibilni tipovi u dodeli vrednosti: linija 28
+ERROR 02:05:55,496 - Nekompatibilan tip u izrazu za mnozenje: linija 29
+ERROR 02:05:55,496 - Nekompatibilni tipovi u izrazu za sabiranje: linija 29
+ERROR 02:05:55,496 - Nekompatibilni tipovi u izrazu za sabiranje: linija 29
+ERROR 02:05:55,496 - Nekompatibilni tipovi u izrazu za sabiranje: linija 29
+ERROR 02:05:55,496 - Nekompatibilni tipovi u dodeli vrednosti: linija 29
+ERROR 02:05:55,496 - Break mora biti u do while petlji
+ERROR 02:05:55,496 - Main nije pronadjen u programu

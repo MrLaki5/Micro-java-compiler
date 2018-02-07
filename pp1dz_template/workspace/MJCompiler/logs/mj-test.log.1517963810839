@@ -1,0 +1,28 @@
+INFO  01:36:39,229 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\parserTest.mj
+INFO  01:36:39,276 - #2 program
+INFO  01:36:39,276 - #43 P
+INFO  01:36:39,276 - #39 {
+INFO  01:36:39,276 - #43 int
+INFO  01:36:39,276 - #43 sum
+INFO  01:36:39,276 - #35 (
+INFO  01:36:39,276 - #36 )
+INFO  01:36:39,276 - #39 {
+INFO  01:36:39,276 - #9 return
+INFO  01:36:39,276 - #43 z
+INFO  01:36:39,276 - #16 +
+INFO  01:36:39,276 - #43 d
+INFO  01:36:39,276 - #32 ;
+INFO  01:36:39,276 - #40 }
+INFO  01:36:39,276 - #10 void
+INFO  01:36:39,276 - #43 main
+INFO  01:36:39,276 - #35 (
+INFO  01:36:39,276 - #36 )
+INFO  01:36:39,276 - #39 {
+INFO  01:36:39,276 - #40 }
+INFO  01:36:39,276 - #40 }
+INFO  01:36:39,307 - Obrada funkcije sum, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 8
+ERROR 01:36:39,307 - Ime z nije deklarisano: linija 10
+ERROR 01:36:39,307 - Ime d nije deklarisano: linija 10
+ERROR 01:36:39,307 - Nekompatibilni tipovi u izrazu za sabiranje: linija 10
+ERROR 01:36:39,307 - Tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije sum: linija 10
+INFO  01:36:39,307 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 14

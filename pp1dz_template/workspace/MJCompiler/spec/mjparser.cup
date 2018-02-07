@@ -64,6 +64,7 @@ nonterminal /*Program, ProgName, */DeclList, DeclVarOnlyList, ConstDeclList, Var
 nonterminal	ClassDecl, ExtendsPart, ClassMethodDecl, MethodDeclList, FormPars, FormalParamList, GlobalVarType, ConstDeclType;
 nonterminal FormalParamDecl, StatementList, Statement, DesignatorStatement, ActList, ActPars, Condition, CondTerm, CondFact;
 nonterminal Relop, Addop, Mulop, ArrayPart, GlobalVarDecl, GlobalVarDeclList, GlobalVarOne, GlobalVarTwo, PomProcCallOne, DoWhileStart;
+nonterminal LogorNT, IfStartThis, IfStart, ElseStart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl, Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue, Expr, Term, Factor;
@@ -215,13 +216,13 @@ StatementList ::= (Statements) StatementList Statement
 				  
 Statement ::= (Assignment) DesignatorStatement
 			  |
-			  (IfStmtNoElse) IF LPAREN Condition RPAREN Statement
+			  (IfStmtNoElse) IfStart LPAREN Condition IfStartThis Statement
 			  |
-			  (IfStmtNoElseError) IF LPAREN error RPAREN Statement
+			  (IfStmtNoElseError) IfStart LPAREN error IfStartThis Statement
 			  |
-			  (IfStmtElse) IF LPAREN Condition RPAREN Statement ELSE Statement
+			  (IfStmtElse) IfStart LPAREN Condition IfStartThis Statement ElseStart Statement
 			  |
-			  (IsStmtElseError) IF LPAREN error RPAREN Statement ELSE Statement
+			  (IsStmtElseError) IfStart LPAREN error IfStartThis Statement ElseStart Statement
 			  |
 			  (DoWhileStmt) DoWhileStart Statement WHILE LPAREN Condition RPAREN SEMI
 			  |
@@ -246,6 +247,15 @@ Statement ::= (Assignment) DesignatorStatement
 			  ;
 			  
 DoWhileStart ::= (DoWhileStart) DO
+;
+
+IfStartThis ::= (IfStartThis) RPAREN
+;
+
+IfStart ::= (IfStart) IF
+;
+
+ElseStart ::= (ElseStart) ELSE
 ;
 			  
 DesignatorStatement ::= (DesignatorStatementExpr) Designator EQUAL Expr SEMI
@@ -272,10 +282,13 @@ ActPars ::= (AnotherActPars) ActPars COMMA Expr
 PomProcCallOne::= (PomProcCallOne) LPAREN
 ;
 
-Condition ::= (AnotherCondition) Condition LOGOR CondTerm
+Condition ::= (AnotherCondition) Condition LogorNT CondTerm
 			  |
 			  (SingleCondition) CondTerm
 			  ;
+
+LogorNT ::= (LogorNT) LOGOR
+;
 
 CondTerm ::= (AnotherCondTerm) CondTerm LOGAND CondFact
 			 |

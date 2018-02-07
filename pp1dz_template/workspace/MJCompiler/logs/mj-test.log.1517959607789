@@ -1,0 +1,462 @@
+INFO  00:26:00,524 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  00:26:00,586 - #2 program
+INFO  00:26:00,586 - #43 P
+INFO  00:26:00,586 - #43 int
+INFO  00:26:00,586 - #43 res
+INFO  00:26:00,602 - #32 ;
+INFO  00:26:00,602 - #39 {
+INFO  00:26:00,602 - #10 void
+INFO  00:26:00,602 - #43 main
+INFO  00:26:00,602 - #35 (
+INFO  00:26:00,602 - #36 )
+INFO  00:26:00,602 - #43 int
+INFO  00:26:00,602 - #43 i
+INFO  00:26:00,602 - #32 ;
+INFO  00:26:00,602 - #39 {
+INFO  00:26:00,602 - #43 res
+INFO  00:26:00,602 - #29 =
+INFO  00:26:00,602 - #42 5
+INFO  00:26:00,602 - #32 ;
+INFO  00:26:00,602 - #43 i
+INFO  00:26:00,602 - #29 =
+INFO  00:26:00,602 - #42 6
+INFO  00:26:00,602 - #32 ;
+INFO  00:26:00,602 - #11 do
+INFO  00:26:00,602 - #39 {
+INFO  00:26:00,602 - #5 if
+INFO  00:26:00,602 - #35 (
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #25 <
+INFO  00:26:00,617 - #42 5
+INFO  00:26:00,617 - #28 ||
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #24 >=
+INFO  00:26:00,617 - #42 8
+INFO  00:26:00,617 - #27 &&
+INFO  00:26:00,617 - #44 true
+INFO  00:26:00,617 - #28 ||
+INFO  00:26:00,617 - #42 1
+INFO  00:26:00,617 - #21 ==
+INFO  00:26:00,617 - #42 1
+INFO  00:26:00,617 - #28 ||
+INFO  00:26:00,617 - #42 0
+INFO  00:26:00,617 - #22 !=
+INFO  00:26:00,617 - #42 1
+INFO  00:26:00,617 - #27 &&
+INFO  00:26:00,617 - #44 false
+INFO  00:26:00,617 - #36 )
+INFO  00:26:00,617 - #11 do
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #29 =
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #16 +
+INFO  00:26:00,617 - #43 i
+INFO  00:26:00,617 - #32 ;
+INFO  00:26:00,617 - #12 while
+INFO  00:26:00,617 - #35 (
+INFO  00:26:00,617 - #44 false
+INFO  00:26:00,617 - #36 )
+INFO  00:26:00,617 - #32 ;
+INFO  00:26:00,617 - #5 if
+INFO  00:26:00,617 - #35 (
+INFO  00:26:00,617 - #42 1
+INFO  00:26:00,617 - #21 ==
+INFO  00:26:00,617 - #42 0
+INFO  00:26:00,617 - #36 )
+INFO  00:26:00,617 - #3 break
+INFO  00:26:00,617 - #32 ;
+INFO  00:26:00,617 - #41 else
+INFO  00:26:00,617 - #14 continue
+INFO  00:26:00,617 - #32 ;
+INFO  00:26:00,617 - #40 }
+INFO  00:26:00,617 - #12 while
+INFO  00:26:00,617 - #35 (
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #25 <
+INFO  00:26:00,617 - #42 20
+INFO  00:26:00,617 - #36 )
+INFO  00:26:00,617 - #32 ;
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #29 =
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #16 +
+INFO  00:26:00,617 - #42 2
+INFO  00:26:00,617 - #32 ;
+INFO  00:26:00,617 - #7 print
+INFO  00:26:00,617 - #35 (
+INFO  00:26:00,617 - #43 res
+INFO  00:26:00,617 - #36 )
+INFO  00:26:00,617 - #32 ;
+INFO  00:26:00,617 - #40 }
+INFO  00:26:00,617 - #40 }
+INFO  00:26:00,633 - Program(
+  ProgName(
+   P
+  ) [ProgName]
+  VarDeclarations(
+    NoDecl(
+    ) [NoDecl]
+    GlobalVarDeclElem(
+      GlobalVarType(
+        Type(
+         int
+        ) [Type]
+      ) [GlobalVarType]
+      GlobalVarDeclLast(
+        GlobalVarTwoNoErr(
+         res
+          IsNotArray(
+          ) [IsNotArray]
+        ) [GlobalVarTwoNoErr]
+      ) [GlobalVarDeclLast]
+    ) [GlobalVarDeclElem]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodVoidType(
+       main
+      ) [MethodVoidType]
+      NoFormParam(
+      ) [NoFormParam]
+      VarOnlyDeclarations(
+        NoVarOnlyDeclarations(
+        ) [NoVarOnlyDeclarations]
+        VarDecl(
+          VarDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [VarDeclType]
+         i
+          IsNotArray(
+          ) [IsNotArray]
+          NoAnotherVarDecl(
+          ) [NoAnotherVarDecl]
+        ) [VarDecl]
+      ) [VarOnlyDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                Assignment(
+                  DesignatorStatementExpr(
+                    SingleDesignator(
+                     res
+                    ) [SingleDesignator]
+                    SinglePosExpr(
+                      SingleTerm(
+                        NumberConstFactor(
+                         5
+                        ) [NumberConstFactor]
+                      ) [SingleTerm]
+                    ) [SinglePosExpr]
+                  ) [DesignatorStatementExpr]
+                ) [Assignment]
+              ) [Statements]
+              Assignment(
+                DesignatorStatementExpr(
+                  SingleDesignator(
+                   i
+                  ) [SingleDesignator]
+                  SinglePosExpr(
+                    SingleTerm(
+                      NumberConstFactor(
+                       6
+                      ) [NumberConstFactor]
+                    ) [SingleTerm]
+                  ) [SinglePosExpr]
+                ) [DesignatorStatementExpr]
+              ) [Assignment]
+            ) [Statements]
+            DoWhileStmt(
+              DoWhileStart(
+              ) [DoWhileStart]
+              BraceStmt(
+                Statements(
+                  Statements(
+                    NoStmt(
+                    ) [NoStmt]
+                    IfStmtNoElse(
+                      IfStart(
+                      ) [IfStart]
+                      AnotherCondition(
+                        AnotherCondition(
+                          AnotherCondition(
+                            SingleCondition(
+                              SingleCondTerm(
+                                CondFactRelop(
+                                  SinglePosExpr(
+                                    SingleTerm(
+                                      DesignatorNoActFactor(
+                                        SingleDesignator(
+                                         res
+                                        ) [SingleDesignator]
+                                      ) [DesignatorNoActFactor]
+                                    ) [SingleTerm]
+                                  ) [SinglePosExpr]
+                                  LowerRelop(
+                                  ) [LowerRelop]
+                                  SinglePosExpr(
+                                    SingleTerm(
+                                      NumberConstFactor(
+                                       5
+                                      ) [NumberConstFactor]
+                                    ) [SingleTerm]
+                                  ) [SinglePosExpr]
+                                ) [CondFactRelop]
+                              ) [SingleCondTerm]
+                            ) [SingleCondition]
+                            LogorNT(
+                            ) [LogorNT]
+                            AnotherCondTerm(
+                              SingleCondTerm(
+                                CondFactRelop(
+                                  SinglePosExpr(
+                                    SingleTerm(
+                                      DesignatorNoActFactor(
+                                        SingleDesignator(
+                                         res
+                                        ) [SingleDesignator]
+                                      ) [DesignatorNoActFactor]
+                                    ) [SingleTerm]
+                                  ) [SinglePosExpr]
+                                  GreaterEqualRelop(
+                                  ) [GreaterEqualRelop]
+                                  SinglePosExpr(
+                                    SingleTerm(
+                                      NumberConstFactor(
+                                       8
+                                      ) [NumberConstFactor]
+                                    ) [SingleTerm]
+                                  ) [SinglePosExpr]
+                                ) [CondFactRelop]
+                              ) [SingleCondTerm]
+                              CondFactNoRelop(
+                                SinglePosExpr(
+                                  SingleTerm(
+                                    BoolConstFactor(
+                                     true
+                                    ) [BoolConstFactor]
+                                  ) [SingleTerm]
+                                ) [SinglePosExpr]
+                              ) [CondFactNoRelop]
+                            ) [AnotherCondTerm]
+                          ) [AnotherCondition]
+                          LogorNT(
+                          ) [LogorNT]
+                          SingleCondTerm(
+                            CondFactRelop(
+                              SinglePosExpr(
+                                SingleTerm(
+                                  NumberConstFactor(
+                                   1
+                                  ) [NumberConstFactor]
+                                ) [SingleTerm]
+                              ) [SinglePosExpr]
+                              EqualsRelop(
+                              ) [EqualsRelop]
+                              SinglePosExpr(
+                                SingleTerm(
+                                  NumberConstFactor(
+                                   1
+                                  ) [NumberConstFactor]
+                                ) [SingleTerm]
+                              ) [SinglePosExpr]
+                            ) [CondFactRelop]
+                          ) [SingleCondTerm]
+                        ) [AnotherCondition]
+                        LogorNT(
+                        ) [LogorNT]
+                        AnotherCondTerm(
+                          SingleCondTerm(
+                            CondFactRelop(
+                              SinglePosExpr(
+                                SingleTerm(
+                                  NumberConstFactor(
+                                   0
+                                  ) [NumberConstFactor]
+                                ) [SingleTerm]
+                              ) [SinglePosExpr]
+                              NotEqualsRelop(
+                              ) [NotEqualsRelop]
+                              SinglePosExpr(
+                                SingleTerm(
+                                  NumberConstFactor(
+                                   1
+                                  ) [NumberConstFactor]
+                                ) [SingleTerm]
+                              ) [SinglePosExpr]
+                            ) [CondFactRelop]
+                          ) [SingleCondTerm]
+                          CondFactNoRelop(
+                            SinglePosExpr(
+                              SingleTerm(
+                                BoolConstFactor(
+                                 false
+                                ) [BoolConstFactor]
+                              ) [SingleTerm]
+                            ) [SinglePosExpr]
+                          ) [CondFactNoRelop]
+                        ) [AnotherCondTerm]
+                      ) [AnotherCondition]
+                      IfStartThis(
+                      ) [IfStartThis]
+                      DoWhileStmt(
+                        DoWhileStart(
+                        ) [DoWhileStart]
+                        Assignment(
+                          DesignatorStatementExpr(
+                            SingleDesignator(
+                             res
+                            ) [SingleDesignator]
+                            AnotherExpr(
+                              SinglePosExpr(
+                                SingleTerm(
+                                  DesignatorNoActFactor(
+                                    SingleDesignator(
+                                     res
+                                    ) [SingleDesignator]
+                                  ) [DesignatorNoActFactor]
+                                ) [SingleTerm]
+                              ) [SinglePosExpr]
+                              PlusAddop(
+                              ) [PlusAddop]
+                              SingleTerm(
+                                DesignatorNoActFactor(
+                                  SingleDesignator(
+                                   i
+                                  ) [SingleDesignator]
+                                ) [DesignatorNoActFactor]
+                              ) [SingleTerm]
+                            ) [AnotherExpr]
+                          ) [DesignatorStatementExpr]
+                        ) [Assignment]
+                        SingleCondition(
+                          SingleCondTerm(
+                            CondFactNoRelop(
+                              SinglePosExpr(
+                                SingleTerm(
+                                  BoolConstFactor(
+                                   false
+                                  ) [BoolConstFactor]
+                                ) [SingleTerm]
+                              ) [SinglePosExpr]
+                            ) [CondFactNoRelop]
+                          ) [SingleCondTerm]
+                        ) [SingleCondition]
+                      ) [DoWhileStmt]
+                    ) [IfStmtNoElse]
+                  ) [Statements]
+                  IfStmtElse(
+                    IfStart(
+                    ) [IfStart]
+                    SingleCondition(
+                      SingleCondTerm(
+                        CondFactRelop(
+                          SinglePosExpr(
+                            SingleTerm(
+                              NumberConstFactor(
+                               1
+                              ) [NumberConstFactor]
+                            ) [SingleTerm]
+                          ) [SinglePosExpr]
+                          EqualsRelop(
+                          ) [EqualsRelop]
+                          SinglePosExpr(
+                            SingleTerm(
+                              NumberConstFactor(
+                               0
+                              ) [NumberConstFactor]
+                            ) [SingleTerm]
+                          ) [SinglePosExpr]
+                        ) [CondFactRelop]
+                      ) [SingleCondTerm]
+                    ) [SingleCondition]
+                    IfStartThis(
+                    ) [IfStartThis]
+                    BreakStmt(
+                    ) [BreakStmt]
+                    ElseStart(
+                    ) [ElseStart]
+                    ContinueStmt(
+                    ) [ContinueStmt]
+                  ) [IfStmtElse]
+                ) [Statements]
+              ) [BraceStmt]
+              SingleCondition(
+                SingleCondTerm(
+                  CondFactRelop(
+                    SinglePosExpr(
+                      SingleTerm(
+                        DesignatorNoActFactor(
+                          SingleDesignator(
+                           res
+                          ) [SingleDesignator]
+                        ) [DesignatorNoActFactor]
+                      ) [SingleTerm]
+                    ) [SinglePosExpr]
+                    LowerRelop(
+                    ) [LowerRelop]
+                    SinglePosExpr(
+                      SingleTerm(
+                        NumberConstFactor(
+                         20
+                        ) [NumberConstFactor]
+                      ) [SingleTerm]
+                    ) [SinglePosExpr]
+                  ) [CondFactRelop]
+                ) [SingleCondTerm]
+              ) [SingleCondition]
+            ) [DoWhileStmt]
+          ) [Statements]
+          Assignment(
+            DesignatorStatementExpr(
+              SingleDesignator(
+               res
+              ) [SingleDesignator]
+              AnotherExpr(
+                SinglePosExpr(
+                  SingleTerm(
+                    DesignatorNoActFactor(
+                      SingleDesignator(
+                       res
+                      ) [SingleDesignator]
+                    ) [DesignatorNoActFactor]
+                  ) [SingleTerm]
+                ) [SinglePosExpr]
+                PlusAddop(
+                ) [PlusAddop]
+                SingleTerm(
+                  NumberConstFactor(
+                   2
+                  ) [NumberConstFactor]
+                ) [SingleTerm]
+              ) [AnotherExpr]
+            ) [DesignatorStatementExpr]
+          ) [Assignment]
+        ) [Statements]
+        PrintNoNumStmt(
+          SinglePosExpr(
+            SingleTerm(
+              DesignatorNoActFactor(
+                SingleDesignator(
+                 res
+                ) [SingleDesignator]
+              ) [DesignatorNoActFactor]
+            ) [SingleTerm]
+          ) [SinglePosExpr]
+        ) [PrintNoNumStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:26:00,633 - Deklarisana promenljiva res, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  00:26:00,633 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 5
+INFO  00:26:00,633 - Deklarisana promenljiva i, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 5
+INFO  00:26:00,680 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  00:26:00,680 - Parsiranje uspesno zavrseno!

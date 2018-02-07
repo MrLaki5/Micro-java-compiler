@@ -1,0 +1,58 @@
+INFO  22:44:40,540 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  22:44:40,582 - #2 program
+INFO  22:44:40,583 - #43 test301
+INFO  22:44:40,583 - #43 int
+INFO  22:44:40,584 - #43 a
+INFO  22:44:40,585 - #32 ;
+INFO  22:44:40,587 - #39 {
+INFO  22:44:40,588 - #10 void
+INFO  22:44:40,589 - #43 main
+INFO  22:44:40,591 - #35 (
+INFO  22:44:40,591 - #36 )
+INFO  22:44:40,591 - #43 int
+INFO  22:44:40,603 - #43 aa
+INFO  22:44:40,604 - #32 ;
+INFO  22:44:40,605 - #43 bool
+INFO  22:44:40,606 - #43 bb
+INFO  22:44:40,606 - #32 ;
+INFO  22:44:40,606 - #39 {
+INFO  22:44:40,606 - #43 aa
+INFO  22:44:40,606 - #29 =
+INFO  22:44:40,606 - #42 4
+INFO  22:44:40,608 - #32 ;
+INFO  22:44:40,608 - #11 do
+INFO  22:44:40,609 - #39 {
+INFO  22:44:40,609 - #7 print
+INFO  22:44:40,610 - #35 (
+INFO  22:44:40,610 - #43 aa
+INFO  22:44:40,610 - #36 )
+INFO  22:44:40,610 - #32 ;
+INFO  22:44:40,610 - #43 aa
+INFO  22:44:40,610 - #31 --
+INFO  22:44:40,610 - #32 ;
+INFO  22:44:40,610 - #5 if
+INFO  22:44:40,610 - #35 (
+INFO  22:44:40,611 - #43 aa
+INFO  22:44:40,611 - #21 ==
+INFO  22:44:40,611 - #42 0
+INFO  22:44:40,612 - #36 )
+INFO  22:44:40,612 - #39 {
+INFO  22:44:40,613 - #14 continue
+INFO  22:44:40,613 - #32 ;
+INFO  22:44:40,613 - #40 }
+INFO  22:44:40,614 - #40 }
+INFO  22:44:40,614 - #12 while
+INFO  22:44:40,614 - #35 (
+INFO  22:44:40,614 - #43 aa
+INFO  22:44:40,614 - #23 >
+INFO  22:44:40,614 - #42 0
+INFO  22:44:40,616 - #36 )
+INFO  22:44:40,616 - #32 ;
+INFO  22:44:40,616 - #40 }
+INFO  22:44:40,616 - #40 }
+INFO  22:44:40,625 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  22:44:40,625 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+INFO  22:44:40,625 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 9
+INFO  22:44:40,625 - Deklarisana promenljiva bb, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 10
+INFO  22:44:40,626 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  22:44:40,640 - Parsiranje uspesno zavrseno!

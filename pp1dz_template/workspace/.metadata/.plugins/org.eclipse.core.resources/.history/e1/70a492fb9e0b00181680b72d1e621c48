@@ -1,0 +1,19 @@
+program P
+
+
+
+{
+
+	
+	int sum()
+	{
+		return z + d;
+	}
+	
+	
+	void main()
+	{
+			
+	}
+}
+

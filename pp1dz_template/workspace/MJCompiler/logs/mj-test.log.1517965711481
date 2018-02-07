@@ -1,0 +1,104 @@
+INFO  02:07:28,605 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\semantikTest.mj
+INFO  02:07:28,651 - #2 program
+INFO  02:07:28,651 - #43 HelloWorld
+INFO  02:07:28,651 - #43 char
+INFO  02:07:28,651 - #43 niz
+INFO  02:07:28,651 - #37 [
+INFO  02:07:28,651 - #38 ]
+INFO  02:07:28,651 - #32 ;
+INFO  02:07:28,651 - #43 int
+INFO  02:07:28,651 - #43 counter
+INFO  02:07:28,651 - #32 ;
+INFO  02:07:28,651 - #39 {
+INFO  02:07:28,651 - #10 void
+INFO  02:07:28,651 - #43 ispisi
+INFO  02:07:28,651 - #35 (
+INFO  02:07:28,651 - #43 char
+INFO  02:07:28,651 - #43 c
+INFO  02:07:28,651 - #36 )
+INFO  02:07:28,651 - #39 {
+INFO  02:07:28,651 - #7 print
+INFO  02:07:28,667 - #35 (
+INFO  02:07:28,667 - #43 c
+INFO  02:07:28,667 - #36 )
+INFO  02:07:28,667 - #32 ;
+INFO  02:07:28,667 - #40 }
+INFO  02:07:28,683 - #10 void
+INFO  02:07:28,683 - #43 main
+INFO  02:07:28,683 - #35 (
+INFO  02:07:28,683 - #36 )
+INFO  02:07:28,683 - #39 {
+INFO  02:07:28,683 - #43 niz
+INFO  02:07:28,683 - #29 =
+INFO  02:07:28,683 - #6 new
+INFO  02:07:28,683 - #43 char
+INFO  02:07:28,683 - #37 [
+INFO  02:07:28,683 - #42 5
+INFO  02:07:28,683 - #38 ]
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #43 niz
+INFO  02:07:28,683 - #37 [
+INFO  02:07:28,683 - #42 0
+INFO  02:07:28,683 - #38 ]
+INFO  02:07:28,683 - #29 =
+INFO  02:07:28,683 - #45 'h'
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #43 niz
+INFO  02:07:28,683 - #37 [
+INFO  02:07:28,683 - #42 1
+INFO  02:07:28,683 - #38 ]
+INFO  02:07:28,683 - #29 =
+INFO  02:07:28,683 - #45 'e'
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #43 niz
+INFO  02:07:28,683 - #37 [
+INFO  02:07:28,683 - #42 2
+INFO  02:07:28,683 - #38 ]
+INFO  02:07:28,683 - #29 =
+INFO  02:07:28,683 - #45 'l'
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #43 niz
+INFO  02:07:28,683 - #37 [
+INFO  02:07:28,683 - #42 3
+INFO  02:07:28,683 - #38 ]
+INFO  02:07:28,683 - #29 =
+INFO  02:07:28,683 - #45 'l'
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #43 niz
+INFO  02:07:28,683 - #37 [
+INFO  02:07:28,683 - #42 4
+INFO  02:07:28,683 - #38 ]
+INFO  02:07:28,683 - #29 =
+INFO  02:07:28,683 - #45 'o'
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #11 do
+INFO  02:07:28,683 - #39 {
+INFO  02:07:28,683 - #43 ispisi
+INFO  02:07:28,683 - #35 (
+INFO  02:07:28,683 - #43 niz
+INFO  02:07:28,683 - #37 [
+INFO  02:07:28,683 - #43 counter
+INFO  02:07:28,683 - #38 ]
+INFO  02:07:28,683 - #36 )
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #43 counter
+INFO  02:07:28,683 - #30 ++
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #40 }
+INFO  02:07:28,683 - #12 while
+INFO  02:07:28,683 - #35 (
+INFO  02:07:28,683 - #43 counter
+INFO  02:07:28,683 - #25 <
+INFO  02:07:28,683 - #42 5
+INFO  02:07:28,683 - #36 )
+INFO  02:07:28,683 - #32 ;
+INFO  02:07:28,683 - #40 }
+INFO  02:07:28,683 - #40 }
+INFO  02:07:28,698 - Deklarisan niz niz, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  02:07:28,698 - Deklarisana promenljiva counter, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 4
+INFO  02:07:28,698 - Obrada funkcije ispisi, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 8
+INFO  02:07:28,698 - Deklarisana promenljiva c, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 8
+INFO  02:07:28,698 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 14
+INFO  02:07:28,698 - Pronadjen poziv funkcije ispisi: linija 24
+INFO  02:07:28,698 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  02:07:28,714 - Parsiranje uspesno zavrseno!

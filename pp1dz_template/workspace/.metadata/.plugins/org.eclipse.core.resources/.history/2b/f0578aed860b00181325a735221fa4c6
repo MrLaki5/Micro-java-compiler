@@ -1,0 +1,21 @@
+// Test301
+
+program test301
+
+	int a;
+{
+
+	void main()
+	int aa;
+	bool bb;
+	{	
+	
+		aa=4;
+		do{
+			print(aa);
+			aa--;
+		}while(aa>0);
+	}
+}
+
+

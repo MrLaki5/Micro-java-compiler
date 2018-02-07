@@ -94,6 +94,10 @@ nonterminal GlobalVarOne GlobalVarOne;
 nonterminal GlobalVarTwo GlobalVarTwo;
 nonterminal PomProcCallOne PomProcCallOne;
 nonterminal DoWhileStart DoWhileStart;
+nonterminal LogorNT LogorNT;
+nonterminal IfStartThis IfStartThis;
+nonterminal IfStart IfStart;
+nonterminal ElseStart ElseStart;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, MethodDecl, MethodTypeName, ConstDecl, Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstValue, Expr, Term, Factor;
@@ -245,13 +249,13 @@ StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new State
 				  
 Statement ::= (Assignment) DesignatorStatement:D1 {: RESULT=new Assignment(D1); RESULT.setLine(D1left); :}
 			  |
-			  (IfStmtNoElse) IF LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new IfStmtNoElse(C1, S2); RESULT.setLine(C1left); :}
+			  (IfStmtNoElse) IfStart:I1 LPAREN Condition:C2 IfStartThis:I3 Statement:S4 {: RESULT=new IfStmtNoElse(I1, C2, I3, S4); RESULT.setLine(I1left); :}
 			  |
-			  (IfStmtNoElseError) IF LPAREN error RPAREN Statement:S1 {: RESULT=new IfStmtNoElseError(S1); RESULT.setLine(S1left); :}
+			  (IfStmtNoElseError) IfStart:I1 LPAREN error IfStartThis:I2 Statement:S3 {: RESULT=new IfStmtNoElseError(I1, I2, S3); RESULT.setLine(I1left); :}
 			  |
-			  (IfStmtElse) IF LPAREN Condition:C1 RPAREN Statement:S2 ELSE Statement:S3 {: RESULT=new IfStmtElse(C1, S2, S3); RESULT.setLine(C1left); :}
+			  (IfStmtElse) IfStart:I1 LPAREN Condition:C2 IfStartThis:I3 Statement:S4 ElseStart:E5 Statement:S6 {: RESULT=new IfStmtElse(I1, C2, I3, S4, E5, S6); RESULT.setLine(I1left); :}
 			  |
-			  (IsStmtElseError) IF LPAREN error RPAREN Statement:S1 ELSE Statement:S2 {: RESULT=new IsStmtElseError(S1, S2); RESULT.setLine(S1left); :}
+			  (IsStmtElseError) IfStart:I1 LPAREN error IfStartThis:I2 Statement:S3 ElseStart:E4 Statement:S5 {: RESULT=new IsStmtElseError(I1, I2, S3, E4, S5); RESULT.setLine(I1left); :}
 			  |
 			  (DoWhileStmt) DoWhileStart:D1 Statement:S2 WHILE LPAREN Condition:C3 RPAREN SEMI {: RESULT=new DoWhileStmt(D1, S2, C3); RESULT.setLine(D1left); :}
 			  |
@@ -276,6 +280,15 @@ Statement ::= (Assignment) DesignatorStatement:D1 {: RESULT=new Assignment(D1); 
 			  ;
 			  
 DoWhileStart ::= (DoWhileStart) DO {: RESULT=new DoWhileStart(); :}
+;
+
+IfStartThis ::= (IfStartThis) RPAREN {: RESULT=new IfStartThis(); :}
+;
+
+IfStart ::= (IfStart) IF {: RESULT=new IfStart(); :}
+;
+
+ElseStart ::= (ElseStart) ELSE {: RESULT=new ElseStart(); :}
 ;
 			  
 DesignatorStatement ::= (DesignatorStatementExpr) Designator:D1 EQUAL Expr:E2 SEMI {: RESULT=new DesignatorStatementExpr(D1, E2); RESULT.setLine(D1left); :}
@@ -302,10 +315,13 @@ ActPars ::= (AnotherActPars) ActPars:A1 COMMA Expr:E2 {: RESULT=new AnotherActPa
 PomProcCallOne::= (PomProcCallOne) LPAREN {: RESULT=new PomProcCallOne(); :}
 ;
 
-Condition ::= (AnotherCondition) Condition:C1 LOGOR CondTerm:C2 {: RESULT=new AnotherCondition(C1, C2); RESULT.setLine(C1left); :}
+Condition ::= (AnotherCondition) Condition:C1 LogorNT:L2 CondTerm:C3 {: RESULT=new AnotherCondition(C1, L2, C3); RESULT.setLine(C1left); :}
 			  |
 			  (SingleCondition) CondTerm:C1 {: RESULT=new SingleCondition(C1); RESULT.setLine(C1left); :}
 			  ;
+
+LogorNT ::= (LogorNT) LOGOR {: RESULT=new LogorNT(); :}
+;
 
 CondTerm ::= (AnotherCondTerm) CondTerm:C1 LOGAND CondFact:C2 {: RESULT=new AnotherCondTerm(C1, C2); RESULT.setLine(C1left); :}
 			 |

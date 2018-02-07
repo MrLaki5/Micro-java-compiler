@@ -1,0 +1,76 @@
+//Test 302
+
+program test302
+
+
+int i;
+bool ibool;
+
+int niz[];
+{
+	
+	int sum(int z, int d)
+	{
+		return z + d;
+	}
+	
+	int inkrement(int a) int pom; 
+	{
+		pom = 1;
+		return sum(a,pom);
+	}
+	
+	void main()
+	{
+
+			
+		if(1!=1) print(-6);
+		else print(0);  
+
+			
+		ibool = false;
+		i = 0;
+		do
+		{
+			if(i == 2) ibool = true;
+			i++;
+		}while(i < 5);
+		
+		if(ibool)
+			if(i == 5) print(1); 
+			else print(-1);
+		
+		
+		niz = new int[3];
+		niz[0] = 1;
+		niz[1] = 2;
+		niz[2] = sum(niz[1], niz[0])  + 1;
+		if(niz[2] == 4) print(ord('A')); 
+		else print(ord('a'));
+		
+		print(eol);
+		i = 0;
+		do 
+		{
+			if(i == 3)
+			{
+				i++;
+				continue;
+			}
+			if(i == 4) break;
+			i = inkrement(i);
+		}while (true);
+		
+		if(i == 3) print(4);
+		else print(-4);  
+		
+		read(niz[0]);
+		read(niz[1]);
+		read(niz[2]);
+		print(eol);
+		
+		print(sum (sum(niz[0], niz[1]), niz[2])); 
+			
+	}
+}
+

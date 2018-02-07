@@ -2,14 +2,19 @@ package rs.ac.bg.etf.pp1;
 
 import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.MethodVarCounter;
+import rs.ac.bg.etf.pp1.ast.AnotherCondTerm;
 import rs.ac.bg.etf.pp1.ast.AnotherConstDecl;
 import rs.ac.bg.etf.pp1.ast.AnotherExpr;
 import rs.ac.bg.etf.pp1.ast.AnotherExprDesignator;
 import rs.ac.bg.etf.pp1.ast.AnotherTerm;
 import rs.ac.bg.etf.pp1.ast.BoolConstFactor;
 import rs.ac.bg.etf.pp1.ast.BooleanValue;
+import rs.ac.bg.etf.pp1.ast.BreakStmt;
 import rs.ac.bg.etf.pp1.ast.CharConstFactor;
+import rs.ac.bg.etf.pp1.ast.CondFactNoRelop;
+import rs.ac.bg.etf.pp1.ast.CondFactRelop;
 import rs.ac.bg.etf.pp1.ast.ConstDecl;
+import rs.ac.bg.etf.pp1.ast.ContinueStmt;
 import rs.ac.bg.etf.pp1.ast.DesignatorActFactor;
 import rs.ac.bg.etf.pp1.ast.DesignatorNoActFactor;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementActP;
@@ -17,13 +22,26 @@ import rs.ac.bg.etf.pp1.ast.DesignatorStatementExpr;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementMM;
 import rs.ac.bg.etf.pp1.ast.DesignatorStatementPP;
 import rs.ac.bg.etf.pp1.ast.DivMulop;
+import rs.ac.bg.etf.pp1.ast.DoWhileStart;
+import rs.ac.bg.etf.pp1.ast.DoWhileStmt;
+import rs.ac.bg.etf.pp1.ast.ElseStart;
+import rs.ac.bg.etf.pp1.ast.EqualsRelop;
+import rs.ac.bg.etf.pp1.ast.GreaterEqualRelop;
+import rs.ac.bg.etf.pp1.ast.GreaterRelop;
+import rs.ac.bg.etf.pp1.ast.IfStart;
+import rs.ac.bg.etf.pp1.ast.IfStartThis;
+import rs.ac.bg.etf.pp1.ast.IfStmtElse;
+import rs.ac.bg.etf.pp1.ast.IfStmtNoElse;
 import rs.ac.bg.etf.pp1.ast.IntegerValue;
+import rs.ac.bg.etf.pp1.ast.LogorNT;
+import rs.ac.bg.etf.pp1.ast.LowerRelop;
 import rs.ac.bg.etf.pp1.ast.MethodDecl;
 import rs.ac.bg.etf.pp1.ast.MethodType;
 import rs.ac.bg.etf.pp1.ast.MethodTypeName;
 import rs.ac.bg.etf.pp1.ast.MethodVoidType;
 import rs.ac.bg.etf.pp1.ast.MulMulop;
 import rs.ac.bg.etf.pp1.ast.NewExprFactor;
+import rs.ac.bg.etf.pp1.ast.NotEqualsRelop;
 import rs.ac.bg.etf.pp1.ast.NumberConstFactor;
 import rs.ac.bg.etf.pp1.ast.PlusAddop;
 import rs.ac.bg.etf.pp1.ast.PrintNoNumStmt;
@@ -31,6 +49,8 @@ import rs.ac.bg.etf.pp1.ast.PrintNumStmt;
 import rs.ac.bg.etf.pp1.ast.ReadStmt;
 import rs.ac.bg.etf.pp1.ast.ReturnExprStmt;
 import rs.ac.bg.etf.pp1.ast.ReturnNoExprStmt;
+import rs.ac.bg.etf.pp1.ast.SingleCondTerm;
+import rs.ac.bg.etf.pp1.ast.SingleCondition;
 import rs.ac.bg.etf.pp1.ast.SingleDesignator;
 import rs.ac.bg.etf.pp1.ast.SingleNegExpr;
 import rs.ac.bg.etf.pp1.ast.StringValue;
@@ -46,6 +66,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	public class Elem{
 		java.util.List<Integer> tf=new java.util.ArrayList<Integer>();
 		java.util.List<Integer> jmpif=new java.util.ArrayList<Integer>();
+		int startPos=0;
+	}
+	
+	public class ElemW{
+		java.util.List<Integer> breakLis=new java.util.ArrayList<Integer>();
+		int startPos=0;
 	}
 	
 	private int varCount;
@@ -54,7 +80,9 @@ public class CodeGenerator extends VisitorAdaptor {
 	private boolean arrayIs=false;
 	private Struct booleanStr;
 	private java.util.List<Elem> globalLista= new java.util.ArrayList<Elem>();
-	private int globalCounter=0;
+	private java.util.List<ElemW> globalListaW= new java.util.ArrayList<ElemW>();
+	private int globalCounter=-1;
+	private int globalCounterW=-1;
 	
 	public CodeGenerator(Struct booleanStr){
 		this.booleanStr=booleanStr;
@@ -195,7 +223,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(AnotherExprDesignator desig){
-		if(!(desig.getParent() instanceof DesignatorStatementExpr)){
+		if((!(desig.getParent() instanceof DesignatorStatementExpr)) && (!(desig.getParent() instanceof ReadStmt))){
 			Code.put(Code.baload);
 		}
 	}
@@ -251,8 +279,13 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(ReadStmt statement){
 		Code.put(Code.read);
-		Code.store(statement.getDesignator().obj);
-		Code.put(Code.pop);
+		if(statement.getDesignator() instanceof SingleDesignator){
+			Code.store(statement.getDesignator().obj);
+			Code.put(Code.pop);
+		}
+		else{
+			Code.put(Code.bastore);
+		}
 	}
 	
 	public void visit(DesignatorStatementActP FuncCall) {
@@ -288,51 +321,149 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	
-	/*
-	public void visit(BooleanValue boolVal){
-		if(boolVal.getValueType().equals("true")){
-			Code.load(new Obj(Obj.Con, "", booleanStr, 1, 0));
+	//CONDITIONS===================================================================
+	
+	public void visit(LogorNT logor){
+		for (int elem : globalLista.get(globalCounter).tf) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).tf.clear();
+	}
+	
+	//-----
+	
+	public void visit(IfStartThis ifst){
+		for (int elem : globalLista.get(globalCounter).jmpif) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).jmpif.clear();
+	}
+	
+	public void visit(IfStart ifst){
+		globalLista.add(new Elem());
+		globalCounter++;
+	}
+	
+	public void visit(ElseStart elseSt){
+		globalLista.get(globalCounter).jmpif.add(Code.pc+1);
+		Code.putJump(0);
+		
+		for (int elem : globalLista.get(globalCounter).tf) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).tf.clear();
+	}
+	
+	//-----
+	
+	public void visit(IfStmtNoElse ine){
+		for (int elem : globalLista.get(globalCounter).tf) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).tf.clear();
+		globalLista.remove(globalCounter);
+		globalCounter--;
+	}
+	
+	public void visit(IfStmtElse ie){
+		for (int elem : globalLista.get(globalCounter).jmpif) {
+			Code.fixup(elem);
+		}
+		globalLista.get(globalCounter).jmpif.clear();
+		globalLista.remove(globalCounter);
+		globalCounter--;
+	}
+	
+	//-----
+	
+	public void visit(AnotherCondTerm term){
+		globalLista.get(globalCounter).jmpif.add(Code.pc+1);
+		Code.putJump(globalLista.get(globalCounter).startPos);
+		System.out.print(term.getLine()+"A ");
+	}
+	
+	public void visit(SingleCondTerm term){
+		if(!(term.getParent() instanceof AnotherCondTerm)){
+			globalLista.get(globalCounter).jmpif.add(Code.pc+1);
+			Code.putJump(globalLista.get(globalCounter).startPos);
+		}
+		System.out.print(term.getLine()+"S ");
+	}
+	
+	//-----
+	
+	public void visit(CondFactNoRelop condF){
+		Code.load(new Obj(Obj.Con, "", booleanStr, 1, 0));
+		globalLista.get(globalCounter).tf.add(Code.pc+1);
+		Code.putFalseJump(Code.eq, 0);
+	}
+	
+	public void visit(CondFactRelop condF){
+		SyntaxNode temp=condF.getRelop();
+		globalLista.get(globalCounter).tf.add(Code.pc+1);
+		if(temp instanceof EqualsRelop){
+			Code.putFalseJump(Code.eq, 0);
 		}
 		else{
-			Code.load(new Obj(Obj.Con, "", booleanStr, 0, 0));
+			if(temp instanceof NotEqualsRelop){
+				Code.putFalseJump(Code.ne, 0);
+			}
+			else{
+				if(temp instanceof GreaterRelop){
+					Code.putFalseJump(Code.gt, 0);
+				}
+				else{
+					if(temp instanceof GreaterEqualRelop){
+						Code.putFalseJump(Code.ge, 0);
+					}
+					else{
+						if(temp instanceof LowerRelop){
+							Code.putFalseJump(Code.lt, 0);
+						}
+						else{
+							Code.putFalseJump(Code.le, 0);
+						}
+					}
+				}
+			}
+		}	
+	}
+	
+	//WHILE---
+	
+	public void visit(DoWhileStart start){
+		globalLista.add(new Elem());
+		globalCounter++;
+		globalLista.get(globalCounter).startPos=Code.pc;
+		globalListaW.add(new ElemW());
+		globalCounterW++;
+		globalListaW.get(globalCounterW).startPos=Code.pc;
+	}
+	
+	public void visit(DoWhileStmt stmt){
+		for (int elem : globalLista.get(globalCounter).tf) {
+			Code.fixup(elem);
 		}
+		globalLista.get(globalCounter).tf.clear();
+		globalLista.remove(globalCounter);
+		globalCounter--;
+		
+		for (int elem : globalListaW.get(globalCounterW).breakLis) {
+			Code.fixup(elem);
+		}
+		globalListaW.get(globalCounterW).breakLis.clear();
+		globalListaW.remove(globalCounterW);
+		globalCounterW--;
 	}
 	
-	public void visit(IntegerValue intVal){
-		Code.load(new Obj(Obj.Con, "", Tab.intType, intVal.getValueType(), 0));
+	//-----
+	
+	public void visit(BreakStmt stmt){
+		globalListaW.get(globalCounterW).breakLis.add(Code.pc+1);
+		Code.putJump(0);
 	}
 	
-	public void visit(StringValue charVal){
-		Code.load(new Obj(Obj.Con, "", Tab.charType, charVal.getValueType().charAt(1), 0));
+	public void visit(ContinueStmt stmt){
+		Code.putJump(globalListaW.get(globalCounterW).startPos);
 	}
-	
-	public void visit(ConstDecl constDecl){
-		Obj constTemp=Tab.find(constDecl.getVarName());
-		Code.store(constTemp);
-	}
-	
-	public void visit(AnotherConstDecl constDecl){
-		Obj constTemp=Tab.find(constDecl.getVarName());
-		Code.store(constTemp);
-	}
-	*/
-	/*
-	@Override
-	public void visit(VarDecl VarDecl) {
-		varCount++;
-	}
-
-	@Override
-	public void visit(FormalParamDecl FormalParam) {
-		paramCnt++;
-	}	
-	
-	@Override
-	public void visit(FuncCall FuncCall) {
-		Obj functionObj = FuncCall.getDesignator().obj;
-		int offset = functionObj.getAdr() - Code.pc; 
-		Code.put(Code.call);
-		Code.put2(offset);
-	}
-	*/
 }

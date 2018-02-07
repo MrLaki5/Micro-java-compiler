@@ -1,32 +1,21 @@
-// Test301
+program P
 
-program test301
-
-	int a;
+int res;
 {
-
-
-	void nesto(char a[]){
-		print(a[1]);
-	}
-
-	int funkcija(int c, char a[])
-	{
-		nesto(a);
-		return c;
-	}
-
-	void main()
-	int aa;
-	char bb[], b[];
-	{	
-		if (){
-		
-		}
-		else{
-		
-		}
-	}
+void main() int i;
+{
+	res = 5;
+	i = 6;
+	
+	do{
+	if( res < 5 || res >= 8 && true || 1 == 1 || 0 != 1 && false)
+		do
+		res = res + i;
+		while(false);
+		if(1 == 0)
+			break;
+	}while(res < 20);
+	res = res + 2;
+	print(res);
 }
-
-
+}

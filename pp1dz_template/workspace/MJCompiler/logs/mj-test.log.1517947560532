@@ -1,0 +1,72 @@
+INFO  21:05:06,360 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  21:05:06,406 - #2 program
+INFO  21:05:06,406 - #43 test301
+INFO  21:05:06,406 - #43 int
+INFO  21:05:06,406 - #43 a
+INFO  21:05:06,406 - #32 ;
+INFO  21:05:06,422 - #39 {
+INFO  21:05:06,422 - #10 void
+INFO  21:05:06,422 - #43 main
+INFO  21:05:06,422 - #35 (
+INFO  21:05:06,422 - #36 )
+INFO  21:05:06,422 - #43 int
+INFO  21:05:06,422 - #43 aa
+INFO  21:05:06,422 - #32 ;
+INFO  21:05:06,422 - #43 bool
+INFO  21:05:06,422 - #43 bb
+INFO  21:05:06,422 - #32 ;
+INFO  21:05:06,422 - #39 {
+INFO  21:05:06,422 - #43 aa
+INFO  21:05:06,422 - #29 =
+INFO  21:05:06,438 - #42 5
+INFO  21:05:06,438 - #32 ;
+INFO  21:05:06,438 - #43 bb
+INFO  21:05:06,438 - #29 =
+INFO  21:05:06,438 - #44 true
+INFO  21:05:06,438 - #32 ;
+INFO  21:05:06,438 - #5 if
+INFO  21:05:06,438 - #35 (
+INFO  21:05:06,438 - #43 aa
+INFO  21:05:06,438 - #21 ==
+INFO  21:05:06,438 - #42 6
+INFO  21:05:06,438 - #27 &&
+INFO  21:05:06,438 - #43 aa
+INFO  21:05:06,438 - #25 <
+INFO  21:05:06,438 - #42 6
+INFO  21:05:06,438 - #28 ||
+INFO  21:05:06,438 - #42 1
+INFO  21:05:06,438 - #21 ==
+INFO  21:05:06,438 - #42 1
+INFO  21:05:06,438 - #36 )
+INFO  21:05:06,438 - #39 {
+INFO  21:05:06,438 - #5 if
+INFO  21:05:06,438 - #35 (
+INFO  21:05:06,438 - #43 bb
+INFO  21:05:06,438 - #36 )
+INFO  21:05:06,438 - #39 {
+INFO  21:05:06,438 - #43 aa
+INFO  21:05:06,438 - #29 =
+INFO  21:05:06,438 - #42 4
+INFO  21:05:06,438 - #32 ;
+INFO  21:05:06,438 - #40 }
+INFO  21:05:06,438 - #40 }
+INFO  21:05:06,438 - #41 else
+INFO  21:05:06,438 - #39 {
+INFO  21:05:06,438 - #43 aa
+INFO  21:05:06,438 - #29 =
+INFO  21:05:06,438 - #42 8
+INFO  21:05:06,438 - #32 ;
+INFO  21:05:06,438 - #40 }
+INFO  21:05:06,438 - #7 print
+INFO  21:05:06,438 - #35 (
+INFO  21:05:06,438 - #43 aa
+INFO  21:05:06,438 - #36 )
+INFO  21:05:06,438 - #32 ;
+INFO  21:05:06,438 - #40 }
+INFO  21:05:06,438 - #40 }
+INFO  21:05:06,454 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  21:05:06,454 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+INFO  21:05:06,454 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 9
+INFO  21:05:06,454 - Deklarisana promenljiva bb, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 10
+INFO  21:05:06,454 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  21:05:06,469 - Parsiranje uspesno zavrseno!

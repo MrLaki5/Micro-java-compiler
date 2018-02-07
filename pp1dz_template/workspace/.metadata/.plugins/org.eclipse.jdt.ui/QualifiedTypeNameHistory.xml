@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarDeclAfterComma"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ArrayPart"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IsArray"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ExprFactor"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VisitorAdaptor"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherVarDecl"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodTypeName"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.CounterVisitor.MethodVarCounter"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter"/>
-<fullyQualifiedTypeName name="rs.etf.pp1.symboltable.visitors.SymbolTableVisitor"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ReturnExprStmt"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ReturnNoExprStmt"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodDecl"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PrintNoNumStmt"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.NumberConstFactor"/>
@@ -47,17 +35,29 @@
 <fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PrintNumStmt"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.FormalParamDecl"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.SingleActPars"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherActPars"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.PomProcCallOne"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.LogorNT"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IfStartThis"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IfStart"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.CondFactNoRelop"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.CondFactRelop"/>
-<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.EqualsRelop"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.NotEqualsRelop"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.EqualsRelop"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.GreaterRelop"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.GreaterEqualRelop"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.LowerRelop"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.AnotherCondTerm"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.SingleCondition"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ElseStart"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IfStmtNoElse"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.IfStmtElse"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DoWhileStart"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DoWhileStmt"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.BreakStmt"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ContinueStmt"/>
-<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.SingleCondTerm"/>
 </qualifiedTypeNameHistroy>

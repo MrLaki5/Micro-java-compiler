@@ -1,0 +1,29 @@
+program P
+
+int  a, abc[];
+char ab[];
+
+{
+
+	
+	int sum(int a, char b)
+	{
+	
+		if (true == 1 && a){
+			
+		}
+		
+		return z + d;
+	}
+	
+	
+	void main(int abc)
+	char pom;
+	{
+		a= true;
+		pom=sum(a, a);
+		a= a + b;
+		a= 2/4;	
+	}
+}
+

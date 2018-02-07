@@ -1,0 +1,96 @@
+INFO  01:45:11,792 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\semantikTest.mj
+INFO  01:45:11,839 - #2 program
+INFO  01:45:11,839 - #43 P
+INFO  01:45:11,839 - #43 int
+INFO  01:45:11,839 - #43 a
+INFO  01:45:11,839 - #33 ,
+INFO  01:45:11,839 - #43 abc
+INFO  01:45:11,839 - #37 [
+INFO  01:45:11,839 - #38 ]
+INFO  01:45:11,839 - #32 ;
+INFO  01:45:11,839 - #43 char
+INFO  01:45:11,839 - #43 ab
+INFO  01:45:11,839 - #37 [
+INFO  01:45:11,855 - #38 ]
+INFO  01:45:11,855 - #32 ;
+INFO  01:45:11,855 - #39 {
+INFO  01:45:11,855 - #43 int
+INFO  01:45:11,855 - #43 sum
+INFO  01:45:11,855 - #35 (
+INFO  01:45:11,855 - #43 int
+INFO  01:45:11,855 - #43 a
+INFO  01:45:11,855 - #33 ,
+INFO  01:45:11,855 - #43 char
+INFO  01:45:11,855 - #43 b
+INFO  01:45:11,855 - #36 )
+INFO  01:45:11,855 - #39 {
+INFO  01:45:11,855 - #5 if
+INFO  01:45:11,855 - #35 (
+INFO  01:45:11,870 - #44 true
+INFO  01:45:11,870 - #36 )
+INFO  01:45:11,870 - #39 {
+INFO  01:45:11,870 - #40 }
+INFO  01:45:11,870 - #9 return
+INFO  01:45:11,870 - #43 z
+INFO  01:45:11,870 - #16 +
+INFO  01:45:11,870 - #43 d
+INFO  01:45:11,870 - #32 ;
+INFO  01:45:11,870 - #40 }
+INFO  01:45:11,870 - #10 void
+INFO  01:45:11,870 - #43 main
+INFO  01:45:11,870 - #35 (
+INFO  01:45:11,870 - #43 int
+INFO  01:45:11,870 - #43 abc
+INFO  01:45:11,870 - #36 )
+INFO  01:45:11,870 - #43 char
+INFO  01:45:11,870 - #43 pom
+INFO  01:45:11,870 - #32 ;
+INFO  01:45:11,870 - #39 {
+INFO  01:45:11,870 - #43 a
+INFO  01:45:11,870 - #29 =
+INFO  01:45:11,870 - #44 true
+INFO  01:45:11,870 - #32 ;
+INFO  01:45:11,870 - #43 pom
+INFO  01:45:11,870 - #29 =
+INFO  01:45:11,870 - #43 sum
+INFO  01:45:11,870 - #35 (
+INFO  01:45:11,870 - #43 a
+INFO  01:45:11,870 - #33 ,
+INFO  01:45:11,870 - #43 a
+INFO  01:45:11,870 - #36 )
+INFO  01:45:11,870 - #32 ;
+INFO  01:45:11,870 - #43 a
+INFO  01:45:11,870 - #29 =
+INFO  01:45:11,870 - #43 a
+INFO  01:45:11,870 - #16 +
+INFO  01:45:11,870 - #43 b
+INFO  01:45:11,870 - #32 ;
+INFO  01:45:11,870 - #43 a
+INFO  01:45:11,870 - #29 =
+INFO  01:45:11,870 - #42 2
+INFO  01:45:11,870 - #19 /
+INFO  01:45:11,870 - #42 4
+INFO  01:45:11,870 - #32 ;
+INFO  01:45:11,886 - #40 }
+INFO  01:45:11,886 - #40 }
+INFO  01:45:11,886 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 3
+INFO  01:45:11,886 - Deklarisan niz abc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 3
+INFO  01:45:11,886 - Deklarisan niz ab, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 4
+INFO  01:45:11,886 - Obrada funkcije sum, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 9
+INFO  01:45:11,886 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@193b845: linija 9
+INFO  01:45:11,886 - Deklarisana promenljiva b, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@817b38: linija 9
+ERROR 01:45:11,886 - Ime z nije deklarisano: linija 16
+ERROR 01:45:11,886 - Ime d nije deklarisano: linija 16
+ERROR 01:45:11,886 - Nekompatibilni tipovi u izrazu za sabiranje: linija 16
+ERROR 01:45:11,886 - Tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije sum: linija 16
+INFO  01:45:11,886 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@4437c4: linija 20
+INFO  01:45:11,886 - Deklarisana promenljiva abc, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@13c675d: linija 20
+INFO  01:45:11,886 - Deklarisana promenljiva pom, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@191beef: linija 21
+ERROR 01:45:11,886 - Nekompatibilni tipovi u dodeli vrednosti: linija 23
+INFO  01:45:11,886 - Pronadjen poziv funkcije sum: linija 24
+ERROR 01:45:11,886 - Parametri se ne poklapaju u funkciji sum: linija 24
+ERROR 01:45:11,886 - Nekompatibilni tipovi u dodeli vrednosti: linija 24
+ERROR 01:45:11,886 - Ime b nije deklarisano: linija 25
+ERROR 01:45:11,886 - Nekompatibilni tipovi u izrazu za sabiranje: linija 25
+ERROR 01:45:11,886 - Nekompatibilni tipovi u dodeli vrednosti: linija 25
+ERROR 01:45:11,886 - Main nije pronadjen u programu

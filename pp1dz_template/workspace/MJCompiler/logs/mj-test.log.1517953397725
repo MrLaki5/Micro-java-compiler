@@ -1,0 +1,48 @@
+INFO  22:42:34,426 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  22:42:34,477 - #2 program
+INFO  22:42:34,477 - #43 test301
+INFO  22:42:34,478 - #43 int
+INFO  22:42:34,478 - #43 a
+INFO  22:42:34,481 - #32 ;
+INFO  22:42:34,484 - #39 {
+INFO  22:42:34,485 - #10 void
+INFO  22:42:34,485 - #43 main
+INFO  22:42:34,486 - #35 (
+INFO  22:42:34,486 - #36 )
+INFO  22:42:34,486 - #43 int
+INFO  22:42:34,488 - #43 aa
+INFO  22:42:34,489 - #32 ;
+INFO  22:42:34,490 - #43 bool
+INFO  22:42:34,491 - #43 bb
+INFO  22:42:34,491 - #32 ;
+INFO  22:42:34,491 - #39 {
+INFO  22:42:34,491 - #43 aa
+INFO  22:42:34,492 - #29 =
+INFO  22:42:34,492 - #42 4
+INFO  22:42:34,493 - #32 ;
+INFO  22:42:34,494 - #11 do
+INFO  22:42:34,494 - #39 {
+INFO  22:42:34,495 - #7 print
+INFO  22:42:34,495 - #35 (
+INFO  22:42:34,495 - #43 aa
+INFO  22:42:34,495 - #36 )
+INFO  22:42:34,495 - #32 ;
+INFO  22:42:34,496 - #43 a
+INFO  22:42:34,496 - #31 --
+INFO  22:42:34,496 - #32 ;
+INFO  22:42:34,496 - #40 }
+INFO  22:42:34,496 - #12 while
+INFO  22:42:34,496 - #35 (
+INFO  22:42:34,497 - #43 aa
+INFO  22:42:34,497 - #23 >
+INFO  22:42:34,497 - #42 0
+INFO  22:42:34,498 - #36 )
+INFO  22:42:34,498 - #32 ;
+INFO  22:42:34,498 - #40 }
+INFO  22:42:34,499 - #40 }
+INFO  22:42:34,509 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  22:42:34,509 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+INFO  22:42:34,509 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 9
+INFO  22:42:34,510 - Deklarisana promenljiva bb, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@1405ef7: linija 10
+INFO  22:42:34,511 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  22:42:34,524 - Parsiranje uspesno zavrseno!

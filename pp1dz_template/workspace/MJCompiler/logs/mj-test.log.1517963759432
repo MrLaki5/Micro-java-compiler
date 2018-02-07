@@ -1,0 +1,50 @@
+INFO  01:35:52,479 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\parserTest.mj
+INFO  01:35:52,526 - #2 program
+INFO  01:35:52,526 - #43 P
+INFO  01:35:52,526 - #43 int
+INFO  01:35:52,526 - #43 int
+INFO  01:35:52,526 - #43 a
+ERROR 01:35:52,526 - Sintaksna greska na liniji 3
+INFO  01:35:52,526 - #33 ,
+INFO  01:35:52,526 - #43 abc
+INFO  01:35:52,526 - #37 [
+INFO  01:35:52,557 - #38 ]
+INFO  01:35:52,557 - #33 ,
+INFO  01:35:52,557 - #42 234
+ERROR 01:35:52,557 - Sintaksna greska na liniji 3
+INFO  01:35:52,557 - #32 ;
+INFO  01:35:52,557 - #43 char
+INFO  01:35:52,557 - #43 a
+INFO  01:35:52,557 - #37 [
+INFO  01:35:52,557 - #32 ;
+ERROR 01:35:52,557 - Sintaksna greska na liniji 4
+INFO  01:35:52,557 - #39 {
+INFO  01:35:52,557 - #4 class
+INFO  01:35:52,557 - #43 imeKlase
+INFO  01:35:52,557 - #13 extends
+INFO  01:35:52,557 - #43 nesto
+INFO  01:35:52,557 - #39 {
+INFO  01:35:52,557 - #40 }
+INFO  01:35:52,557 - #43 int
+INFO  01:35:52,557 - #43 sum
+INFO  01:35:52,557 - #35 (
+INFO  01:35:52,557 - #36 )
+INFO  01:35:52,557 - #39 {
+INFO  01:35:52,557 - #9 return
+INFO  01:35:52,557 - #43 z
+INFO  01:35:52,557 - #16 +
+INFO  01:35:52,557 - #43 d
+INFO  01:35:52,557 - #32 ;
+INFO  01:35:52,557 - #40 }
+INFO  01:35:52,557 - #10 void
+INFO  01:35:52,557 - #43 main
+INFO  01:35:52,557 - #35 (
+INFO  01:35:52,557 - #36 )
+INFO  01:35:52,557 - #39 {
+INFO  01:35:52,557 - #43 a
+INFO  01:35:52,557 - #29 =
+INFO  01:35:52,557 - #43 wd
+INFO  01:35:52,557 - #32 ;
+INFO  01:35:52,557 - #40 }
+INFO  01:35:52,557 - #40 }
+ERROR 01:35:52,557 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 22

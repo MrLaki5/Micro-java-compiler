@@ -1,0 +1,50 @@
+INFO  20:45:28,687 - Compiling source file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.mj
+INFO  20:45:28,719 - #2 program
+INFO  20:45:28,719 - #43 test301
+INFO  20:45:28,719 - #43 int
+INFO  20:45:28,719 - #43 a
+INFO  20:45:28,735 - #32 ;
+INFO  20:45:28,735 - #39 {
+INFO  20:45:28,735 - #10 void
+INFO  20:45:28,735 - #43 main
+INFO  20:45:28,735 - #35 (
+INFO  20:45:28,735 - #36 )
+INFO  20:45:28,735 - #43 int
+INFO  20:45:28,735 - #43 aa
+INFO  20:45:28,735 - #32 ;
+INFO  20:45:28,735 - #39 {
+INFO  20:45:28,735 - #43 aa
+INFO  20:45:28,735 - #29 =
+INFO  20:45:28,735 - #42 6
+INFO  20:45:28,735 - #32 ;
+INFO  20:45:28,735 - #5 if
+INFO  20:45:28,735 - #35 (
+INFO  20:45:28,735 - #43 aa
+INFO  20:45:28,735 - #21 ==
+INFO  20:45:28,735 - #42 6
+INFO  20:45:28,735 - #36 )
+INFO  20:45:28,735 - #39 {
+INFO  20:45:28,735 - #43 aa
+INFO  20:45:28,735 - #29 =
+INFO  20:45:28,735 - #42 7
+INFO  20:45:28,735 - #32 ;
+INFO  20:45:28,735 - #40 }
+INFO  20:45:28,735 - #41 else
+INFO  20:45:28,735 - #39 {
+INFO  20:45:28,735 - #43 aa
+INFO  20:45:28,735 - #29 =
+INFO  20:45:28,735 - #42 8
+INFO  20:45:28,735 - #32 ;
+INFO  20:45:28,735 - #40 }
+INFO  20:45:28,735 - #7 print
+INFO  20:45:28,735 - #35 (
+INFO  20:45:28,735 - #43 aa
+INFO  20:45:28,750 - #36 )
+INFO  20:45:28,750 - #32 ;
+INFO  20:45:28,750 - #40 }
+INFO  20:45:28,750 - #40 }
+INFO  20:45:28,766 - Deklarisana promenljiva a, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@fb509a: linija 5
+INFO  20:45:28,766 - Obrada funkcije main, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@ffa5d: linija 8
+INFO  20:45:28,766 - Deklarisana promenljiva aa, objekat u tabeli simbola rs.etf.pp1.symboltable.concepts.Obj@117ae12: linija 9
+INFO  20:45:28,766 - Generating bytecode file: C:\Users\mimar\Desktop\PP1 PROJEKAT\microjava-program-interpreter\pp1dz_template\workspace\MJCompiler\test\program.obj
+INFO  20:45:28,782 - Parsiranje uspesno zavrseno!
