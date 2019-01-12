@@ -1,1 +1,5 @@
-microjava-program-interpreter
+## Program compiler with:
+* Lexical analysis
+* Syntax analysis
+* Semantic analysis
+* Bytecode generator
